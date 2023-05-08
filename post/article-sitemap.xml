@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>
-            http://localhost/~connorjarrett/lab-notebook/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search
+            https://labnotebook.connorjarrett.com/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search
         </loc>
         <lastmod>
             2023-5-8
         </lastmod>
         <image:image>
             <image:loc>
-                http://localhost/~connorjarrett/lab-notebook/assets/articles/chatbot.png
+                https://labnotebook.connorjarrett.com/assets/articles/chatbot.png
             </image:loc>
         </image:image>
     </url>
     <url>
         <loc>
-            http://localhost/~connorjarrett/lab-notebook/post/building-a-blog-with-github-pages-and-nodejs-despite-the-challenges
+            https://labnotebook.connorjarrett.com/post/building-a-blog-with-github-pages-and-nodejs-despite-the-challenges
         </loc>
         <lastmod>
             2023-5-7
         </lastmod>
         <image:image>
             <image:loc>
-                http://localhost/~connorjarrett/lab-notebook/assets/articles/making-a-blog.png
+                https://labnotebook.connorjarrett.com/assets/articles/making-a-blog.png
             </image:loc>
         </image:image>
     </url>
