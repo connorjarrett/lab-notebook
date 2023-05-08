@@ -15,6 +15,7 @@ $.getJSON("./post/index.json", function(postIndex){
         console.log(post)
         document.title = post.title
         $("#seo")[0].outerHTML = `
+        <meta http-equiv="refresh" content="0;URL='${post.url}'" />  
         <meta name="description" content="${post.SEOdescription}">
         <meta name="author" content="Connor Jarrett">
         <meta name="keywords" content="blog, Connor Jarrett, Lab Notebook">

@@ -6,3 +6,10 @@ Disallow: /posts_md/
 Disallow: /tools/
 Disallow: /s.html
 Disallow: /.vscode/
+
+User-agent: Twitterbot
+Allow: /
+
+Disallow: /posts_md/
+Disallow: /tools/
+Disallow: /.vscode/
