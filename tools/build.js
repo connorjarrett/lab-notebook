@@ -10,8 +10,7 @@ marked.use({
     silent: true
 });
 
-// const baseUrl = "labnotebook.connorjarrett.com"
-const baseUrl = "http://localhost/~connorjarrett/lab-notebook"
+const baseUrl = "https://labnotebook.connorjarrett.com"
 
 const prefix = "../" // Relative path
 
