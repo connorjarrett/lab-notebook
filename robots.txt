@@ -1,5 +1,7 @@
 User-agent: *
-Disallow: /posts_md
-Disallow: /tools
-Disallow: /s
-Disallow: /.vscode
+Sitemap: https://labnotebook.connorjarrett.com/sitemap_index.xml
+
+Disallow: /posts_md/
+Disallow: /tools/
+Disallow: /s.html
+Disallow: /.vscode/
