@@ -13,6 +13,7 @@ $.getJSON("./post/index.json", function(postIndex){
 
     if (post) {
         console.log(post)
+        document.title = post.title
         $("#seo")[0].outerHTML = `
         <meta name="description" content="${post.SEOdescription}">
         <meta name="author" content="Connor Jarrett">
