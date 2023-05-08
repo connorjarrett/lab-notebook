@@ -1,4 +1,5 @@
 User-agent: *
+Allow: /
 Sitemap: https://labnotebook.connorjarrett.com/sitemap_index.xml
 
 Disallow: /posts_md/
