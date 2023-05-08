@@ -285,7 +285,6 @@ e.then(function(){
             sitemap += `
             <url>
                 <loc>${article.url}</loc>
-                <lastmod>${article.published}</lastmod>
                 <image:image>
                     <image:loc>${article.image}</image:loc>
                 </image:image>
