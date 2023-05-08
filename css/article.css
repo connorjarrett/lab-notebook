@@ -1,0 +1,75 @@
+/* Variables */
+:root {
+    --bodyPad: 20%;
+}
+
+main {
+    padding: 40px 0 40px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+p.date {
+    margin-top: -2px;
+    color: #686868;
+    font-size: 0.95em;
+}
+
+h2.description {
+    color: #404040;
+    font-style: italic;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    margin-top: 0;
+}
+
+main img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+article h2 {
+    margin-top: 1.5em;
+    margin-bottom: -10px;
+    font-size: 1.2em;
+    text-underline-offset: 4.5px;
+    color: #222222;
+}
+
+.youtube {
+    border: none;
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 2em 0 10px 0;
+}
+
+article a {
+    color: #3f6ff4;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.socials {
+    gap: 5px;
+}
+
+.socials a {
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    box-sizing: border-box
+}
+
+.socials a:hover {
+    background-color: #373737;
+}
+
+.socials img {
+    filter: invert(1);
+}

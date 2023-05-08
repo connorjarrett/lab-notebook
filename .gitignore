@@ -1,0 +1,6 @@
+# Mac Things
+._*
+.DS_Store
+
+# Modules available in package.json
+/node_modules

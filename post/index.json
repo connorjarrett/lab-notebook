@@ -1,0 +1,40 @@
+[
+	{
+		"url": "http://localhost/~connorjarrett/lab-notebook/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
+		"id": "how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
+		"title": "How I made a smart assistant by harnessing the power of Google Search",
+		"description": "I look at the fundamental concept of search engines and explore opportunities to improve them.",
+		"SEOdescription": "Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.",
+		"published": "2023-5-8",
+		"dateFormats": {
+			"unix": 1683500400000,
+			"locale": "08/05/2023",
+			"string": "May 8, 2023",
+			"iso": "2023-05-07T23:00:00.000Z"
+		},
+		"share": {
+			"string": "-13m6dmf",
+			"url": "http://localhost/~connorjarrett/lab-notebook/s?r=-13m6dmf&s="
+		},
+		"image": "http://localhost/~connorjarrett/lab-notebook/assets/articles/chatbot.png"
+	},
+	{
+		"url": "http://localhost/~connorjarrett/lab-notebook/post/building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
+		"id": "building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
+		"title": "Building a Blog with GitHub Pages and Node.js despite the challenges",
+		"description": "I share my experience of building a blog using GitHub Pages and Node.js, despite the challenges of limited dynamic content.",
+		"SEOdescription": "Connor Jarrett shares his experience of creating a blog using GitHub Pages and Node.js and explains how he overcame the technical challenges involved in hosting and creating a blog.",
+		"published": "2023-5-7",
+		"dateFormats": {
+			"unix": 1683414000000,
+			"locale": "07/05/2023",
+			"string": "May 7, 2023",
+			"iso": "2023-05-06T23:00:00.000Z"
+		},
+		"share": {
+			"string": "scvexq",
+			"url": "http://localhost/~connorjarrett/lab-notebook/s?r=scvexq&s="
+		},
+		"image": "http://localhost/~connorjarrett/lab-notebook/assets/articles/making-a-blog.png"
+	}
+]

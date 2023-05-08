@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /posts_md
+Disallow: /tools
+Disallow: /s
+Disallow: /.vscode
