@@ -16,6 +16,7 @@ const prefix = "../" // Relative path
 
 const indexURL = `${prefix}/post/index.json`
 const sitemapURL = `${prefix}/post/article-sitemap.xml`
+const shareDir = `${prefix}/s`
 
 var postsAdded = 0
 var postsRemoved = 0
@@ -23,13 +24,17 @@ var postsRemoved = 0
 const logPrefix = " > "
 
 // Get template
-const template = fs.readFileSync(`${prefix}/tools/template.html`).toString();
+const articleTemplate = fs.readFileSync(`${prefix}/tools/article-template.html`).toString();
+const shareTemplate = fs.readFileSync(`${prefix}/tools/share-template.html`).toString();
 
 // Get previous index to check for new creations vs renames
 const previousIndex = JSON.parse(fs.readFileSync(indexURL).toString());
 
 // Get all the posts in markdown format
 const posts = fs.readdirSync(`${prefix}/posts_md`)
+
+// Get all share pages
+const startSharePages = fs.readdirSync(shareDir)
 
 
 function getAttribute(file, attribute) {
@@ -64,10 +69,10 @@ const e = new Promise((resolveOuter) => {
                         return false;
                     }
 
-                    var templateEdit = template
+                    var articleTemplateEdit = articleTemplate
 
                     this.attribute = function(attribute) {
-                        if (!["content","url","share","iso","dateString","built","image"].includes(attribute)) {
+                        if (!["content","url","share","shareid","iso","dateString","built","image"].includes(attribute)) {
                             return getAttribute(data, attribute)
                         }
 
@@ -95,6 +100,8 @@ const e = new Promise((resolveOuter) => {
                             return `${baseUrl}/post/${filename.replace(".html","")}`
                         } else if (attribute == "share") {
                             return shareURL
+                        } else if (attribute == "shareid") {
+                            return share
                         } else if (attribute == "iso") {
                             return new Date(this.attribute("date")).toISOString()
                         } else if (attribute == "dateString") {
@@ -119,20 +126,20 @@ const e = new Promise((resolveOuter) => {
 
                     // Create share string
                     const share = ADLER32.str(filename.replace(".html","")).toString(35)
-                    const shareURL = `${baseUrl}/s?r=${share}&s=`
+                    const shareURL = `${baseUrl}/s/${share}?s=`
 
                     // Create file path
                     const filepath = `${prefix}/post/${filename}`
 
                     // Get text between 2x braces {{ $ }}
-                    const placeholders = template.match(/\{\{([^}]+)\}\}/g)
+                    const placeholders = articleTemplate.match(/\{\{([^}]+)\}\}/g)
                     
                     // Get and replace all the placeholders
                     for (let x=0; x<placeholders.length; x++) {
                         let placeholder = placeholders[x].replace("{{","").replace("}}","")
                         let attribute = placeholder.replace("article.","")
 
-                        templateEdit = templateEdit.replaceAll(placeholders[x], this.attribute(attribute))
+                        articleTemplateEdit = articleTemplateEdit.replaceAll(placeholders[x], this.attribute(attribute))
                     }
 
                     let hasRenamed = false
@@ -157,7 +164,7 @@ const e = new Promise((resolveOuter) => {
                     if (!fs.existsSync(filepath)) {
                         // The article doesn't exist, create a new file
                         waitfor += 1
-                        fs.writeFile(filepath, templateEdit, function (err) {
+                        fs.writeFile(filepath, articleTemplateEdit, function (err) {
                             if (err) throw err;
                             
                             // Don't announce "creation" if renamed to avoid confusion
@@ -174,25 +181,79 @@ const e = new Promise((resolveOuter) => {
 
                         waitfor += 1
 
-                        if (fs.readFileSync(filepath).toString() == templateEdit) {
+                        if (fs.readFileSync(filepath).toString() == articleTemplateEdit) {
                             // The article exists and is up to date, do nothing
                             console.log(`\x1b[32m${logPrefix}\u{1F44D} ${filename} already exists, and is up to date\x1b[0m`)
 
                             waitfor = waitfor - 1
-                        } else 
+                        } else {
                             // The article exists and is outdated, rewrite it with the new template
 
                             // Only announce if more than comments were changed
-                            if (fs.readFileSync(filepath).toString().replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"") != templateEdit.replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"")) {
+                            if (fs.readFileSync(filepath).toString().replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"") != articleTemplateEdit.replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"")) {
                                 console.log(`${logPrefix}\u231B ${filename} already exists, and is being updated\x1b[0m`)
                             }
 
-                            fs.writeFile(filepath, templateEdit, function (err) {
+                            fs.writeFile(filepath, articleTemplateEdit, function (err) {
                                 if (err) throw err;
                 
                                 console.log(`\x1b[32m${logPrefix}\u{1F44D} ${filename} sucessfuly updated\x1b[0m`)
                                 waitfor = waitfor - 1
                             });
+                        }
+                        
+                    }
+
+                    // Create share page
+                    // Get text between 2x braces {{ $ }}
+                    const sharePlaceholders = shareTemplate.match(/\{\{([^}]+)\}\}/g)
+                    var shareTemplateEdit = shareTemplate
+                    
+                    // Get and replace all the placeholders
+                    for (let x=0; x<sharePlaceholders.length; x++) {
+                        let placeholder = sharePlaceholders[x].replace("{{","").replace("}}","")
+                        let attribute = placeholder.replace("article.","")
+                        
+                        shareTemplateEdit = shareTemplateEdit.replaceAll(sharePlaceholders[x], this.attribute(attribute))
+                    }
+
+                    // Check for existance
+                    const sharePath = `${shareDir}/${share}.html`
+
+                     // Check for sharepage existance
+                     if (!fs.existsSync(sharePath)) {
+                        // The sharepage doesn't exist, create a new file
+                        waitfor += 1
+                        fs.writeFile(sharePath, shareTemplateEdit, function (err) {
+                            if (err) throw err;
+                            
+                            // Don't announce "creation" if parent article renamed to avoid confusion
+                            if (!hasRenamed) {
+                                console.log(`\x1b[32m${logPrefix}\u2705 Created sharing link for ${filename}\x1b[0m`)
+                            } else {
+                                console.log(`\x1b[32m${logPrefix}\u{1F44D} Sharing link for ${filename} sucessfuly updated\x1b[0m`)
+                            }
+                            
+                            waitfor = waitfor - 1
+                        });
+                    } else if (fs.readFileSync(sharePath).toString() != shareTemplateEdit) {
+                        waitfor += 1
+                        // The sharepage exists and is outdated, rewrite it with the new template
+                        // Only announce if more than comments were changed
+                        
+                        if (fs.readFileSync(sharePath).toString().replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"") != shareTemplateEdit.replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"")) {
+                            console.log(`${logPrefix}\u231B Updating sharing link for ${filename}\x1b[0m`)
+                        }
+
+                        fs.writeFile(sharePath, shareTemplateEdit, function (err) {
+                            if (err) throw err;
+            
+                            if (fs.readFileSync(sharePath).toString().replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"") != shareTemplateEdit.replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"")) {
+                                console.log(`\x1b[32m${logPrefix}\u{1F44D} Sharing link for ${filename} sucessfuly updated\x1b[0m`)
+                            }
+
+                            waitfor = waitfor - 1
+                        });
                         
                     }
 
@@ -254,6 +315,7 @@ e.then(function(){
         const allPosts = index.map(function(item) { return item.id; })
 
         if (htmls.length > allPosts.length) {
+            waitfor += 1
             // All posts that don't have a markdown file with them
             const noMarkdown = (htmls.filter(element => !allPosts.find(e=> e == element.replace(".html",""))))
 
@@ -264,12 +326,22 @@ e.then(function(){
                 } else {
                     // If not renamed, announce deletion
                     console.log(`\x1b[31m${logPrefix}\u{1F5D1}\uFE0F  Removed stray post ${noMarkdown[i]} as it had no markdown file\x1b[0m`)
+                    postsRemoved =- 1
                 }
 
-                postsRemoved -= 1
-                fs.rmSync(`${prefix}/post/${noMarkdown[i]}`);
+                fs.unlinkSync(`${prefix}/post/${noMarkdown[i]}`)
             }
         }
+
+        // Check for stray sharepages
+        const endSharePages = fs.readdirSync(shareDir)
+
+        const pagesWithSharepage = index.map(e => e.share.string)
+        const noParentPage = endSharePages.filter(element => !pagesWithSharepage.includes(element.replace(".html","")))
+
+        for (let i=0; i<noParentPage.length; i++) {
+            fs.unlinkSync(`${shareDir}/${noParentPage[i]}`)
+        } 
 
         console.log("\n----------\n")
 

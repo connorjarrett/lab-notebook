@@ -4,12 +4,10 @@ Sitemap: https://labnotebook.connorjarrett.com/sitemap_index.xml
 
 Disallow: /posts_md/
 Disallow: /tools/
-Disallow: /s.html
+Disallow: /s/
 Disallow: /.vscode/
 
 User-agent: Twitterbot
 Allow: /
 
-Disallow: /posts_md/
 Disallow: /tools/
-Disallow: /.vscode/
