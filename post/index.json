@@ -1,5 +1,24 @@
 [
 	{
+		"url": "https://labnotebook.connorjarrett.com/post/adding-a-mailing-list-to-a-github-pages-site-through-getformio",
+		"id": "adding-a-mailing-list-to-a-github-pages-site-through-getformio",
+		"title": "Adding a mailing list to a GitHub pages site through getform.io",
+		"description": "I dive in to the challenges of trying to create a mailing list whithout acccess to a backend",
+		"SEOdescription": "Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.",
+		"published": "2023-5-12",
+		"dateFormats": {
+			"unix": 1683846000000,
+			"locale": "12/05/2023",
+			"string": "May 12, 2023",
+			"iso": "2023-05-11T23:00:00.000Z"
+		},
+		"share": {
+			"string": "-dlvgp3",
+			"url": "https://labnotebook.connorjarrett.com/s/-dlvgp3?s="
+		},
+		"image": "https://labnotebook.connorjarrett.com/assets/articles/mailing-list.png"
+	},
+	{
 		"url": "https://labnotebook.connorjarrett.com/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
 		"id": "how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
 		"title": "How I made a smart assistant by harnessing the power of Google Search",

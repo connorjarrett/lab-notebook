@@ -2,5 +2,8 @@
 ._*
 .DS_Store
 
+# Don't leak my keys
+/tools/email/secrets.json
+
 # Modules available in package.json
 /node_modules

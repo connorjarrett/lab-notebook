@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.">
+    <meta name="author" content="Connor Jarrett">
+    <meta name="keywords" content="blog, Connor Jarrett, Lab Notebook, tech blog, tech news, mailing list, github pages, github, emails, email service, getform, mailchimp, email notifications, notifications">
+    <meta property="og:title" content="Adding a mailing list to a GitHub pages site through getform.io">
+    <meta property="og:description" content="Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.">
+    <meta property="og:image" content="https://labnotebook.connorjarrett.com/assets/articles/mailing-list.png">
+    <meta property="og:url" content="https://labnotebook.connorjarrett.com/post/adding-a-mailing-list-to-a-github-pages-site-through-getformio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Adding a mailing list to a GitHub pages site through getform.io">
+    <meta name="twitter:description" content="Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.">
+    <meta name="twitter:image" content="https://labnotebook.connorjarrett.com/assets/articles/mailing-list.png">
+    <meta name="twitter:creator" content="@connorjrt">
+    <link rel="canonical" href="https://labnotebook.connorjarrett.com/post/adding-a-mailing-list-to-a-github-pages-site-through-getformio">
+
+    <link rel="icon" type="image/png" href="../assets/icon/16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../assets/icon/48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="../assets/icon/96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../assets/icon/144.png" sizes="144x144">
+
+    <link rel="icon" type="image/png" href="../assets/icon/maskable-48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="../assets/icon/maskable-96.png" sizes="96x96">
+
+    <link rel="apple-touch-icon" href="../assets/icon/apple-touch.png">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Adding a mailing list to a GitHub pages site through getform.io",
+          "abstract": "Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.",
+          "url": "https://labnotebook.connorjarrett.com/post/adding-a-mailing-list-to-a-github-pages-site-through-getformio",
+          "isAccessibleForFree": "https://schema.org/True",
+          "image": [
+            "https://labnotebook.connorjarrett.com/assets/articles/mailing-list.png"
+           ],
+          "datePublished": "2023-05-11T23:00:00.000Z",
+          "author": [{
+              "@type": "Person",
+              "name": "Connor Jarrett",
+              "url": "https://connorjarrett.com",
+              "sameAs": [
+                "https://www.wikidata.org/wiki/Q115942784",
+                "https://twitter.com/connorjrt"
+              ]
+            }]
+        }
+    </script>
+
+    <link rel="stylesheet" href="../css/sitewide.css">
+    <link rel="stylesheet" href="../css/article.css">
+
+    <title>Adding a mailing list to a GitHub pages site through getform.io | Lab Notebook</title>
+</head>
+<body>
+    <!--
+
+        This page is built automatically.
+        If you're interested in that kind of stuff, this blog is for you.
+
+        Page last built: Fri, 12 May 2023 15:23:13 GMT
+
+    -->
+    
+    <header class="width">
+        <a href="../"><img src="../assets/brand/logo-big.svg" alt="Connor Jarret's Lab Notebook"></a>
+        <h1 class="hidden">Connor Jarrett's Lab Notebook</h1>
+    </header>
+
+    <main class="width">
+        <h1>Adding a mailing list to a GitHub pages site through getform.io</h1>
+        <h2 class="description">I dive in to the challenges of trying to create a mailing list whithout acccess to a backend</h2>
+
+        <img src="https://labnotebook.connorjarrett.com/assets/articles/mailing-list.png">
+
+        <p class="date dt-published" datetime="2023-05-11T23:00:00.000Z" itemprop="datePublished">May 12, 2023</p>
+        
+        <div class="socials">
+            <a href="https://twitter.com/intent/tweet?text=Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.%0a%0a&url=https://labnotebook.connorjarrett.com/s/-dlvgp3?s=tw&via=connorjrt">
+                <img src="../assets/social/twitter.svg">
+            </a>
+            <a href="mailto:?subject=From 'LabNotebook': Adding a mailing list to a GitHub pages site through getform.io&body=Here's a post from Connor Jarrett's blog that might interest you:%0a%0a-- Adding a mailing list to a GitHub pages site through getform.io --%0aConnor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.%0a%0ahttps://labnotebook.connorjarrett.com/post/adding-a-mailing-list-to-a-github-pages-site-through-getformio">
+                <img src="../assets/social/email.svg">
+            </a>
+            <a onclick='navigator.clipboard.writeText("https://labnotebook.connorjarrett.com/s/-dlvgp3?s=article")'>
+                <img src="../assets/social/link.svg">
+            </a>
+        </div>
+
+        <article>
+            <!-- 
+# title: Adding a mailing list to a GitHub pages site through getform.io
+# description: I dive in to the challenges of trying to create a mailing list whithout acccess to a backend
+# seo-description: Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.
+# keywords: mailing list, github pages, github, emails, email service, getform, mailchimp, email notifications, notifications
+# image: mailing-list.png
+# date: 2023-5-12
+-->
+<p>For my blog, I knew that I would want a mailing list so that people can be informed when the next post is. But, because it&#39;s hosted on GitHub pages, that wasn&#39;t as easy as I might have thought and took some real thinking and helpful services to get it done.</p>
+<h2 id="the-problems-with-static-pages">The problems with static pages</h2>
+<p>I fully explore the problems with static pages in <a target='_BLANK' href="https://labnotebook.connorjarrett.com/post/building-a-blog-with-github-pages-and-nodejs-despite-the-challenges">this article</a>, but I&#39;m going to touch on them here to keep you updated. The main issue here is the lack of being able to securely implement a backend. Having a backend for my page would allow me to create a database where I can add emails, remove emails and handle the whole process with ease. It also doesn&#39;t allow me to securely use APIs, so linking to something like Firebase wouldn&#39;t be much help either.</p>
+<h2 id="what-about-email-services">What about email services</h2>
+<p>I originally looked at the option of using an email service like <a target='_BLANK' href="https://mailchimp.com/">Mailchimp</a> and some of its alternatives, but the most reputable of these services required for you to link your Address at the bottom, now while this helps in deterring and stopping scammers and phising emails, it makes my situation more difficult. For obvious reasons, I did not want to post my home address at the end of each email, and spending money on something like renting a PO box wasn&#39;t something I was interested in doing either.</p>
+<h2 id="the-solution">The solution</h2>
+<p>As it turns out, the solution was a service that I had used before on an older version of my <a target='_BLANK' href="https://connorjarrett.com">connorjarrett.com</a> website. <a target='_BLANK' href="https://getform.io">getform.io</a> is a service that allows for one free form endpoint, hosted by them. In simpler terms, this service allows for me to use them as a database, while not having read permissions open to the public. Even better, their services come with a free API that I can use to fetch, parse, and email everyone on my mailing list.</p>
+<h2 id="the-drawbacks">The drawbacks</h2>
+<p>While I had found the solution that would work the best, I was not there yet. Seeing as I&#39;m on the free plan, I can only have one endpoint, which means that I can only use this service for the one mailing list and nothing else in the future, unless I decide to delete my mailing list. Another drawback is because I am sending the emails myself, meaning that the emails may not even get through the spam filter, or if they do will have a low click rate. I also have to handle unsubscribes completely myself.</p>
+<h2 id="managing-emails-via-smtp">Managing emails via SMTP</h2>
+<p>With signups out of the way, I now needed a way for people to actually receive email notifications, and because Getform was not necessarily designed to manage a mailing list I had to get creative. I settled on using a Node.js module called <code>nodemailer</code> to handle emailing. I had to plug in some basic SMTP information that I found on <a target='_BLANK' href="https://support.apple.com/en-gb/HT202304">Apple&#39;s website</a> and then, quite simply, had to fetch all the subscribers via the Getform API and send each person a custom email where I&#39;d modify a template to fill in some of their personal info.</p>
+<h2 id="unsubscribing">Unsubscribing</h2>
+<p>There really is no clean way I can think of handling unsubscriptions, even if the Getform API allowed for me to remove entries from an API request, it would be extremely insecure if I were to expose that URL to the frontend seeing as I have no server to go in the middle, people would be able to unsubscribe anyone, and perhaps everyone from the mailing list. Right now I&#39;ve decided that my best solution is just to get people to email me to unsubscribe, seeing as, realistically, I&#39;m not going to be getting an awful lot, if any of subscriptions.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Making a mailing list on a static website may look easy at first, but lots of small annoyances push it further and further away from being a simple task. If I had a business address to put on the emails, I would have definitely opted for Mailchimp as it seemed to be the easiest solution, but, the workaround I have with Getform, while it may be lacking in some areas, works for a system where there will be a low number of subscribers.</p>
+        </article>
+    </main>
+</body>
+</html
