@@ -83,13 +83,13 @@
         <p class="date dt-published" datetime="{{article.iso}}" itemprop="datePublished">{{article.dateString}}</p>
         
         <div class="socials">
-            <a href="https://twitter.com/intent/tweet?text={{article.seo-description}}%0a%0a&url={{article.share}}tw&via=connorjrt">
+            <a href="https://twitter.com/intent/tweet?text={{article.seo-description}}%0a%0a&url={{article.share}}tw-i&via=connorjrt">
                 <img src="../assets/social/twitter.svg">
             </a>
             <a href="mailto:?subject=From 'LabNotebook': {{article.title}}&body=Here's a post from Connor Jarrett's blog that might interest you:%0a%0a-- {{article.title}} --%0a{{article.seo-description}}%0a%0a{{article.url}}">
                 <img src="../assets/social/email.svg">
             </a>
-            <a onclick='navigator.clipboard.writeText("{{article.share}}url-independant")'>
+            <a onclick='navigator.clipboard.writeText("{{article.share}}url-i")'>
                 <img src="../assets/social/link.svg">
             </a>
         </div>
@@ -104,13 +104,13 @@
 
         <p>If you enjoyed this article please consider sharing with a friend</p>
         <div class="socials">
-            <a href="https://twitter.com/intent/tweet?text={{article.seo-description}}%0a%0a&url={{article.share}}tw&via=connorjrt">
+            <a href="https://twitter.com/intent/tweet?text={{article.seo-description}}%0a%0a&url={{article.share}}tw-e&via=connorjrt">
                 <img src="../assets/social/twitter.svg">
             </a>
             <a href="mailto:?subject=From 'LabNotebook': {{article.title}}&body=Here's a post from Connor Jarrett's blog that might interest you:%0a%0a-- {{article.title}} --%0a{{article.seo-description}}%0a%0a{{article.url}}">
                 <img src="../assets/social/email.svg">
             </a>
-            <a onclick='navigator.clipboard.writeText("{{article.share}}url-encouraged")'>
+            <a onclick='navigator.clipboard.writeText("{{article.share}}url-e")'>
                 <img src="../assets/social/link.svg">
             </a>
         </div>
