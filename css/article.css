@@ -7,6 +7,24 @@ main {
     padding: 40px 0 40px 0;
 }
 
+.share-encouragement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0 40px 0;
+}
+
+.share-encouragement .socials {
+    gap: 15px !important;
+}
+
+.share-encouragement .socials a {
+    height: 30px !important;
+    width: 30px !important;
+    padding: 7px !important;
+}
+
 h1 {
     margin: 0;
 }
@@ -25,10 +43,20 @@ h2.description {
     margin-top: 0;
 }
 
+hr {
+    box-sizing: border-box;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    margin: 2em auto 2em auto;
+}
+
+
 main > img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
+    border-radius: 1em;
 }
 
 article img {
@@ -39,9 +67,20 @@ article img {
 article h2 {
     margin-top: 1.5em;
     margin-bottom: -10px;
-    font-size: 1.2em;
+    font-size: 2em;
     text-underline-offset: 4.5px;
+    text-decoration-thickness: 2px;
     color: #222222;
+}
+
+article h3 {
+    font-size: 1.5em;
+}
+
+article ul {
+    list-style-type: square;
+    font-size: 1em;
+    padding-left: 25px;
 }
 
 .youtube {
@@ -60,11 +99,11 @@ article a:hover {
     text-decoration: underline;
 }
 
-.socials {
+main .socials, .share-encouragement .socials {
     gap: 5px;
 }
 
-.socials a {
+main .socials a, .share-encouragement .socials a{
     background-color: black;
     width: 25px;
     height: 25px;
@@ -72,10 +111,10 @@ article a:hover {
     box-sizing: border-box
 }
 
-.socials a:hover {
+main .socials a:hover, .share-encouragement .socials a:hover {
     background-color: #373737;
 }
 
-.socials img {
+main .socials img, .share-encouragement .socials img {
     filter: invert(1);
 }

@@ -89,7 +89,7 @@
             <a href="mailto:?subject=From 'LabNotebook': {{article.title}}&body=Here's a post from Connor Jarrett's blog that might interest you:%0a%0a-- {{article.title}} --%0a{{article.seo-description}}%0a%0a{{article.url}}">
                 <img src="../assets/social/email.svg">
             </a>
-            <a onclick='navigator.clipboard.writeText("{{article.share}}article")'>
+            <a onclick='navigator.clipboard.writeText("{{article.share}}url-independant")'>
                 <img src="../assets/social/link.svg">
             </a>
         </div>
@@ -98,5 +98,69 @@
             {{article.content}}
         </article>
     </main>
+
+    <section class="share-encouragement width">
+        <hr>
+
+        <p>If you enjoyed this article please consider sharing with a friend</p>
+        <div class="socials">
+            <a href="https://twitter.com/intent/tweet?text={{article.seo-description}}%0a%0a&url={{article.share}}tw&via=connorjrt">
+                <img src="../assets/social/twitter.svg">
+            </a>
+            <a href="mailto:?subject=From 'LabNotebook': {{article.title}}&body=Here's a post from Connor Jarrett's blog that might interest you:%0a%0a-- {{article.title}} --%0a{{article.seo-description}}%0a%0a{{article.url}}">
+                <img src="../assets/social/email.svg">
+            </a>
+            <a onclick='navigator.clipboard.writeText("{{article.share}}url-encouraged")'>
+                <img src="../assets/social/link.svg">
+            </a>
+        </div>
+    </section>
+
+    <footer data-nosnippet>
+        <section class="top width">
+            <section class="top-left">
+                <img class="logo long" src="https://labnotebook.connorjarrett.com/assets/brand/logo-big.svg" alt="Connor Jarrett's Lab Notebook Logo">
+                <img class="logo stack" src="https://labnotebook.connorjarrett.com/assets/brand/logo-stack.svg" alt="Connor Jarrett's Lab Notebook Logo">
+            </section>
+            <section class="top-right">
+                <div class="socials">
+                    <a href="https://twitter.com/connorjrt" target="_blank">
+                        <img src="https://labnotebook.connorjarrett.com/assets/social/twitter.svg">
+                    </a>
+                    <a href="https://github.com/conjardev" target="_blank">
+                        <img src="https://labnotebook.connorjarrett.com/assets/social/github.svg">
+                    </a>
+                    <a href="https://connorjarrett.com" target="_blank">
+                        <img src="https://labnotebook.connorjarrett.com/assets/social/me_laptop.png">
+                    </a>
+                </div>
+            </section>
+        </section>
+        <section class="mid width">
+            <section class="mid-left">
+                <ul>
+                    <li><a href="https://www.connorjarrett.com/about" target="_blank">About Connor Jarrett</a></li>
+                </ul>
+            </section>
+            <section class="mid-right">
+                <h2>BE THE FIRST TO KNOW</h2>
+                <form action="https://getform.io/f/ae8ec051-fa4b-42ef-b7a0-2c44b84730ee" method="POST">
+                    <div class="name-group">
+                        <input name="firstname" type="text" placeholder="Firstname" required>
+                        <input name="surname" type="text" placeholder="Surname" required>
+                    </div>
+                    <input name="email" type="email" placeholder="your@email.com" required>
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+                    <input type="submit" value="Join">
+                    <p>Data sent through this form is sent to <a href="https://getform.io/legal/privacy-policy" target="_blank">getform.io</a>. By clicking "Join" you agree to their privacy policy and terms.</p>
+                </form>
+                
+            </section>
+        </section>
+        <section class="bottom width">
+            <p>&copy; Connor Jarrett</p>
+            <p>This site doesn't track you | All analytics are not individually identifiable</p>
+        </section>
+    </footer>
 </body>
 </html
