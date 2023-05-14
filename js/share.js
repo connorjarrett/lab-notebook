@@ -34,7 +34,8 @@ if (source) {
         "url-i": "url-shared-independant",
         "url-e": "url-shared-encouraged",
         "tw-i": "tweet-independant",
-        "tw-e": "tweet-encouraged"
+        "tw-e": "tweet-encouraged",
+        "tw": "tweet-legacy"
     }
 
     cleanedSource = sources[source.toLowerCase()] ? sources[source.toLowerCase()] : "unsupported"
