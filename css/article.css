@@ -25,11 +25,17 @@ h2.description {
     margin-top: 0;
 }
 
-main img {
+main > img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 article h2 {
     margin-top: 1.5em;
     margin-bottom: -10px;
