@@ -68,7 +68,7 @@ const template = {
             <main>
                 <center class="content">
                     <h1>Hey ${person.firstname}, there's a new post from Connor Jarrett</h1>
-                    <a href="${latest.share.url}mail-subscriber">
+                    <a href="${latest.share.url}m-sub">
                         <h2>"${latest.title}"</h2>
     
                         <img src="${latest.image}">
