@@ -35,61 +35,87 @@ const template = {
     latest: function(person) {
         return {
             subject: `New post from Connor Jarrett - "${latest.title}"`,
+            text: `Hey ${person.firstname}, this is hot off the press from Lab Notebook: `,
             body: `
-            <style>
-                main > .content {
-                    color: black;
-                    text-decoration: none;
-                }
-    
-                main {
-                    max-width: 99%;
-                    width: 8in;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-    
-                img, p {
-                    width: 90%;
-                }
-    
-                p {
-                    font-size: 1.25em;
-                }
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="color-scheme" content="light">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                code {
-                    margin-top: 2em;
-                }
+                                
+                <style>
+                    html {
+                        background-color: #f5f5f5;
+                        display: grid;
+                        place-items: center;
+                    }
 
-                code pre {
-                    text-align: left;
-                }
-            </style>
-            <main>
-                <center class="content">
-                    <h1>Hey ${person.firstname}, there's a new post from Connor Jarrett</h1>
-                    <a href="${latest.share.url}m-sub">
-                        <h2>"${latest.title}"</h2>
-    
-                        <img src="${latest.image}">
-                        <p>${latest.SEOdescription}</p>
-                    </a>
-                </center>
-                <hr>
-                <center>
-                    <sub>You recieved this email because you are on the <a href="https://labnotebook.connorjarrett.com">Lab Notebook</a> mailing list</sub><br>
-                    <sub><a href="mailto:mail@connorjarrett.com?subject=Unsubscribe Me">Unsubscribe</a></sub>
+                    body {
+                        display: grid;
+                        place-items: center;
+                        margin: 0;
+                        font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+                        color: #0b0b0b;
+                    }
+                    a {
+                        cursor: pointer;
+                    }
+                    a:visited {
+                        color: inherit; text-decoration: inherit;
+                    }
+                    footer a:hover {
+                        text-decoration: underline !important;
+                    }
+                </style>
+            </head>
+            <body style='max-width: 700px; display: grid; place-items: center; font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; color: #0b0b0b; margin: 0;' bgcolor="#f5f5f5">
+                <main style="margin-top: 20px; margin-bottom: 20px; width: 90%; max-width: 8in; background-color: white; box-sizing: border-box; border-radius: 25px; padding: 30px;">
+                    <header style="display: flex; gap: 35px;">
+                        <a href="https://labnotebook.connorjarrett.com" target="_blank" style="text-decoration: inherit; color: inherit; font-size: inherit;">
+                            <img src="https://labnotebook.connorjarrett.com/assets/brand/logo-email.png" alt="Lab Notebook" title="Lab Notebook">
+                        </a> 
+                        <h1 style="font-size: 2em; font-weight: bold;">Hey ${person.firstname}, this is hot off the press from Lab Notebook 📝</h1>
+                    </header>
+                    <hr style="border-bottom-width: 1px; border-bottom-color: #e2e2e2; width: 95%; margin: 20px auto; border-style: none none solid;">
+                    <article style="width: 95%; margin-left: auto; margin-right: auto;">
+                        <p class="blockquote" style="width: 100%; font-size: 1.5em; font-weight: bolder; text-decoration: underline; color: rgb(95, 95, 95); margin: 0;">This just in:</p>
+                        <a href="${latest.share.url}ms-i" target="_blank" style="text-decoration: inherit; color: inherit; font-size: inherit;">
+                            <h2 style="width: 100%; font-size: 2em; margin-top: 0; margin-bottom: 0.15em;">${latest.title}</h2>
 
-                    <details>
-                        <summary>Personal information we keep</summary>
-                        <code><pre>
-                            firstname: ${person.firstname}
-                            surname: ${person.surname}
-                            email: ${person.email}
-                        </pre></code>
-                    </details>
-                </center>
-            </main>
+                            <img class="image-main" src="${latest.image}" style="width: 100%; border-radius: 20px;" alt="${latest.SEOdescription}">
+                        
+                            <br><br>
+
+                            <p class="blockquote" style="width: 100%; font-size: 1.5em; font-weight: bolder; text-decoration: underline; color: rgb(95, 95, 95); margin: 0;">Learn More</p>
+                            <h3 style="width: 100%; font-size: 1.25em; color: #797979; font-weight: 400; margin: 0;">${latest.SEOdescription}</h3>
+                        </a>
+
+                        <br>
+
+                        <a href="${latest.share.url}ms-e" target="_blank" style="text-decoration: inherit; color: inherit; font-size: inherit;">
+                            <button style="cursor: pointer; background-color: #252525; color: white; border-radius: 5px; padding: 1em 2em; border-style: none;">Read Now</button>
+                        </a>
+                    </article>
+                    <hr style="border-bottom-width: 1px; border-bottom-color: #e2e2e2; width: 95%; margin: 20px auto; border-style: none none solid;">
+                    <footer style="width: 90%; margin-left: auto; margin-right: auto; box-sizing: border-box; font-size: 12px;">
+                        <p style="color: #8b8b8b; margin: 0;">You've recieved this marketing email because you've signed up to recieve emails for <a href="https://labnotebook.connorjarrett.com" target="_blank" style="text-decoration: inherit; color: rgb(0, 94, 255) !important; font-size: inherit;">Lab Notebook</a></p>
+                        <p style="color: #8b8b8b; margin: 0;">Please <a href="mailto:mail@connorjarrett.com?subject=Unsubscribe%20Me" style="text-decoration: inherit; color: rgb(0, 94, 255) !important; font-size: inherit;">contact us</a> to unsubscribe.</p>
+                    
+                        <details style="margin-top: 0.5em; color: #c5c5c5;">
+                            <summary>See all the data we have on you</summary>
+                            <code><pre style="text-align: left; white-space: pre-line; margin: 0;">
+                                name: ${person.firstname} ${person.surname}
+                                email: ${person.email}
+                            </pre></code>
+                        </details>
+                    </footer>
+                </main>
+            </body>
+            </html>
             `
         }
     }
@@ -189,17 +215,12 @@ async function main(recipiants) {
     const endTime = Date.now()
     const successMessage = `\n${logPrefix} ${emojis.success} Successfully sent ${emails.sent}/${recipiants.length} emails in ${(endTime-startTime)/1000} seconds${emails.failed ? `, failed to send ${emails.failed}` : ""}`
     console.log(successMessage)
-  
-    emails = {
-        sent: 100,
-        failed: 25
-    }
 
     // Visualise sent vs unsent
     const compareLength = successMessage.length - (logPrefix.length + emojis.success.length + "   ".length)
     const total = emails.sent + emails.failed
-    const succeededString = "#".repeat(Math.ceil(emails.sent / total * compareLength))
-    const failedString = "#".repeat(compareLength - succeededString.length)
+    const succeededString = " ".repeat(Math.ceil(emails.sent / total * compareLength))
+    const failedString = " ".repeat(compareLength - succeededString.length)
     const compareString = `\x1b[102m\x1b[30m${succeededString}\x1b[101m\x1b[97m${failedString}\x1b[0m`
 
     console.log(`${logPrefix} ${emojis.analytics} ${compareString}`)
