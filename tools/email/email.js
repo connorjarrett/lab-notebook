@@ -2,6 +2,14 @@ const nodemailer = require("nodemailer");
 const fs = require("fs")
 const axios = require('axios');
 
+// Safety Net
+const safetyNet = false;
+// const safetyNet =Array(1).fill({
+//     firstname: "Jane",
+//     surname: "Doe",
+//     email: "notarealemail@cade.dev"
+// })
+
 const logPrefix = " > "
 
 // Define emojis
@@ -122,18 +130,16 @@ const template = {
 }
 
 // Can't use await in the global scope so it must be wrapped
-// Pass in the email recipiants.
-async function main(recipiants) {
+// Pass in the email recipients.
+async function main(recipients) {
 
     // Test function so I don't spam everyone.
-    recipiants = Array(1).fill({
-        firstname: "Jane",
-        surname: "Doe",
-        email: "notarealemail@cade.dev"
-    })
+    if (safetyNet) {
+        recipients = safetyNet
+    }
 
 
-    console.log(`\n--- Preparing to send ${recipiants.length} email${recipiants.length > 1 ? "s" : ""} ---\n`)
+    console.log(`\n--- Preparing to send ${recipients.length} email${recipients.length > 1 ? "s" : ""} ---\n`)
 
     // Start a timer to keep track
     const startTime = Date.now()
@@ -144,14 +150,14 @@ async function main(recipiants) {
         failed: 0
     }
     
-    // Loop through all email recipiants
-    for (let i=0; i<recipiants.length; i++) {
+    // Loop through all email recipients
+    for (let i=0; i<recipients.length; i++) {
         // Sleect person
-        const person = recipiants[i];
+        const person = recipients[i];
 
         // Build a string to visualise completion percentage
         const percentLength = 10; // How long is the string (higher = higher fidelity)
-        var percent = (i+1) / recipiants.length * percentLength; // Calculate percentage 
+        var percent = (i+1) / recipients.length * percentLength; // Calculate percentage 
         var percentString = `\x1b[40m\x1b[97m ${"#".repeat(Math.ceil(percent))}${" ".repeat(percentLength-Math.ceil(percent))} \x1b[0m`; // Put in string form
 
         // Build the email using templated info
@@ -168,13 +174,13 @@ async function main(recipiants) {
             let info = await transporter.sendMail(mailinfo).then(function(){
                 emails.sent += 1
 
-                console.log(`${logPrefix} ${emojis.success} ${percentString} Email ${i+1}/${recipiants.length} sent to ${person.email} (${person.firstname} ${person.surname}) - ${(Date.now()-startTime)/1000}s`);
+                console.log(`${logPrefix} ${emojis.success} ${percentString} Email ${i+1}/${recipients.length} sent to ${person.email} (${person.firstname} ${person.surname}) - ${(Date.now()-startTime)/1000}s`);
             });
         } catch {
             // Handle failures by retrying up to 10 times, then giving up.
             
             await new Promise((resolve) => {
-                console.log(`\x1b[91m${logPrefix} ${emojis.fail} ${percentString}\x1b[91m Email ${i+1}/${recipiants.length} to ${recipiants[i].email} failed, retrying - ${(Date.now()-startTime)/1000}s\x1b[0m`)
+                console.log(`\x1b[91m${logPrefix} ${emojis.fail} ${percentString}\x1b[91m Email ${i+1}/${recipients.length} to ${recipients[i].email} failed, retrying - ${(Date.now()-startTime)/1000}s\x1b[0m`)
             
                 // Log retries
                 const maxRetries = 10
@@ -183,13 +189,13 @@ async function main(recipiants) {
                 async function attempt() {
                     retries += 1
     
-                    console.log(`\x1b[33m${logPrefix} ${emojis.working} ${percentString}\x1b[33m Retrying email ${i+1}/${recipiants.length} to ${recipiants[i].email} (${retries}/${maxRetries}) - ${(Date.now()-startTime)/1000}s\x1b[0m`)
+                    console.log(`\x1b[33m${logPrefix} ${emojis.working} ${percentString}\x1b[33m Retrying email ${i+1}/${recipients.length} to ${recipients[i].email} (${retries}/${maxRetries}) - ${(Date.now()-startTime)/1000}s\x1b[0m`)
     
                     try {
                         // Try and send again, if succeeded, break the loop.
                         await transporter.sendMail(mailinfo).then(function() {
                             emails.sent += 1
-                            console.log(`${logPrefix} ${emojis.working} ${percentString} Email ${i+1}/${recipiants.length} sent to ${person.email} (${person.firstname} ${person.surname}) - ${(Date.now()-startTime)/1000}s`);
+                            console.log(`${logPrefix} ${emojis.working} ${percentString} Email ${i+1}/${recipients.length} sent to ${person.email} (${person.firstname} ${person.surname}) - ${(Date.now()-startTime)/1000}s`);
                             resolve()
                         })
                     } catch {
@@ -199,7 +205,7 @@ async function main(recipiants) {
                         } else {
                             // If more than 10 tries, accept fail and leave email.
                             emails.failed += 1
-                            console.log(`\x1b[91m${logPrefix} ${emojis.fail} ${percentString}\x1b[91m Email ${i+1}/${recipiants.length} to ${recipiants[i].email} failed - ${(Date.now()-startTime)/1000}s\x1b[0m`)
+                            console.log(`\x1b[91m${logPrefix} ${emojis.fail} ${percentString}\x1b[91m Email ${i+1}/${recipients.length} to ${recipients[i].email} failed - ${(Date.now()-startTime)/1000}s\x1b[0m`)
                             resolve()
                         }
                     }
@@ -213,7 +219,7 @@ async function main(recipiants) {
 
     // Log send success
     const endTime = Date.now()
-    const successMessage = `\n${logPrefix} ${emojis.success} Successfully sent ${emails.sent}/${recipiants.length} emails in ${(endTime-startTime)/1000} seconds${emails.failed ? `, failed to send ${emails.failed}` : ""}`
+    const successMessage = `\n${logPrefix} ${emojis.success} Successfully sent ${emails.sent}/${recipients.length} emails in ${(endTime-startTime)/1000} seconds${emails.failed ? `, failed to send ${emails.failed}` : ""}`
     console.log(successMessage)
 
     // Visualise sent vs unsent
@@ -231,7 +237,7 @@ async function main(recipiants) {
 
 }
 
-// Fetch recipiants list
+// Fetch recipients list
 axios.get(`https://api.getform.io/v1/forms/${secrets.getform.id}?token=${secrets.getform.token}`)
   .then(response => {
     // Send emails
