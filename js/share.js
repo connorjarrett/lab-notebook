@@ -35,6 +35,7 @@ if (source) {
         "url-e": "url-shared-encouraged",
         "tw-i": "tweet-independant",
         "tw-e": "tweet-encouraged",
+        "tw-p": "tweet-promotion",
         "tw": "tweet-legacy",
         "ms-i": "mailing-list-independant",
         "ms-i": "mailing-list-encouraged"
