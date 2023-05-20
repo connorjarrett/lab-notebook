@@ -61,6 +61,19 @@ $.getJSON("../post/index.json", function(postIndex){
         
         // Push a bunch of helpful information to Firebase for analytics
         async function push() {
+            var location = {}
+            $.ajax({
+                url: "https://api.db-ip.com/v2/free/self",
+                async: false,
+                success: function(data) {
+                    location = {
+                        contient: data.continentName,
+                        country: data.countryName,
+                        stateProv: data.stateProv
+                    }
+                }
+            })
+
             await set(ref(database, `${time}`), {
                 time: time,
                 source: cleanedSource,
@@ -73,6 +86,7 @@ $.getJSON("../post/index.json", function(postIndex){
                         name: platform.name,
                         version: platform.version
                     },
+                    location: location,
                     os: platform.os.family,
                     userAgent: navigator.userAgent,
                     deviceType: window.mobileCheck() ? "mobile" : "desktop"
