@@ -78,6 +78,7 @@ $.getJSON("../post/index.json", function(postIndex){
             await set(ref(database, `${time}`), {
                 time: time,
                 source: cleanedSource,
+                referrerURL: document.referrer,
                 client: {
                     product: {
                         vendor: platform.manufacturer,
