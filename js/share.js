@@ -67,7 +67,7 @@ $.getJSON("../post/index.json", function(postIndex){
                 async: false,
                 success: function(data) {
                     location = {
-                        contient: data.continentName,
+                        continent: data.continentName,
                         country: data.countryName,
                         stateProv: data.stateProv,
                         city: data.city
