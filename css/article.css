@@ -87,7 +87,7 @@ article ul {
     border: none;
     width: 100%;
     aspect-ratio: 16/9;
-    margin: 2em 0 10px 0;
+    /* margin: 2em 0 10px 0; */
 }
 
 article a {
