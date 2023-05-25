@@ -187,19 +187,23 @@ const e = new Promise((resolveOuter) => {
 
                             waitfor = waitfor - 1
                         } else {
-                            // The article exists and is outdated, rewrite it with the new template
-
-                            // Only announce if more than comments were changed
+                            // The article exists and is outdated, rewrite it with the new templat
+                            // Only update if more than comments were changed
+                            
                             if (fs.readFileSync(filepath).toString().replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"") != articleTemplateEdit.replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"")) {
                                 console.log(`${logPrefix}\u231B ${filename} already exists, and is being updated\x1b[0m`)
+                            
+                                fs.writeFile(filepath, articleTemplateEdit, function (err) {
+                                    if (err) throw err;
+                    
+                                    console.log(`\x1b[32m${logPrefix}\u{1F44D} ${filename} sucessfuly updated\x1b[0m`)
+                                    waitfor = waitfor - 1
+                                });
+                            } else {
+                                waitfor = waitfor - 1
                             }
 
-                            fs.writeFile(filepath, articleTemplateEdit, function (err) {
-                                if (err) throw err;
-                
-                                console.log(`\x1b[32m${logPrefix}\u{1F44D} ${filename} sucessfuly updated\x1b[0m`)
-                                waitfor = waitfor - 1
-                            });
+ 
                         }
                         
                     }
@@ -239,22 +243,23 @@ const e = new Promise((resolveOuter) => {
                     } else if (fs.readFileSync(sharePath).toString() != shareTemplateEdit) {
                         waitfor += 1
                         // The sharepage exists and is outdated, rewrite it with the new template
-                        // Only announce if more than comments were changed
+                        // Only update if more than comments were changed
                         
                         if (fs.readFileSync(sharePath).toString().replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"") != shareTemplateEdit.replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"")) {
                             console.log(`${logPrefix}\u231B Updating sharing link for ${filename}\x1b[0m`)
-                        }
 
-                        fs.writeFile(sharePath, shareTemplateEdit, function (err) {
-                            if (err) throw err;
-            
-                            if (fs.readFileSync(sharePath).toString().replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"") != shareTemplateEdit.replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"")) {
-                                console.log(`\x1b[32m${logPrefix}\u{1F44D} Sharing link for ${filename} sucessfuly updated\x1b[0m`)
-                            }
-
+                            fs.writeFile(sharePath, shareTemplateEdit, function (err) {
+                                if (err) throw err;
+                
+                                if (fs.readFileSync(sharePath).toString().replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"") != shareTemplateEdit.replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,"")) {
+                                    console.log(`\x1b[32m${logPrefix}\u{1F44D} Sharing link for ${filename} sucessfuly updated\x1b[0m`)
+                                }
+    
+                                waitfor = waitfor - 1
+                            });
+                        } else {
                             waitfor = waitfor - 1
-                        });
-                        
+                        }   
                     }
 
                     // Add to index
