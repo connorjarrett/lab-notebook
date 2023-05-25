@@ -91,7 +91,7 @@ const e = new Promise((resolveOuter) => {
 
                             if (content.includes("<p>[video]</p>")) {
                                 if (this.attribute("video")) {
-                                    content = content.replaceAll("<p>[video]</p>", `<iframe class="youtube" src="https://youtube.com/embed/${this.attribute("video")}"></iframe>`)
+                                    content = content.replaceAll("<p>[video]</p>", `<iframe class="youtube" src="https://youtube-nocookie.com/embed/${this.attribute("video")}"></iframe>`)
                                 }
                             }
 
