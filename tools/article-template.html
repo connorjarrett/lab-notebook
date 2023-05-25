@@ -57,6 +57,9 @@
 
     <link rel="stylesheet" href="../css/sitewide.css">
     <link rel="stylesheet" href="../css/article.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/dark.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
 
     <title>{{article.title}} | Lab Notebook</title>
 </head>
@@ -163,5 +166,13 @@
             <p>This site doesn't track you | All analytics are not individually identifiable</p>
         </section>
     </footer>
+
+    <!-- Style Code -->
+    <script>
+        hljs.configure({
+            cssSelector: "code"
+        })
+        hljs.highlightAll();
+    </script>
 </body>
 </html

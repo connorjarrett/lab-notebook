@@ -90,6 +90,11 @@ article ul {
     /* margin: 2em 0 10px 0; */
 }
 
+code {
+    border-radius: 4px;
+    padding: 0 5px 0 5px !important;
+}
+
 article a {
     color: #3f6ff4;
     text-decoration: none;
