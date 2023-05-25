@@ -1,10 +1,47 @@
 [
 	{
+		"url": "https://labnotebook.connorjarrett.com/post/the-ethics-of-tracking-and-analytics-on-the-internet",
+		"id": "the-ethics-of-tracking-and-analytics-on-the-internet",
+		"title": "The ethics of tracking and analytics on the internet",
+		"description": "I look at how analytics and tracking work online, and dispel some common myths",
+		"SEOdescription": "Connor Jarrett explores the ethics of tracking and analytics online and how to make them more ethical and privacy-first",
+		"tags": [
+			"ethics",
+			"tracking",
+			"privacy",
+			"analytics",
+			"online privacy",
+			"online ethics",
+			"privacy-fist",
+			"security",
+			"personal information"
+		],
+		"published": "2023-5-26",
+		"dateFormats": {
+			"unix": 1685055600000,
+			"locale": "26/05/2023",
+			"string": "May 26, 2023",
+			"iso": "2023-05-25T23:00:00.000Z"
+		},
+		"share": {
+			"string": "2ng6ib",
+			"url": "https://labnotebook.connorjarrett.com/s/2ng6ib?s="
+		},
+		"image": "https://labnotebook.connorjarrett.com/assets/articles/tracking-ethics.png"
+	},
+	{
 		"url": "https://labnotebook.connorjarrett.com/post/my-10-favourite-porfolios-for-inspiration-from-across-the-web",
 		"id": "my-10-favourite-porfolios-for-inspiration-from-across-the-web",
 		"title": "My 10 favourite porfolios for inspiration from across the web",
 		"description": "I share my top 10 favourite websites that inspire me to create, and some of my top tips for your portfolio.",
 		"SEOdescription": "Connor Jarrett shares his 10 favourite websites for inspiration and gives some tips for people looking to design their own portfolio website.",
+		"tags": [
+			"portfolio",
+			"web portfolio",
+			"designer portfolio",
+			"top 10 portfolios",
+			"portfolio inspiration"
+		],
 		"published": "2023-5-19",
 		"dateFormats": {
 			"unix": 1684450800000,
@@ -24,6 +61,17 @@
 		"title": "Adding a mailing list to a GitHub pages site through getform.io",
 		"description": "I dive in to the challenges of trying to create a mailing list whithout acccess to a backend",
 		"SEOdescription": "Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.",
+		"tags": [
+			"mailing list",
+			"github pages",
+			"github",
+			"emails",
+			"email service",
+			"getform",
+			"mailchimp",
+			"email notifications",
+			"notifications"
+		],
 		"published": "2023-5-12",
 		"dateFormats": {
 			"unix": 1683846000000,
@@ -43,6 +91,15 @@
 		"title": "How I made a smart assistant by harnessing the power of Google Search",
 		"description": "I look at the fundamental concept of search engines and explore opportunities to improve them.",
 		"SEOdescription": "Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.",
+		"tags": [
+			"chatbot",
+			"ai",
+			"chatgpt",
+			"artificial inteligence",
+			"ai search",
+			"ai chatbot",
+			"google search"
+		],
 		"published": "2023-5-8",
 		"dateFormats": {
 			"unix": 1683500400000,
@@ -62,6 +119,15 @@
 		"title": "Building a Blog with GitHub Pages and Node.js despite the challenges",
 		"description": "I share my experience of building a blog using GitHub Pages and Node.js, despite the challenges of limited dynamic content.",
 		"SEOdescription": "Connor Jarrett shares his experience of creating a blog using GitHub Pages and Node.js and explains how he overcame the technical challenges involved in hosting and creating a blog.",
+		"tags": [
+			"blog",
+			"github pages",
+			"blog tutorial",
+			"node.js",
+			"markdown",
+			"markdown blog",
+			"javascript blog"
+		],
 		"published": "2023-5-7",
 		"dateFormats": {
 			"unix": 1683414000000,
