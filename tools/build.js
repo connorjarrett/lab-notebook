@@ -264,6 +264,9 @@ const e = new Promise((resolveOuter) => {
                         title: this.attribute("title"),
                         description: this.attribute("description"),
                         SEOdescription: this.attribute("seo-description"),
+                        tags: this.attribute("keywords").split(",").map(function(item) {
+                            return item.trim();
+                        }),
                         published: this.attribute("date"),
                         dateFormats: {
                             unix: new Date(this.attribute("date")).getTime(),
