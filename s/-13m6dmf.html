@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="robots" content="noinex">
+	<meta name="robots" content="noinex">
 
-    <!-- SEO -->
-    <meta name="description" content="Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.">
-    <meta name="author" content="Connor Jarrett">
-    <meta name="keywords" content="blog, Connor Jarrett, Lab Notebook">
-    <meta property="og:title" content="How I made a smart assistant by harnessing the power of Google Search">
-    <meta property="og:description" content="Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.">
-    <meta property="og:image" content="https://labnotebook.connorjarrett.com/assets/articles/chatbot.png">
-    <meta property="og:url" content="https://labnotebook.connorjarrett.com/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="How I made a smart assistant by harnessing the power of Google Search">
-    <meta name="twitter:description" content="Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.">
-    <meta name="twitter:image" content="https://labnotebook.connorjarrett.com/assets/articles/chatbot.png">
-    <meta name="twitter:creator" content="@connorjrt">
-    <link rel="canonical" href="https://labnotebook.connorjarrett.com/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search">
+	<!-- SEO -->
+	<meta name="description" content="Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.">
+	<meta name="author" content="Connor Jarrett">
+	<meta name="keywords" content="blog, Connor Jarrett, Lab Notebook">
+	<meta property="og:title" content="How I made a smart assistant by harnessing the power of Google Search">
+	<meta property="og:description" content="Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.">
+	<meta property="og:image" content="https://labnotebook.connorjarrett.com/assets/articles/chatbot.png">
+	<meta property="og:url" content="https://labnotebook.connorjarrett.com/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="How I made a smart assistant by harnessing the power of Google Search">
+	<meta name="twitter:description" content="Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.">
+	<meta name="twitter:image" content="https://labnotebook.connorjarrett.com/assets/articles/chatbot.png">
+	<meta name="twitter:creator" content="@connorjrt">
+	<link rel="canonical" href="https://labnotebook.connorjarrett.com/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search">
 
-    <link rel="icon" type="image/png" href="../assets/icon/16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="../assets/icon/48.png" sizes="48x48">
-    <link rel="icon" type="image/png" href="../assets/icon/96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="../assets/icon/144.png" sizes="144x144">
+	<link rel="icon" type="image/png" href="../assets/icon/16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="../assets/icon/48.png" sizes="48x48">
+	<link rel="icon" type="image/png" href="../assets/icon/96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="../assets/icon/144.png" sizes="144x144">
 
-    <link rel="icon" type="image/png" href="../assets/icon/maskable-48.png" sizes="48x48">
-    <link rel="icon" type="image/png" href="../assets/icon/maskable-96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="../assets/icon/maskable-48.png" sizes="48x48">
+	<link rel="icon" type="image/png" href="../assets/icon/maskable-96.png" sizes="96x96">
 
-    <link rel="apple-touch-icon" href="../assets/icon/apple-touch.png">
+	<link rel="apple-touch-icon" href="../assets/icon/apple-touch.png">
 
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "How I made a smart assistant by harnessing the power of Google Search",
-        "abstract": "Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.",
-        "url": "https://labnotebook.connorjarrett.com/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
-        "isAccessibleForFree": "https://schema.org/True",
-        "image": [
-            "https://labnotebook.connorjarrett.com/assets/articles/chatbot.png"
-        ],
-        "datePublished": "2023-05-07T23:00:00.000Z",
-        "author": [{
-            "@type": "Person",
-            "name": "Connor Jarrett",
-            "url": "https://connorjarrett.com",
-            "sameAs": [
-                "https://www.wikidata.org/wiki/Q115942784",
-                "https://twitter.com/connorjrt"
-            ]
-            }]
-        }
-    </script>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BlogPosting",
+			"headline": "How I made a smart assistant by harnessing the power of Google Search",
+			"abstract": "Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.",
+			"url": "https://labnotebook.connorjarrett.com/post/how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
+			"isAccessibleForFree": "https://schema.org/True",
+			"image": [
+				"https://labnotebook.connorjarrett.com/assets/articles/chatbot.png"
+			],
+			"datePublished": "2023-05-07T23:00:00.000Z",
+			"author": [{
+				"@type": "Person",
+				"name": "Connor Jarrett",
+				"url": "https://connorjarrett.com",
+				"sameAs": [
+					"https://www.wikidata.org/wiki/Q115942784",
+					"https://twitter.com/connorjrt"
+				]
+			}]
+		}
+	</script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/platform@1.3.6/platform.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/platform@1.3.6/platform.min.js"></script>
 
-    <title>Lab Notebook - How I made a smart assistant by harnessing the power of Google Search</title>
+	<title>Lab Notebook - How I made a smart assistant by harnessing the power of Google Search</title>
 </head>
+
 <body>
-    
-    <script>
-        const id = "-13m6dmf"
-    </script>
-    <script type="module" src="../js/share.js"></script>
+
+	<script>
+		const id = "-13m6dmf"
+	</script>
+	<script type="module" src="../js/share.js"></script>
 
 
 </body>
+
 </html>
