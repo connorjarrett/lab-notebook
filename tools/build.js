@@ -1,5 +1,6 @@
 // build.js converts all the article.md files into HTML files following a template
 const path = require('path');
+const jsBeautify = require("js-beautify");
 const fs = require('fs');
 const marked = require('marked');
 const ADLER32 = require('adler-32'); 
@@ -81,7 +82,7 @@ const e = new Promise((resolveOuter) => {
                             data = data.replace(/^<!--.*$-->/gm,"").trim()
 
                             // Parse
-                            var content = marked.parse(data)
+                            var content = marked.parse(data.replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g,""))
 
                             // Remove H1s
                             content = content.replace(/^<h1.*$/gm,"").trim()
@@ -141,6 +142,13 @@ const e = new Promise((resolveOuter) => {
 
                         articleTemplateEdit = articleTemplateEdit.replaceAll(placeholders[x], this.attribute(attribute))
                     }
+
+                    // Beautify HTML
+                    articleTemplateEdit = jsBeautify.html_beautify(articleTemplateEdit, {
+                        "indent_size": 4,
+                        "indent_char": " ",
+                        "indent_with_tabs": true,
+                    })
 
                     let hasRenamed = false
 
@@ -220,6 +228,13 @@ const e = new Promise((resolveOuter) => {
                         
                         shareTemplateEdit = shareTemplateEdit.replaceAll(sharePlaceholders[x], this.attribute(attribute))
                     }
+
+                    // Beautify HTML
+                    shareTemplateEdit = jsBeautify.html_beautify(shareTemplateEdit, {
+                        "indent_size": 4,
+                        "indent_char": " ",
+                        "indent_with_tabs": true,
+                    })
 
                     // Check for existance
                     const sharePath = `${shareDir}/${share}.html`
