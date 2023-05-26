@@ -38,7 +38,7 @@ if (source) {
         "tw-p": "tweet-promotion",
         "tw": "tweet-legacy",
         "ms-i": "mailing-list-independant",
-        "ms-i": "mailing-list-encouraged"
+        "ms-e": "mailing-list-encouraged"
     }
 
     cleanedSource = sources[source.toLowerCase()] ? sources[source.toLowerCase()] : "unsupported"
