@@ -189,8 +189,12 @@ article.article.adjustable #info {
         border-radius: 0;
     }
 
+    article.article.adjustable img #info {
+        border-radius: 0 var(--cardRadius) var(--cardRadius) 0;
+    }
+
     article.article.adjustable img {
-        border-radius: 0;
+        border-radius: var(--cardRadius) 0 0 var(--cardRadius);
     }
 }
 

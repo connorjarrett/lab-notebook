@@ -7,7 +7,7 @@
 :root {
     --bodyPad: 100px;
     --sizeFix: 13in;
-    --cardRadius: 2.5px;
+    --cardRadius: 10px;
 }
 
 body {
@@ -232,7 +232,7 @@ footer .bottom p {
     object-fit: contain;
 }
 
-@media screen and (max-width: 5in) {
+@media screen and (max-width: 6in) {
     footer .logo {
         display: none !important;
     }
@@ -248,6 +248,7 @@ footer .bottom p {
     footer .bottom {
         flex-direction: column-reverse;
         gap: 5px;
+        text-align: center;
     }
 }
 
