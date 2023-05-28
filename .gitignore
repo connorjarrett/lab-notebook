@@ -7,3 +7,6 @@
 
 # Modules available in package.json
 /node_modules
+
+# Performance monitoring
+.unlighthouse
