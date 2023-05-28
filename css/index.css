@@ -73,7 +73,7 @@
         flex-direction: row !important;
         gap: 10px;
 
-        font-size: 0.9em;
+        /* font-size: 1em; */
     }
 
     article.article.adjustable #info {
@@ -91,7 +91,7 @@
 
 @media screen and (max-width: 6in) {
     article.article.adjustable {
-        font-size: 0.7em;
+        /* font-size: 0.7em; */
         gap: 0;
         border-radius: 0;
     }
