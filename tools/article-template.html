@@ -84,8 +84,12 @@
 
         <img src="{{article.image}}">
 
-        <p class="date dt-published" datetime="{{article.iso}}" itemprop="datePublished">{{article.dateString}}</p>
-        
+        <div class="postinfo"> 
+            <p class="dt-published" datetime="{{article.iso}}" itemprop="datePublished">{{article.dateString}}</p>
+            <span data-nosnippet></span>
+            <p>&#128338; {{article.readtime}} minutes</p>
+        </div>
+
         <div class="socials">
             <a href="https://twitter.com/intent/tweet?text={{article.seo-description}}%0a%0a&url={{article.share}}tw-i&via=connorjrt">
                 <img src="../assets/social/twitter.svg">

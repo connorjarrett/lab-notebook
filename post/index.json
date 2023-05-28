@@ -31,6 +31,33 @@
 		"image": "https://labnotebook.connorjarrett.com/assets/articles/tracking-ethics.png"
 	},
 	{
+		"url": "https://labnotebook.connorjarrett.com/post/my-10-favourite-porfolios-for-inspiration-from-across-the-web",
+		"id": "my-10-favourite-porfolios-for-inspiration-from-across-the-web",
+		"title": "My 10 favourite porfolios for inspiration from across the web",
+		"description": "I share my top 10 favourite websites that inspire me to create, and some of my top tips for your portfolio.",
+		"SEOdescription": "Connor Jarrett shares his 10 favourite websites for inspiration and gives some tips for people looking to design their own portfolio website.",
+		"readtime": 6,
+		"tags": [
+			"portfolio",
+			"web portfolio",
+			"designer portfolio",
+			"top 10 portfolios",
+			"portfolio inspiration"
+		],
+		"published": "2023-5-19",
+		"dateFormats": {
+			"unix": 1684450800000,
+			"locale": "19/05/2023",
+			"string": "May 19, 2023",
+			"iso": "2023-05-18T23:00:00.000Z"
+		},
+		"share": {
+			"string": "-hlf5ce",
+			"url": "https://labnotebook.connorjarrett.com/s/-hlf5ce?s="
+		},
+		"image": "https://labnotebook.connorjarrett.com/assets/articles/dev-portfolios.png"
+	},
+	{
 		"url": "https://labnotebook.connorjarrett.com/post/adding-a-mailing-list-to-a-github-pages-site-through-getformio",
 		"id": "adding-a-mailing-list-to-a-github-pages-site-through-getformio",
 		"title": "Adding a mailing list to a GitHub pages site through getform.io",

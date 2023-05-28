@@ -29,10 +29,30 @@ h1 {
     margin: 0;
 }
 
-p.date {
+.postinfo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.postinfo p {
     margin-top: -2px;
     color: #686868;
     font-size: 0.95em;
+
+    display: flex;
+    align-items: center;
+}
+
+.postinfo span {
+    background-color: #b5b5b5;
+    height: 1em;
+    margin-top: -1em;
+    
+    width: 1px;
 }
 
 h2.description {
