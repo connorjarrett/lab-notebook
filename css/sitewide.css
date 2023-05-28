@@ -108,6 +108,7 @@ article.article #article-description {
 /* Adjustable articles */
 article.article.adjustable {
     flex-direction: column;
+    height: 100%;
 }
 
 article.article.adjustable img {
@@ -116,6 +117,7 @@ article.article.adjustable img {
 
 article.article.adjustable #info {
     border-radius: 0 0 var(--cardRadius) var(--cardRadius);
+    flex-grow: 1;
 }
 
 /* Header/ Navbar */
