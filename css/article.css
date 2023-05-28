@@ -7,12 +7,21 @@ main {
     padding: 40px 0 0 0;
 }
 
-.share-encouragement {
+.share-encouragement, .related-articles {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     padding: 40px 0 40px 0;
+}
+
+.share-encouragement {
+    padding-bottom: 0;
+}
+
+.share-encouragement p {
+    width: 100%;
+    text-align: center;
 }
 
 .share-encouragement .socials {
@@ -23,6 +32,25 @@ main {
     height: 30px !important;
     width: 30px !important;
     padding: 7px !important;
+}
+
+.related-articles h3 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.related-articles .posts-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.related-articles article.article.adjustable {
+    width: 13em;
 }
 
 h1 {

@@ -82,7 +82,7 @@ function getRelatedArticles(id, tags) {
         return similarTagsA.length - similarTagsB.length
     })
 
-    return differentArticles.slice(0,3)
+    return differentArticles.map(element => element.id).slice(0,3)
 }
 
 
@@ -117,7 +117,7 @@ const e = new Promise((resolveOuter) => {
                     )
 
                     this.attribute = function(attribute) {
-                        if (!["content","url","share","shareid","iso","dateString","built","image","readtime"].includes(attribute)) {
+                        if (!["content","url","share","shareid","iso","dateString","built","image","readtime", "relevant"].includes(attribute)) {
                             return getAttribute(data, attribute)
                         }
 
@@ -141,6 +141,26 @@ const e = new Promise((resolveOuter) => {
                             }
 
                             return content
+                        } else if (attribute == "relevant") {
+                            let relevantHTML = ""
+                            
+                            for (let x=0; x<relatedArticles.length; x++) {
+                                let article = previousIndex.find(element => element.id == relatedArticles[x])
+
+                                relevantHTML += `
+                                <a href="${article.share.url}rel&ref=${share}">
+                                    <article class="article adjustable"><img src="${article.image}">
+                                        <div id="info">
+                                            <p id="article-title">${article.title}</p>
+                                            <p id="article-description">${article.description}</p>
+                                        </div>
+                                    </article>
+                                </a>
+                                `
+                                
+                            }
+
+                            return relevantHTML
                         } else if (attribute == "url") {
                             return `${baseUrl}/post/${filename.replace(".html","")}`
                         } else if (attribute == "share") {
@@ -161,13 +181,7 @@ const e = new Promise((resolveOuter) => {
                             }
                         } else if (attribute == "readtime") {
                             return getReadTime(data)
-                        } else if (attribute == "relevant1") {
-                            return relatedArticles[0]
-                        } else if (attribute == "relevant2") {
-                            return relatedArticles[1]
-                        } else if (attribute == "relevant3") {
-                            return relatedArticles[2]
-                        }
+                        } 
                     }
 
                     const filename = this.attribute("title") // Get article title
