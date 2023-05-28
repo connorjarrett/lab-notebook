@@ -49,6 +49,7 @@ function getAttribute(file, attribute) {
     return match
 }
 
+// Get read time from text
 function getReadTime(text) {
     const wpm = 225;
     const words = text.trim().split(/\s+/).length;
