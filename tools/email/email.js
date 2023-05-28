@@ -42,7 +42,7 @@ const template = {
     // Latest: Alerts about the latest article
     latest: function(person) {
         return {
-            subject: `New post from Connor Jarrett - "${latest.title}"`,
+            subject: `📝 New post from Connor Jarrett - "${latest.title}"`,
             text: `Hey ${person.firstname}, this is hot off the press from Lab Notebook: `,
             body: `
             <!DOCTYPE html>
