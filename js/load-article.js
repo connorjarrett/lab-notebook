@@ -55,6 +55,7 @@ const articles = {
                             link.classList = "video-item"
 
                             let thumbnail = document.createElement("img")
+
                             let title = document.createElement("p")
                             
                             let button = document.createElement("button")
@@ -133,6 +134,7 @@ const articles = {
                                 infobox.appendChild(description)
 
                                 let image = document.createElement("img")
+                                image.alt = article.SEOdescription
                                 image.dataset.prop = "image"
 
                                 domArticle.appendChild(image)
