@@ -26,6 +26,7 @@ window.mobileCheck = function() {
 // Get URL params to fetch source from URL
 const urlParams = new URLSearchParams(window.location.search);
 const source = urlParams.get("s")
+const prefefinedRef = urlParams.get("ref")
 
 // Clean sources to allow for shorter URLs and prevent bad inputs
 var cleanedSource = "undefined"
@@ -38,7 +39,8 @@ if (source) {
         "tw-p": "tweet-promotion",
         "tw": "tweet-legacy",
         "ms-i": "mailing-list-independant",
-        "ms-e": "mailing-list-encouraged"
+        "ms-e": "mailing-list-encouraged",
+        "related": "related-article"
     }
 
     cleanedSource = sources[source.toLowerCase()] ? sources[source.toLowerCase()] : "unsupported"
@@ -75,10 +77,16 @@ $.getJSON("../post/index.json", function(postIndex){
                 }
             })
 
+            let referrerArticle = []
+            if (cleanedSource == "related-article" && prefefinedRef) {
+                referrerArticle = postIndex.find(post => post.share.string == prefefinedRef)
+            }
+
             await set(ref(database, `events/${time}`), {
                 time: time,
                 source: cleanedSource,
                 referrerURL: document.referrer,
+                referrerArticle: referrerArticle,
                 client: {
                     product: {
                         vendor: platform.manufacturer,
