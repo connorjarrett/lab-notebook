@@ -58,6 +58,33 @@ function getReadTime(text) {
     return time
 }
 
+function getRelatedArticles(id, tags) {
+    // Get all articles that aren't the current one
+    const differentArticles = previousIndex.filter(element => element.title != id)
+
+    // Sort by which has the most relevant tags
+    differentArticles.sort(function(a,b) {
+        let similarTagsA = []
+        let similarTagsB = []
+
+        for (let i=0; i<a.tags.length; i++) {
+            if (tags.includes(a.tags[i])) {
+                similarTagsA.push(a.tags[i])
+            }
+        }
+
+        for (let i=0; i<b.tags.length; i++) {
+            if (tags.includes(b.tags[i])) {
+                similarTagsB.push(b.tags[i])
+            }
+        }
+
+        return similarTagsA.length - similarTagsB.length
+    })
+
+    return differentArticles.slice(0,3)
+}
+
 
 var index = []
 var renamed = []
@@ -81,6 +108,13 @@ const e = new Promise((resolveOuter) => {
                     }
 
                     var articleTemplateEdit = articleTemplate
+
+                    const relatedArticles = getRelatedArticles(
+                        getAttribute(data, "title"),
+                        getAttribute(data, "keywords").split(",").map(function(item) {
+                            return item.trim();
+                        })
+                    )
 
                     this.attribute = function(attribute) {
                         if (!["content","url","share","shareid","iso","dateString","built","image","readtime"].includes(attribute)) {
@@ -127,6 +161,12 @@ const e = new Promise((resolveOuter) => {
                             }
                         } else if (attribute == "readtime") {
                             return getReadTime(data)
+                        } else if (attribute == "relevant1") {
+                            return relatedArticles[0]
+                        } else if (attribute == "relevant2") {
+                            return relatedArticles[1]
+                        } else if (attribute == "relevant3") {
+                            return relatedArticles[2]
                         }
                     }
 
@@ -300,6 +340,7 @@ const e = new Promise((resolveOuter) => {
                         tags: this.attribute("keywords").split(",").map(function(item) {
                             return item.trim();
                         }),
+                        relatedArticles: relatedArticles,
                         published: this.attribute("date"),
                         dateFormats: {
                             unix: new Date(this.attribute("date")).getTime(),
