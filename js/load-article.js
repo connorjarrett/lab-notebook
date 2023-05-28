@@ -134,7 +134,6 @@ const articles = {
                                 infobox.appendChild(description)
 
                                 let image = document.createElement("img")
-                                image.alt = article.SEOdescription
                                 image.dataset.prop = "image"
 
                                 domArticle.appendChild(image)
@@ -168,6 +167,7 @@ const articles = {
 
                     if (image.length > 0 && articles.getAttribute(article, "image")) {
                         image[0].src = articles.getAttribute(article, "image")
+                        image[0].alt = articles.getAttribute(article, "SEOdescription")
                     }
                 }
             })
