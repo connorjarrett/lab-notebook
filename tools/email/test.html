@@ -1,185 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="color-scheme" content="light">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="color-scheme" content="light">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                background-color: #f5f5f5;
+                display: grid;
+                place-items: center;
+            }
 
-    <style>
-        body {
-            display: grid;
-            place-items: center;
-            width: 100%;
-            height: 100vmin;
-            background-color: #f5f5f5;
+            body {
+                display: grid;
+                place-items: center;
+                margin: 0;
+                font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+                color: #0b0b0b;
+            }
 
-            font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
-            color: #0b0b0b;
-        }
+            a {
+                cursor: pointer;
+            }
 
-        a {
-            text-decoration: inherit;
-            color: inherit;
-            font-size: inherit;
-        }
+            a:visited {
+                color: inherit;
+                text-decoration: inherit;
+            }
 
-        a:visited {
-            color: inherit;
-            text-decoration: inherit;
-        }
-
-        main {
-            width: 90%;
-            max-width: 8in;
-
-            background-color: white;
-            padding: 30px;
-            box-sizing: border-box;
-            border-radius: 25px;
-        }
-
-        main header {
-            display: flex;
-            gap: 35px;
-        }
-
-        main h1 {
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        main article {
-            width: 95%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        main hr {
-            border: none;
-            border-bottom: 1px solid #e2e2e2;
-
-            width: 95%;
-            margin: 20px auto 20px auto;
-        }
-
-        main button {
-            cursor: pointer;
-            border: none;
-            padding: 1em 2em 1em 2em;
-            background-color: #252525;
-            color: white;
-            border-radius: 5px;
-        }
-
-        main h2 {
-            width: 100%;
-            font-size: 2em;
-
-            margin-top: 0;
-            margin-bottom: 0.15em;
-        }
-
-        main h3 {
-            width: 100%;
-            font-size: 1.25em;
-            margin: 0;
-            color: #797979;
-            font-weight: 400;
-        }
-
-        main .blockquote {
-            width: 100%;
-
-            margin: 0;
-
-            font-size: 1.5em;
-            font-weight: bolder;
-            text-decoration: underline;
-            color: rgb(95, 95, 95);
-            /* text-decoration-color: grey; */
-        }
-
-        main .image-main {
-            width: 100%;
-            border-radius: 20px;
-        }
-
-        footer {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-
-            box-sizing: border-box;
-            font-size: 12px;
-        }
-
-        footer p {
-            margin: 0;
-            color: #8b8b8b;
-        }
-
-        footer details {
-            margin-top: 0.5em;
-            color: #c5c5c5;
-        }
-
-        footer pre {
-            text-align: left;
-            white-space: pre-line;
-            margin: 0;
-        }
-
-        footer a {
-            color: rgb(0, 94, 255) !important;
-        }
-
-        footer a:hover {
-            text-decoration: underline !important;
-        }
-    </style>
-</head>
-<body>
-    <main>
-        <header>
-            <a href="https://labnotebook.connorjarrett.com" target="_blank">
-                <img src="https://labnotebook.connorjarrett.com/assets/brand/logo-stack.svg" alt="Lab Notebook">
-            </a>
-            <h1>Hey Connor, this is hot off the press from Lab Notebook&#128221;</h1>
-        </header>
-        <hr>
-        <article>
-            <p class="blockquote">This just in:</p>
-            <a href="https://labnotebook.connorjarrett.com/post/adding-a-mailing-list-to-a-github-pages-site-through-getformio" target="_blank">
-                <h2>Adding a mailing list to a GitHub pages site through getform.io</h2>
-
-                <img class="image-main" src="https://labnotebook.connorjarrett.com/assets/articles/mailing-list.png">
-            
-                <br><br>
-
-                <p class="blockquote">Learn More</p>
-                <h3>Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.</h3>
-            </a>
-
-            <br>
-
-            <a href="https://labnotebook.connorjarrett.com/post/adding-a-mailing-list-to-a-github-pages-site-through-getformio" target="_blank">
-                <button>Read Now</button>
-            </a>
-        </article>
-        <hr>
-        <footer>
-            <p>You've recieved this marketing email because you've signed up to recieve emails for <a href="https://labnotebook.connorjarrett.com" target="_blank">Lab Notebook</a></p>
-            <p>Please <a href="mailto:mail@connorjarrett.com?subject=Unsubscribe%20Me">contact us</a> to unsubscribe.</p>
-        
-            <details>
-                <summary>See all the data we have on you</summary>
-                <code><pre>
-                    name: Connor Jarrett
-                    email: connorjrt@icloud.com
-                </pre></code>
-            </details>
-        </footer>
-    </main>
-</body>
+            footer a:hover {
+                text-decoration: underline !important;
+            }
+        </style>
+    </head>
+    <body style='max-width: 700px; display: grid; place-items: center; font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; color: #0b0b0b; margin: 0;' bgcolor="#f5f5f5">
+        <main style="margin-top: 20px; margin-bottom: 20px; width: 90%; max-width: 8in; background-color: white; box-sizing: border-box; border-radius: 25px; padding: 30px;">
+            <header style="display: flex; gap: 35px;">
+                <a href="https://labnotebook.connorjarrett.com" target="_blank" style="text-decoration: inherit; color: inherit; font-size: inherit;">
+                    <img src="https://labnotebook.connorjarrett.com/assets/brand/logo-email.png" alt="Lab Notebook" title="Lab Notebook">
+                </a>
+                <h1 style="font-size: 2em; font-weight: bold;">Hey ${person.firstname}, this is hot off the press from Lab Notebook 📝</h1>
+            </header>
+            <hr style="border-bottom-width: 1px; border-bottom-color: #e2e2e2; width: 95%; margin: 20px auto; border-style: none none solid;">
+            <article style="width: 95%; margin-left: auto; margin-right: auto;">
+                <p class="blockquote" style="width: 100%; font-size: 1.5em; font-weight: bolder; text-decoration: underline; color: rgb(95, 95, 95); margin: 0;">This just in:</p>
+                <a href="${latest.share.url}ms-i" target="_blank" style="text-decoration: inherit; color: inherit; font-size: inherit;">
+                    <h2 style="width: 100%; font-size: 2em; margin-top: 0; margin-bottom: 0.15em;">${latest.title}</h2>
+                    <img class="image-main" src="${latest.image}" style="width: 100%; border-radius: 20px;" alt="${latest.SEOdescription}">
+                    <br>
+                    <br>
+                    <p class="blockquote" style="width: 100%; font-size: 1.5em; font-weight: bolder; text-decoration: underline; color: rgb(95, 95, 95); margin: 0;">Learn More</p>
+                    <h3 style="width: 100%; font-size: 1.25em; color: #797979; font-weight: 400; margin: 0;">${latest.SEOdescription}</h3>
+                </a>
+                <br>
+                <a href="${latest.share.url}ms-e" target="_blank" style="text-decoration: inherit; color: inherit; font-size: inherit;">
+                    <button style="cursor: pointer; background-color: #252525; color: white; border-radius: 5px; padding: 1em 2em; border-style: none;">Read Now</button>
+                </a>
+            </article>
+            <hr style="border-bottom-width: 1px; border-bottom-color: #e2e2e2; width: 95%; margin: 20px auto; border-style: none none solid;">
+            <footer style="width: 90%; margin-left: auto; margin-right: auto; box-sizing: border-box; font-size: 12px;">
+                <p style="color: #8b8b8b; margin: 0;">You've recieved this marketing email because you've signed up to recieve emails for <a href="https://labnotebook.connorjarrett.com" target="_blank" style="text-decoration: inherit; color: rgb(0, 94, 255) !important; font-size: inherit;">Lab Notebook</a>
+                </p>
+                <p style="color: #8b8b8b; margin: 0;">Please <a href="mailto:mail@connorjarrett.com?subject=Unsubscribe%20Me" style="text-decoration: inherit; color: rgb(0, 94, 255) !important; font-size: inherit;">contact us</a> to unsubscribe. </p>
+                <details style="margin-top: 0.5em; color: #c5c5c5;">
+                    <summary>See all the data we have on you</summary>
+                    <code>
+                        <pre style="text-align: left; white-space: pre-line; margin: 0;">
+                                name: ${person.firstname} ${person.surname}
+                                email: ${person.email}
+                            </pre>
+                    </code>
+                </details>
+            </footer>
+        </main>
+    </body>
 </html>
