@@ -75,7 +75,7 @@ $.getJSON("../post/index.json", function(postIndex){
                 }
             })
 
-            await set(ref(database, `${time}`), {
+            await set(ref(database, `events/${time}`), {
                 time: time,
                 source: cleanedSource,
                 referrerURL: document.referrer,
