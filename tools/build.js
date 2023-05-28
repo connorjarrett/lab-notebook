@@ -49,6 +49,15 @@ function getAttribute(file, attribute) {
     return match
 }
 
+function getReadTime(text) {
+    const wpm = 225;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+
+    return time
+}
+
+
 var index = []
 var renamed = []
 var waitfor = 0
@@ -73,7 +82,7 @@ const e = new Promise((resolveOuter) => {
                     var articleTemplateEdit = articleTemplate
 
                     this.attribute = function(attribute) {
-                        if (!["content","url","share","shareid","iso","dateString","built","image"].includes(attribute)) {
+                        if (!["content","url","share","shareid","iso","dateString","built","image","readtime"].includes(attribute)) {
                             return getAttribute(data, attribute)
                         }
 
@@ -115,6 +124,8 @@ const e = new Promise((resolveOuter) => {
                             } else {
                                 return `${baseUrl}/assets/articles/${getAttribute(data, attribute) }`
                             }
+                        } else if (attribute == "readtime") {
+                            return getReadTime(data)
                         }
                     }
 
@@ -284,6 +295,7 @@ const e = new Promise((resolveOuter) => {
                         title: this.attribute("title"),
                         description: this.attribute("description"),
                         SEOdescription: this.attribute("seo-description"),
+                        readtime: getReadTime(data),
                         tags: this.attribute("keywords").split(",").map(function(item) {
                             return item.trim();
                         }),

@@ -12,16 +12,6 @@
     </url>
     <url>
         <loc>
-            https://labnotebook.connorjarrett.com/post/my-10-favourite-porfolios-for-inspiration-from-across-the-web
-        </loc>
-        <image:image>
-            <image:loc>
-                https://labnotebook.connorjarrett.com/assets/articles/dev-portfolios.png
-            </image:loc>
-        </image:image>
-    </url>
-    <url>
-        <loc>
             https://labnotebook.connorjarrett.com/post/adding-a-mailing-list-to-a-github-pages-site-through-getformio
         </loc>
         <image:image>
@@ -47,6 +37,16 @@
         <image:image>
             <image:loc>
                 https://labnotebook.connorjarrett.com/assets/articles/making-a-blog.png
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>
+            https://labnotebook.connorjarrett.com/post/my-10-favourite-porfolios-for-inspiration-from-across-the-web
+        </loc>
+        <image:image>
+            <image:loc>
+                https://labnotebook.connorjarrett.com/assets/articles/dev-portfolios.png
             </image:loc>
         </image:image>
     </url>
