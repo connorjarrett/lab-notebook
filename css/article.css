@@ -7,7 +7,7 @@ main {
     padding: 40px 0 0 0;
 }
 
-.share-encouragement, .related-articles {
+.share-encouragement, .related-articles, .comments {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +32,10 @@ main {
     height: 30px !important;
     width: 30px !important;
     padding: 7px !important;
+}
+
+.comments {
+    padding-bottom: 0;
 }
 
 .related-articles h3 {
