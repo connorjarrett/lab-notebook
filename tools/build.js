@@ -117,7 +117,7 @@ const e = new Promise((resolveOuter) => {
                     )
 
                     this.attribute = function(attribute) {
-                        if (!["content","url","share","shareid","iso","dateString","built","image","readtime", "relevant"].includes(attribute)) {
+                        if (!["content","url","share","shareid","iso","dateString","built","image","readtime", "relevant","keywords"].includes(attribute)) {
                             return getAttribute(data, attribute)
                         }
 
@@ -181,7 +181,9 @@ const e = new Promise((resolveOuter) => {
                             }
                         } else if (attribute == "readtime") {
                             return getReadTime(data)
-                        } 
+                        } else if (attribute == "keywords") {
+                            return getAttribute(data, "keywords").toLowerCase()
+                        }
                     }
 
                     const filename = this.attribute("title") // Get article title
