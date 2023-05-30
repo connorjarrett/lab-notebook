@@ -79,7 +79,7 @@ function getRelatedArticles(id, tags) {
             }
         }
 
-        return similarTagsA.length - similarTagsB.length
+        return similarTagsB.length - similarTagsA.length
     })
 
     return differentArticles.map(element => element.id).slice(0,3)
