@@ -127,6 +127,7 @@ article h2 {
 
 article h3 {
     font-size: 1.5em;
+    margin-bottom: -15px;
 }
 
 article ul {
@@ -143,9 +144,19 @@ article ul {
     border-radius: 1em;
 }
 
+/* Base Code */
 code {
     border-radius: 4px;
     padding: 0 5px 0 5px !important;
+}
+
+p > code * {
+    color: white !important;
+}
+
+/* Multi Line Code */
+pre code {
+    padding: 10px !important;
 }
 
 article a {
