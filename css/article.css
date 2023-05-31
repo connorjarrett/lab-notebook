@@ -156,7 +156,8 @@ p > code * {
 
 /* Multi Line Code */
 pre code {
-    padding: 10px !important;
+    padding: 20px !important;
+    border-radius: 10px;
 }
 
 article a {
