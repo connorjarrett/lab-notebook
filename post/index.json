@@ -1,5 +1,44 @@
 [
 	{
+		"url": "https://labnotebook.connorjarrett.com/post/why-the-little-things-are-important-in-ui-and-ux-design",
+		"id": "why-the-little-things-are-important-in-ui-and-ux-design",
+		"title": "Why the little things are important in UI and UX design",
+		"description": "I look into the history of User Interface and User Experience design and provide some top tips for beginners",
+		"SEOdescription": "Connor Jarrett explores the history of User Interface and User Experience and uncovers the key ingredient to a successful design.",
+		"readtime": 5,
+		"tags": [
+			"ui",
+			"ux",
+			"user interface",
+			"user experience",
+			"uiux",
+			"design",
+			"designers",
+			"web design",
+			"websites",
+			"website flow",
+			"micro-interactions",
+			"ui design"
+		],
+		"relatedArticles": [
+			"the-ethics-of-tracking-and-analytics-on-the-internet",
+			"my-10-favourite-porfolios-for-inspiration-from-across-the-web",
+			"adding-a-mailing-list-to-a-github-pages-site-through-getformio"
+		],
+		"published": "2023-5-31",
+		"dateFormats": {
+			"unix": 1685487600000,
+			"locale": "31/05/2023",
+			"string": "May 31, 2023",
+			"iso": "2023-05-30T23:00:00.000Z"
+		},
+		"share": {
+			"string": "oebce7",
+			"url": "https://labnotebook.connorjarrett.com/s/oebce7?s="
+		},
+		"image": "https://labnotebook.connorjarrett.com/assets/articles/uiux-little-things.png"
+	},
+	{
 		"url": "https://labnotebook.connorjarrett.com/post/the-ethics-of-tracking-and-analytics-on-the-internet",
 		"id": "the-ethics-of-tracking-and-analytics-on-the-internet",
 		"title": "The ethics of tracking and analytics on the internet",
@@ -18,9 +57,9 @@
 			"personal information"
 		],
 		"relatedArticles": [
+			"why-the-little-things-are-important-in-ui-and-ux-design",
 			"my-10-favourite-porfolios-for-inspiration-from-across-the-web",
-			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search"
+			"adding-a-mailing-list-to-a-github-pages-site-through-getformio"
 		],
 		"published": "2023-5-26",
 		"dateFormats": {
@@ -50,9 +89,9 @@
 			"portfolio inspiration"
 		],
 		"relatedArticles": [
+			"why-the-little-things-are-important-in-ui-and-ux-design",
 			"the-ethics-of-tracking-and-analytics-on-the-internet",
-			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search"
+			"adding-a-mailing-list-to-a-github-pages-site-through-getformio"
 		],
 		"published": "2023-5-19",
 		"dateFormats": {
@@ -87,8 +126,8 @@
 		],
 		"relatedArticles": [
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"the-ethics-of-tracking-and-analytics-on-the-internet",
-			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
+			"why-the-little-things-are-important-in-ui-and-ux-design",
+			"the-ethics-of-tracking-and-analytics-on-the-internet"
 		],
 		"published": "2023-5-12",
 		"dateFormats": {
@@ -120,9 +159,9 @@
 			"google search"
 		],
 		"relatedArticles": [
+			"why-the-little-things-are-important-in-ui-and-ux-design",
 			"the-ethics-of-tracking-and-analytics-on-the-internet",
-			"my-10-favourite-porfolios-for-inspiration-from-across-the-web",
-			"adding-a-mailing-list-to-a-github-pages-site-through-getformio"
+			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
 		],
 		"published": "2023-5-8",
 		"dateFormats": {
@@ -155,8 +194,8 @@
 		],
 		"relatedArticles": [
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"the-ethics-of-tracking-and-analytics-on-the-internet",
-			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
+			"why-the-little-things-are-important-in-ui-and-ux-design",
+			"the-ethics-of-tracking-and-analytics-on-the-internet"
 		],
 		"published": "2023-5-7",
 		"dateFormats": {
