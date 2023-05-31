@@ -1,6 +1,8 @@
 const nodemailer = require("nodemailer");
 const fs = require("fs")
 const axios = require('axios');
+const admin = require("firebase-admin");
+const { getDatabase } = require('firebase-admin/database');
 
 // Safety Net
 var safetyNet = false;
@@ -33,8 +35,18 @@ const emojis = {
 
 // Fetch key info from files
 const secrets = JSON.parse(fs.readFileSync("./secrets.json").toString())
+const serviceAccount = require("./firebase.json"); // Private af - don't leak it by accident
 const articles = JSON.parse(fs.readFileSync("../../post/index.json").toString())
 const latest = articles[0]
+
+// Connect to Firebase
+const app = admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: "https://lab-notebook-analytics-default-rtdb.firebaseio.com"
+});
+
+// Get DB
+const db = getDatabase();
 
 // Create email transporter to use throughout
 const transporter = nodemailer.createTransport({
@@ -160,9 +172,11 @@ async function main(recipients) {
         failed: 0
     }
     
+    const sessionID = Date.now();
+
     // Loop through all email recipients
     for (let i=0; i<recipients.length; i++) {
-        // Sleect person
+        // Select person
         const person = recipients[i];
 
         // Build a string to visualise completion percentage
@@ -177,6 +191,8 @@ async function main(recipients) {
             subject: template.latest(person).subject,
             html: template.latest(person).body
         };
+
+        var success = true
 
         // Send email
         try {
@@ -215,6 +231,7 @@ async function main(recipients) {
                         } else {
                             // If more than 10 tries, accept fail and leave email.
                             emails.failed += 1
+                            success = false
                             console.log(`\x1b[91m${logPrefix} ${emojis.fail} ${percentString}\x1b[91m Email ${i+1}/${recipients.length} to ${recipients[i].email} failed - ${(Date.now()-startTime)/1000}s\x1b[0m`)
                             resolve()
                         }
@@ -224,7 +241,19 @@ async function main(recipients) {
                 attempt()
             })
         }
-        
+
+
+        var receipt = {
+            session: sessionID,
+            email: mailinfo,
+            success: success
+        }
+
+        const profileRef = db.ref(`email/${person.id}/profile`);
+        profileRef.set(person)
+
+        const sessionRef = db.ref(`email/${person.id}/sessions/${sessionID}`);
+        sessionRef.set(receipt)
     } 
 
     // Log send success
@@ -244,6 +273,10 @@ async function main(recipients) {
 
     // Add some line breaks at the bottom for neatness
     console.log("\n----------\n")
+
+    // Disconnect from Firebase
+    db.goOffline()
+    app.delete()
 
 }
 

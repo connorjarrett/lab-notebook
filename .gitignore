@@ -4,6 +4,7 @@
 
 # Don't leak my keys
 /tools/email/secrets.json
+/tools/email/firebase.json
 
 # Modules available in package.json
 /node_modules
