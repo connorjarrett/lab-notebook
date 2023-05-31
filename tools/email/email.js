@@ -3,12 +3,22 @@ const fs = require("fs")
 const axios = require('axios');
 
 // Safety Net
-const safetyNet = false;
-// const safetyNet =Array(1).fill({
-//     firstname: "Jane",
-//     surname: "Doe",
-//     email: "notarealemail@cade.dev"
-// })
+var safetyNet = false;
+
+if (safetyNet) {
+    safetyNet = [{
+        firstname: "Jane",
+        surname: "Doe",
+        id: 0,
+        email: "notarealemail@cade.dev"
+    },
+    {
+        firstname: "John",
+        surname: "Doe",
+        id: 1,
+        email: "alsoafakeemail@cade.dev"
+    }]
+}
 
 const logPrefix = " > "
 
