@@ -188,6 +188,7 @@ const e = new Promise((resolveOuter) => {
 
                     const filename = this.attribute("title") // Get article title
                                     .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"") // Remove punctuation
+                                    .replaceAll("'","") // Remove apostrophe
                                     .replace(/\s{2,}/g," ") // Remove stray spaces
                                     .replaceAll(" ","-") // Replace spaces with dashes
                                     .toLowerCase() // Lowercase
