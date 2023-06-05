@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>
+            https://labnotebook.connorjarrett.com/post/wwdc-2023-everything-apple-revealed-in-this-years-keynote
+        </loc>
+        <image:image>
+            <image:loc>
+                https://labnotebook.connorjarrett.com/assets/articles/wwdc-23.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>
             https://labnotebook.connorjarrett.com/post/why-the-little-things-are-important-in-ui-and-ux-design
         </loc>
         <image:image>
