@@ -43,6 +43,7 @@ if (source) {
         "ms-i": "mailing-list-independant",
         "ms-e": "mailing-list-encouraged",
         "related": "related-article",
+        "md": "medium",
         "nw": "networking",
         "cjrt": "portfolio"
     }
