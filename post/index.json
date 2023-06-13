@@ -1,5 +1,43 @@
 [
 	{
+		"url": "https://labnotebook.connorjarrett.com/post/an-autonomous-future-may-be-closer-than-i-thought",
+		"id": "an-autonomous-future-may-be-closer-than-i-thought",
+		"title": "An autonomous future may be closer than I thought",
+		"description": "I explore the development of autonomous driving technology over the years, and share with you my experience of its development in San Francisco.",
+		"SEOdescription": "Connor Jarrett looks into the development of autonomous driving technology over the years, and looks at the technology we have today.",
+		"readtime": 4,
+		"tags": [
+			"autonomous vehicles",
+			"autonomous transportation",
+			"san francisco",
+			"vehicle development",
+			"future technology",
+			"new cars",
+			"vehicle developments",
+			"autopilot",
+			"self driving cars",
+			"car technology",
+			"autonomous driving"
+		],
+		"relatedArticles": [
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
+			"why-the-little-things-are-important-in-ui-and-ux-design",
+			"the-ethics-of-tracking-and-analytics-on-the-internet"
+		],
+		"published": "2023-6-13",
+		"dateFormats": {
+			"unix": 1686610800000,
+			"locale": "13/06/2023",
+			"string": "June 13, 2023",
+			"iso": "2023-06-12T23:00:00.000Z"
+		},
+		"share": {
+			"string": "-c1c78m",
+			"url": "https://labnotebook.connorjarrett.com/s/-c1c78m?s="
+		},
+		"image": "https://labnotebook.connorjarrett.com/assets/articles/robotaxi.jpg"
+	},
+	{
 		"url": "https://labnotebook.connorjarrett.com/post/wwdc-2023-everything-apple-revealed-in-this-years-keynote",
 		"id": "wwdc-2023-everything-apple-revealed-in-this-years-keynote",
 		"title": "WWDC 2023: Everything Apple revealed in this year's keynote",
@@ -29,9 +67,9 @@
 			"apple glasses"
 		],
 		"relatedArticles": [
+			"an-autonomous-future-may-be-closer-than-i-thought",
 			"why-the-little-things-are-important-in-ui-and-ux-design",
-			"the-ethics-of-tracking-and-analytics-on-the-internet",
-			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
+			"the-ethics-of-tracking-and-analytics-on-the-internet"
 		],
 		"published": "2023-6-5",
 		"dateFormats": {
@@ -68,9 +106,9 @@
 			"ui design"
 		],
 		"relatedArticles": [
-			"wwdc-2023-everything-apple-revealed-in-this-year's-keynote",
-			"the-ethics-of-tracking-and-analytics-on-the-internet",
-			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
+			"an-autonomous-future-may-be-closer-than-i-thought",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
+			"the-ethics-of-tracking-and-analytics-on-the-internet"
 		],
 		"published": "2023-5-31",
 		"dateFormats": {
@@ -104,9 +142,9 @@
 			"personal information"
 		],
 		"relatedArticles": [
-			"wwdc-2023-everything-apple-revealed-in-this-year's-keynote",
-			"why-the-little-things-are-important-in-ui-and-ux-design",
-			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
+			"an-autonomous-future-may-be-closer-than-i-thought",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
+			"why-the-little-things-are-important-in-ui-and-ux-design"
 		],
 		"published": "2023-5-26",
 		"dateFormats": {
@@ -136,9 +174,9 @@
 			"portfolio inspiration"
 		],
 		"relatedArticles": [
-			"wwdc-2023-everything-apple-revealed-in-this-year's-keynote",
-			"why-the-little-things-are-important-in-ui-and-ux-design",
-			"the-ethics-of-tracking-and-analytics-on-the-internet"
+			"an-autonomous-future-may-be-closer-than-i-thought",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
+			"why-the-little-things-are-important-in-ui-and-ux-design"
 		],
 		"published": "2023-5-19",
 		"dateFormats": {
@@ -173,8 +211,8 @@
 		],
 		"relatedArticles": [
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"wwdc-2023-everything-apple-revealed-in-this-year's-keynote",
-			"why-the-little-things-are-important-in-ui-and-ux-design"
+			"an-autonomous-future-may-be-closer-than-i-thought",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
 		],
 		"published": "2023-5-12",
 		"dateFormats": {
@@ -206,9 +244,9 @@
 			"google search"
 		],
 		"relatedArticles": [
-			"wwdc-2023-everything-apple-revealed-in-this-year's-keynote",
-			"why-the-little-things-are-important-in-ui-and-ux-design",
-			"the-ethics-of-tracking-and-analytics-on-the-internet"
+			"an-autonomous-future-may-be-closer-than-i-thought",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
+			"why-the-little-things-are-important-in-ui-and-ux-design"
 		],
 		"published": "2023-5-8",
 		"dateFormats": {
@@ -241,8 +279,8 @@
 		],
 		"relatedArticles": [
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"wwdc-2023-everything-apple-revealed-in-this-year's-keynote",
-			"why-the-little-things-are-important-in-ui-and-ux-design"
+			"an-autonomous-future-may-be-closer-than-i-thought",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
 		],
 		"published": "2023-5-7",
 		"dateFormats": {
