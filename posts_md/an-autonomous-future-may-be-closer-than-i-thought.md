@@ -32,7 +32,7 @@ Zoox was founded in 2014 by Jesse Levinson and Tim Kentley-Klay in California, a
 
 In 2015, they had their first prototype with and made their first autonomous drive. In 2019, Zoox got a new CEO, Aicha Evans. Aicha Evans had previously held various senior leadership positions at Intel, including Chief Strategy Officer.
 
-4 years later, in 2020, they were acquired by Amazon and revealed their very own vehicle, the robotaxi.
+4 years later, in 2020, they were acquired by Amazon and revealed their very own vehicle, the Robotaxi. The Robotaxi had been in development for years, and this was the first time that people outside of Zoox got to see it.
 ![The Zoox vehicle parked at Coit Tower, San Francisco](../assets/articles/extra/zooxsf.jpg)
 
 This year, in 2023, their robotaxi took its very first completely autonomous journey on open public roads. While I didn't see one of their production vehicles in person, I witnessed a lot of their test cars driving around collecting data.
