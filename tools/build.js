@@ -148,7 +148,7 @@ const e = new Promise((resolveOuter) => {
                                 let article = previousIndex.find(element => element.id == relatedArticles[x])
 
                                 relevantHTML += `
-                                <a href="${article.share.url}related">
+                                <a href="${article.share.url}related" class="articleLinkElement">
                                     <article class="article adjustable"><img src="${article.image}">
                                         <div id="info">
                                             <p id="article-title">${article.title}</p>

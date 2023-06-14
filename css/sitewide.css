@@ -72,6 +72,16 @@ a:has(>article.article):hover {
     text-decoration: underline;
 }
 
+/* Backup in case your browser doesn't support :has */
+a.articleLinkElement {
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+}
+
+a.articleLinkElement:hover {
+    text-decoration: underline;
+}
+
 article.article {
     display: flex;
     align-items: center;

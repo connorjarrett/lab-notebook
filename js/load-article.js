@@ -117,6 +117,8 @@ const articles = {
                                 let link = document.createElement("a")
                                 link.dataset.postId = article.id
 
+                                link.classList = "articleLinkElement"
+
                                 let domArticle = document.createElement("article")
                                 domArticle.classList = "article adjustable"
                                 domArticle.dataset.postId = article.id
