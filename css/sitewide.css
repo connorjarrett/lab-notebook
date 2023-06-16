@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
 
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('../assets/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('../assets/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
 /* Variables */
 :root {
     --bodyPad: 100px;
@@ -105,14 +114,16 @@ article.article img {
 article.article #article-title {
     margin: 0;
     font-size: 1em;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 article.article #article-description {
     margin: 0;
     margin-top: 0.25em;
-    font-weight: lighter;
+    font-weight: 500;
     font-size: 0.8em;
+
+    color: #3e3e3e;
 }
 
 /* Adjustable articles */
