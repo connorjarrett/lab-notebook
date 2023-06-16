@@ -97,6 +97,8 @@ const articles = {
         const article = articles.load(element.dataset.postId)
 
         if (article) {
+            element.dataset.filled = ""
+
             const info = $(element).find("#info")
             const image = $(element).find('img[data-prop=image]')
         
