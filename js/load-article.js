@@ -37,8 +37,8 @@ const articles = {
                     url: "post/index.json",
                     success: function(articles) {
                         if (articles.filter(element => element.video).length < cap) {
-                            // container.parentNode.remove()
-                            // $("#highlights").remove()
+                            container.parentNode.remove()
+                            $("#highlights").remove()
                         }
 
                         for (let i=0; i<(articles.length>cap ? cap : articles.length); i++) {
@@ -93,7 +93,7 @@ const articles = {
         }
     },
 
-    fillArticle: function(element) {
+    fillArticle: async function(element) {
         const article = articles.load(element.dataset.postId)
 
         if (article) {
@@ -183,7 +183,8 @@ const articles = {
             // Add content to articles
             $("article.article").each(function(){
                 if (this.dataset.filled != "") {
-                articles.fillArticle(this)
+                    articles.fillArticle(this)
+                }
             })
 
             $("a").each(function(){
