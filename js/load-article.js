@@ -93,30 +93,51 @@ const articles = {
         }
     },
 
+    fillArticle: function(element) {
+        const article = articles.load(element.dataset.postId)
+
+        if (article) {
+            const info = $(element).find("#info")
+            const image = $(element).find('img[data-prop=image]')
+        
+            if (info.length > 0) {
+                const items = info[0].children
+
+                for (let i=0; i<items.length; i++) {
+                    let value = articles.getAttribute(article, items[i].dataset.prop, items[i].dataset.prop2)
+                    items[i].innerHTML = value
+                    items[i].id = `article-${items[i].dataset.prop}`
+                }
+            }
+
+            if (image.length > 0 && articles.getAttribute(article, "image")) {
+                image[0].src = articles.getAttribute(article, "image")
+                image[0].alt = articles.getAttribute(article, "SEOdescription")
+            }
+        }
+    },
+
     populate: function() {
-        $(window).on("load", function(){
+        $(window).on("load", async function(){
             $(".posts-grid").each(function(){
                 const cap = this.dataset.cap
                 const filter = this.dataset.filter
                 const container = this
 
-                // If no filter, do latest
-                if (!filter) {
-                    $.ajax({
-                        async: false,
-                        url: "post/index.json",
-                        success: function(articles) {
-                            if (container.dataset.removeFirst != null) {
-                                // Remove the first element as that is the feature article
-                                articles.shift()
-                            }
-
-                            for (let i=0; i<(articles.length>cap ? cap : articles.length); i++) {
-                                let article = articles[i]
+                $.ajax({
+                    async: false,
+                    url: "post/index.json",
+                    success: function(allArticles) {
+                        if (container.dataset.removeFirst != null) {
+                            // Remove the first element as that is the feature article
+                            allArticles.shift()
+                        }
+                        for (let i=0; i<(allArticles.length>cap ? cap : allArticles.length); i++) {
+                            async function createDOMarticle(allArticles) {
+                                let article = allArticles[i]
 
                                 let link = document.createElement("a")
                                 link.dataset.postId = article.id
-
                                 link.classList = "articleLinkElement"
 
                                 let domArticle = document.createElement("article")
@@ -136,42 +157,30 @@ const articles = {
                                 infobox.appendChild(description)
 
                                 let image = document.createElement("img")
+
                                 image.dataset.prop = "image"
 
                                 domArticle.appendChild(image)
                                 domArticle.appendChild(infobox)
+
                                 link.appendChild(domArticle)
                                 container.appendChild(link)
+                                
+                                articles.fillArticle(container)
                             }
-                            
+
+                            createDOMarticle(allArticles)
                         }
-                    })
-                }
+                        
+                    }
+                })
+                
+            
             })
 
             // Add content to articles
             $("article.article").each(function(){
-                const article = articles.load(this.dataset.postId)
-
-                if (article) {
-                    const info = $(this).find("#info")
-                    const image = $(this).find('img[data-prop=image]')
-                
-                    if (info.length > 0) {
-                        const items = info[0].children
-
-                        for (let i=0; i<items.length; i++) {
-                            let value = articles.getAttribute(article, items[i].dataset.prop, items[i].dataset.prop2)
-                            items[i].innerHTML = value
-                            items[i].id = `article-${items[i].dataset.prop}`
-                        }
-                    }
-
-                    if (image.length > 0 && articles.getAttribute(article, "image")) {
-                        image[0].src = articles.getAttribute(article, "image")
-                        image[0].alt = articles.getAttribute(article, "SEOdescription")
-                    }
-                }
+                articles.fillArticle(this)
             })
 
             $("a").each(function(){
