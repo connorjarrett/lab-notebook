@@ -113,8 +113,12 @@ const articles = {
             }
 
             if (image.length > 0 && articles.getAttribute(article, "image")) {
-                image[0].src = articles.getAttribute(article, "image")
+                image[0].loading = "lazy"
                 image[0].alt = articles.getAttribute(article, "SEOdescription")
+
+                setTimeout(function(){
+                    image[0].src = articles.getAttribute(article, "image")
+                }, 10)
             }
         }
     },
