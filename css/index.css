@@ -4,6 +4,12 @@
     }
 }
 
+h2 {
+    font-size: 2em;
+    font-weight: 900;
+    font-stretch: 110%;
+}
+
 /* Highlighted article */
 .highlight-article {
     font-size: 2em;
@@ -148,7 +154,7 @@
 
 section.videos-band {
     width: 100%;
-    background-color: #212121;
+    background-color: #101010;
 
     /* margin-top: 20px;
     margin-bottom: 20px; */
