@@ -5,6 +5,7 @@
 
 body {
     background-color: white;
+    overflow-x: hidden;
 }
 
 main {
@@ -92,6 +93,8 @@ main > img {
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 1.5em;
+
+    transition: aspect-ratio 450ms, border-radius 550ms;
 }
 
 #articleDivider {
@@ -116,8 +119,15 @@ main > img {
 
 @media screen and (max-width: 7in) {
     main > img {
-        aspect-ratio: 1/1;
-        border-radius: 1em;
+        /* aspect-ratio: 1/1;
+        border-radius: 1em; */
+
+        width: 100vw;
+        border-radius: 0;
+        aspect-ratio: 4/3;
+        position: relative;
+        left: 50%;
+        translate: -50%;
     }
 }
 
