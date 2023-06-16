@@ -3,8 +3,14 @@
     --bodyPad: 20%;
 }
 
+body {
+    background-color: white;
+}
+
 main {
-    padding: 40px 0 0 0;
+    padding: 15px 0 0 0;
+
+    font-family: 'Mona Sans';
 }
 
 .share-encouragement, .related-articles, .comments {
@@ -57,8 +63,86 @@ main {
     width: 13em;
 }
 
+.related-articles article #info {
+    background-color: #fafafa;
+}
+
 h1 {
     margin: 0;
+    font-size: 3em;
+
+    font-weight: 700;
+    color: #000000;
+
+    word-break: initial;
+    /* -webkit-hyphens: auto;
+    hyphens: auto;
+    -ms-hyphens: auto; */
+}
+
+h2.description {
+    color: #404040;
+    text-decoration: none;
+    font-variation-settings: "ital" 5;
+    font-weight: 500;
+    margin-top: 0;
+    
+}
+
+main > img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 1.5em;
+}
+
+#articleDivider {
+    display: none;
+    margin: 1em auto 1em auto;
+    width: 95%;
+}
+
+@media screen and (max-width: 7.5in) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2.description {
+        font-size: 1.5em;
+    }
+
+    article h2 {
+        font-size: 2em !important;
+    }
+}
+
+@media screen and (max-width: 7in) {
+    main > img {
+        aspect-ratio: 1/1;
+        border-radius: 1em;
+    }
+}
+
+@media screen and (max-width: 5.2in) {
+    .split {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        
+        gap: 10px;
+    }
+
+    #articleDivider {
+        display: block;
+    }
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 5px;
 }
 
 .postinfo {
@@ -72,6 +156,7 @@ h1 {
 
 .postinfo p {
     margin-top: -2px;
+    margin-bottom: 0;
     color: #686868;
     font-size: 0.95em;
 
@@ -82,17 +167,8 @@ h1 {
 .postinfo span {
     background-color: #b5b5b5;
     height: 1em;
-    margin-top: -1em;
     
     width: 1px;
-}
-
-h2.description {
-    color: #404040;
-    font-style: italic;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
-    margin-top: 0;
 }
 
 hr {
@@ -103,32 +179,30 @@ hr {
     margin: 2em auto 2em auto;
 }
 
-
-main > img {
+article img {
+    margin: 0 0 10px 0;
     width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
     border-radius: 1em;
 }
 
-article img {
-    margin: 10px 0 0 0;
-    width: 100%;
-    border-radius: 10px;
+article p {
+    font-size: 1.2em;
 }
 
 article h2 {
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-bottom: -10px;
-    font-size: 2em;
-    text-underline-offset: 4.5px;
-    text-decoration-thickness: 2px;
-    color: #222222;
+    font-size: 2.5em;
+
+    text-decoration: none;
+    color: #131313;
 }
 
 article h3 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     margin-bottom: -15px;
+
+    color: #151515;
 }
 
 article ul {
@@ -175,15 +249,17 @@ main .socials, .share-encouragement .socials {
 }
 
 main .socials a, .share-encouragement .socials a{
-    background-color: black;
+    background-color: #2d2d2d;
     width: 25px;
     height: 25px;
     padding: 5px;
-    box-sizing: border-box
+    box-sizing: border-box;
+
+    transition: all 2   50ms;
 }
 
 main .socials a:hover, .share-encouragement .socials a:hover {
-    background-color: #373737;
+    background-color: #595959;
 }
 
 main .socials img, .share-encouragement .socials img {
