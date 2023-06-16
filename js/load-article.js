@@ -37,8 +37,8 @@ const articles = {
                     url: "post/index.json",
                     success: function(articles) {
                         if (articles.filter(element => element.video).length < cap) {
-                            container.parentNode.remove()
-                            $("#highlights").remove()
+                            // container.parentNode.remove()
+                            // $("#highlights").remove()
                         }
 
                         for (let i=0; i<(articles.length>cap ? cap : articles.length); i++) {
@@ -106,7 +106,7 @@ const articles = {
                         async: false,
                         url: "post/index.json",
                         success: function(articles) {
-                            if (container.dataset.removeFirst) {
+                            if (container.dataset.removeFirst != null) {
                                 // Remove the first element as that is the feature article
                                 articles.shift()
                             }
@@ -177,9 +177,10 @@ const articles = {
             $("a").each(function(){
                 if (this.dataset.postId) {
                     const article = articles.load(this.dataset.postId)
+                    const hostname = window.location.hostname
 
                     if (article) {
-                        this.href = article.url
+                        this.href = hostname != "localhost" ? article.url : article.url.replace("https://labnotebook.connorjarrett.com", window.location.href)
                     }
                 }
             })
