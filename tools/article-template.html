@@ -83,23 +83,27 @@
 
         <img src="{{article.image}}">
 
-        <div class="postinfo"> 
-            <p class="dt-published" datetime="{{article.iso}}" itemprop="datePublished">{{article.dateString}}</p>
-            <span data-nosnippet></span>
-            <p>&#128338; {{article.readtime}} minutes</p>
+        <div class="split">
+            <div class="postinfo"> 
+                <p class="dt-published" datetime="{{article.iso}}" itemprop="datePublished">{{article.dateString}}</p>
+                <span data-nosnippet></span>
+                <p>&#128338; {{article.readtime}} minute read</p>
+            </div>
+
+            <div class="socials">
+                <a href="https://twitter.com/intent/tweet?text={{article.seo-description}}%0a%0a&url={{article.share}}tw-i&via=connorjrt">
+                    <img src="../assets/social/twitter.svg">
+                </a>
+                <a href="mailto:?subject=From 'LabNotebook': {{article.title}}&body=Here's a post from Connor Jarrett's blog that might interest you:%0a%0a-- {{article.title}} --%0a{{article.seo-description}}%0a%0a{{article.url}}">
+                    <img src="../assets/social/email.svg">
+                </a>
+                <a onclick='navigator.clipboard.writeText("{{article.share}}url-i")'>
+                    <img src="../assets/social/link.svg">
+                </a>
+            </div>
         </div>
 
-        <div class="socials">
-            <a href="https://twitter.com/intent/tweet?text={{article.seo-description}}%0a%0a&url={{article.share}}tw-i&via=connorjrt">
-                <img src="../assets/social/twitter.svg">
-            </a>
-            <a href="mailto:?subject=From 'LabNotebook': {{article.title}}&body=Here's a post from Connor Jarrett's blog that might interest you:%0a%0a-- {{article.title}} --%0a{{article.seo-description}}%0a%0a{{article.url}}">
-                <img src="../assets/social/email.svg">
-            </a>
-            <a onclick='navigator.clipboard.writeText("{{article.share}}url-i")'>
-                <img src="../assets/social/link.svg">
-            </a>
-        </div>
+        <hr id="articleDivider">
 
         <article>
             {{article.content}}
