@@ -276,9 +276,16 @@ footer .bottom {
     font-size: 0.7em;
 }
 
-footer .bottom p {
+footer .bottom p, footer .bottom a {
     color: #7b7b7b !important;
     margin: 0;
+
+    text-decoration: none;
+}
+
+footer .bottom a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .socials {
