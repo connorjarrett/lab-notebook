@@ -38,7 +38,7 @@ const articles = {
                     success: function(articles) {
                         if (articles.filter(element => element.video).length < cap) {
                             container.parentNode.remove()
-                            $("#highlights").remove()
+                            // $("#highlights").remove()
                         }
 
                         for (let i=0; i<(articles.length>cap ? cap : articles.length); i++) {
