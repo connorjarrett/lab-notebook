@@ -180,6 +180,7 @@ const articles = {
 
             // Add content to articles
             $("article.article").each(function(){
+                if (this.dataset.filled != "") {
                 articles.fillArticle(this)
             })
 
