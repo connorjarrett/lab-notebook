@@ -151,7 +151,6 @@ h2 {
 
 
 /* Videos */
-
 section.videos-band {
     width: 100%;
     background-color: #101010;
@@ -215,4 +214,88 @@ section.videos-grid p {
 section.videos-grid button {
     margin-top: 1.5em;
     z-index: 100;
+}
+
+/* About */
+section.about-band {
+    width: 100%;
+    background-color: #101010;
+
+    padding: 40px 0 40px 0;
+
+    border-top: 1px solid #393939;
+    border-bottom: 1px solid #393939;
+}
+
+section.about h2 {
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+section.about .split {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    width: 100%;
+}
+
+section.about .split > img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+section.about .split > div {
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+
+    color: white;
+}
+
+section.about .split h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+    font-stretch: 125%;
+    margin: 0;
+}
+
+section.about .split p {
+    font-size: 1.2em;
+    font-stretch: 125%;
+
+    color: #e4e4e4;
+    margin: 0;
+}
+
+section.about .split a {
+    color: #5a83ff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section.about .split a:hover {
+    text-decoration: underline;
+}
+
+section.about img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+@media screen and (max-width: 9in) {
+    section.about .split > div {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 7in) {
+    section.about .split {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
 }
