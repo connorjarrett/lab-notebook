@@ -114,12 +114,20 @@ article.article #article-title {
 }
 
 article.article #article-description {
-    margin: 0;
-    margin-top: 0.25em;
+    margin: 0 0 0.25em 0;
     font-weight: 500;
     font-size: 0.8em;
 
     color: #3e3e3e;
+}
+
+article.article.adjustable #article-dateFormats {
+    font-weight: 400;
+    position: sticky;
+    top: 100%;
+    font-size: 0.8em;
+    display: block;
+    color: #6c6c6c;
 }
 
 /* Adjustable articles */
