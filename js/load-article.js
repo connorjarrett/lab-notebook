@@ -172,7 +172,7 @@ const articles = {
                                 link.appendChild(domArticle)
                                 container.appendChild(link)
                                 
-                                articles.fillArticle(container)
+                                articles.fillArticle(domArticle)
                             }
 
                             createDOMarticle(allArticles)
@@ -185,9 +185,8 @@ const articles = {
             })
 
             // Add content to articles
-            $("article.article").each(function(){
-                if (this.dataset.filled != "") {
-                    articles.fillArticle(this)
+            $('article.article[data-filled!=""]').each(function(){
+                articles.fillArticle(this)
                 }
             })
 
