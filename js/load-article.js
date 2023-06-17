@@ -159,8 +159,13 @@ const articles = {
                                 let description = document.createElement("p")
                                 description.dataset.prop = "description"
 
+                                let date = document.createElement("span")
+                                date.dataset.prop = "dateFormats"
+                                date.dataset.prop2 = "string"
+
                                 infobox.appendChild(heading)
                                 infobox.appendChild(description)
+                                infobox.appendChild(date)
 
                                 let image = document.createElement("img")
 
@@ -187,7 +192,6 @@ const articles = {
             // Add content to articles
             $('article.article[data-filled!=""]').each(function(){
                 articles.fillArticle(this)
-                }
             })
 
             $("a").each(function(){
