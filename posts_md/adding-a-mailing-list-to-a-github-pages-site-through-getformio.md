@@ -2,6 +2,7 @@
 # title: Adding a mailing list to a GitHub pages site through getform.io
 # description: I dive in to the challenges of trying to create a mailing list whithout acccess to a backend
 # seo-description: Connor Jarrett explores the solutions and processes for creating a mailing list for a blog, and why it isn't as easy as it might seem.
+# category: My projects
 # keywords: mailing list, github pages, github, emails, email service, getform, mailchimp, email notifications, notifications
 # image: mailing-list.png
 # date: 2023-5-12

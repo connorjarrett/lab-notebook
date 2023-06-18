@@ -2,6 +2,7 @@
 # title: An autonomous future may be closer than I thought
 # description: I explore the development of autonomous driving technology over the years, and share with you my experience of its development in San Francisco.
 # seo-description: Connor Jarrett looks into the development of autonomous driving technology over the years, and looks at the technology we have today.
+# category: Future tech
 # keywords: autonomous vehicles, autonomous transportation, San Francisco, vehicle development, future technology, new cars, vehicle developments, autopilot, self driving cars, car technology, autonomous driving
 # image: robotaxi.jpg
 # date: 2023-6-13

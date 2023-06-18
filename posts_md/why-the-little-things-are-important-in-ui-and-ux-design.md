@@ -2,6 +2,7 @@
 # title: Why the little things are important in UI and UX design
 # description: I look into the history of User Interface and User Experience design and provide some top tips for beginners
 # seo-description: Connor Jarrett explores the history of User Interface and User Experience and uncovers the key ingredient to a successful design.
+# category: UI UX
 # keywords: UI, UX, User Interface, User Experience, UIUX, Design, Designers, Web Design, Websites, Website Flow, Micro-interactions, UI Design
 # image: uiux-little-things.png
 # date: 2023-5-31

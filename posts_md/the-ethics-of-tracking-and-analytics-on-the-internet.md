@@ -2,6 +2,7 @@
 # title: The ethics of tracking and analytics on the internet 
 # description: I look at how analytics and tracking work online, and dispel some common myths
 # seo-description: Connor Jarrett explores the ethics of tracking and analytics online and how to make them more ethical and privacy-first
+# category: Privacy
 # keywords: ethics, tracking, privacy, analytics, online privacy, online ethics, privacy-fist, security, personal information
 # image: tracking-ethics.png
 # date: 2023-5-26

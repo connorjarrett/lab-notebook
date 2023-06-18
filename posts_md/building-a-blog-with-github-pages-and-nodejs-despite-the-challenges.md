@@ -2,6 +2,7 @@
 # title: Building a Blog with GitHub Pages and Node.js despite the challenges
 # description: I share my experience of building a blog using GitHub Pages and Node.js, despite the challenges of limited dynamic content.
 # seo-description: Connor Jarrett shares his experience of creating a blog using GitHub Pages and Node.js and explains how he overcame the technical challenges involved in hosting and creating a blog.
+# category: My projects
 # keywords: blog, github pages, blog tutorial, node.js, markdown, markdown blog, javascript blog
 # image: making-a-blog.png
 # date: 2023-5-7
