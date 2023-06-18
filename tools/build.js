@@ -140,6 +140,8 @@ const e = new Promise((resolveOuter) => {
                                 }
                             }
 
+                            content = content.replaceAll('iframe class="youtube"', 'iframe class="youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen')
+
                             return content
                         } else if (attribute == "relevant") {
                             let relevantHTML = ""
