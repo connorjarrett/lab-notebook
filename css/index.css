@@ -10,12 +10,16 @@ h2 {
     font-stretch: 110%;
 }
 
+#highlights {
+    padding: 25px 0 25px 0;
+}
+
 /* Highlighted article */
 .highlight-article {
     font-size: 2em;
     width: 100%;
 
-    padding: 40px 0 40px 0;
+    padding: 25px 0 25px 0;
     background-color: #ffffff;
 
     background-position: 50%;
@@ -127,6 +131,7 @@ h2 {
 
 .post-grid-container h2 {
     color: black !important;
+    margin-top: 0;
 }
 
 .posts-grid img {
