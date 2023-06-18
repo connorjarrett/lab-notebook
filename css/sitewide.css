@@ -165,7 +165,7 @@ footer {
 }
 
 footer h2, footer p {
-    color: white;
+    color: #ececec;
 }
 
 footer .logo {
@@ -362,7 +362,7 @@ form input {
     border: 1.5px solid black;
 
     color: black;
-    background-color: white;
+    background-color: #f6f6f6;
 }
 
 form input[type="submit"] {
