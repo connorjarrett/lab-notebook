@@ -1,22 +1,40 @@
-{
-	"my-projects": [
-		"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-		"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
-		"adding-a-mailing-list-to-a-github-pages-site-through-getformio"
-	],
-	"inspiration": [
-		"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
-	],
-	"future-tech": [
-		"an-autonomous-future-may-be-closer-than-i-thought"
-	],
-	"privacy": [
-		"the-ethics-of-tracking-and-analytics-on-the-internet"
-	],
-	"ui-ux": [
-		"why-the-little-things-are-important-in-ui-and-ux-design"
-	],
-	"tech-news": [
-		"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
-	]
-}
+[
+	{
+		"category": "my-projects",
+		"articles": [
+			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
+			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
+			"adding-a-mailing-list-to-a-github-pages-site-through-getformio"
+		]
+	},
+	{
+		"category": "future-tech",
+		"articles": [
+			"an-autonomous-future-may-be-closer-than-i-thought"
+		]
+	},
+	{
+		"category": "privacy",
+		"articles": [
+			"the-ethics-of-tracking-and-analytics-on-the-internet"
+		]
+	},
+	{
+		"category": "inspiration",
+		"articles": [
+			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
+		]
+	},
+	{
+		"category": "ui-ux",
+		"articles": [
+			"why-the-little-things-are-important-in-ui-and-ux-design"
+		]
+	},
+	{
+		"category": "tech-news",
+		"articles": [
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+		]
+	}
+]

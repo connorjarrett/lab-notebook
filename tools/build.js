@@ -88,7 +88,7 @@ function getRelatedArticles(id, tags) {
 
 
 var index = []
-var categories = {}
+var categories = []
 var renamed = []
 var waitfor = 0
 
@@ -379,12 +379,17 @@ const e = new Promise((resolveOuter) => {
                     })
 
                     // Add to categories
-                    let findCategory = categories[this.attribute("category").toLowerCase().replaceAll(" ", "-")]
+                    let findCategory = categories.find(e => e.category == this.attribute("category").toLowerCase().replaceAll(" ", "-"))
 
                     if (findCategory) {
-                        findCategory.push(filename.replace(".html",""))
+                        findCategory.articles.push(filename.replace(".html",""))
                     } else {
-                        categories[this.attribute("category").toLowerCase().replaceAll(" ", "-")] = [filename.replace(".html","")]
+                        categories.push({
+                            category: this.attribute("category").toLowerCase().replaceAll(" ", "-"),
+                            articles: [
+                                filename.replace(".html","")
+                            ]
+                        })
                     }
 
                     function end() {
@@ -459,7 +464,7 @@ e.then(function(){
         console.log(`\n\x1b[32m\u2705 index.json successfully written\x1b[0m`)
 
         // Create Categories
-        fs.writeFile(categoriesURL, JSON.stringify(categories, null, "\t"), function (err) {
+        fs.writeFile(categoriesURL, JSON.stringify(categories.sort(function(a,b) {a.articles.length - b.articles.length}), null, "\t"), function (err) {
             if (err) throw err;
             
             console.log(`\x1b[32m\u2705 categories.json successfully written\n\x1b[0m`)
