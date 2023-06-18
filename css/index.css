@@ -47,7 +47,7 @@ h2 {
 .highlight-article .article img {
     width: 100%;
     aspect-ratio: 3/2;
-    border-radius: 1.25em;
+    border-radius: calc(var(--cardRadius) * 2);
 }
 
 .highlight-article .article #info {
