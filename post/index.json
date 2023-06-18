@@ -17,8 +17,10 @@
 			"autopilot",
 			"self driving cars",
 			"car technology",
-			"autonomous driving"
+			"autonomous driving",
+			"future tech"
 		],
+		"category": "future-tech",
 		"relatedArticles": [
 			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
 			"why-the-little-things-are-important-in-ui-and-ux-design",
@@ -64,8 +66,10 @@
 			"new ios",
 			"new mac",
 			"macos 14",
-			"apple glasses"
+			"apple glasses",
+			"tech news"
 		],
+		"category": "tech-news",
 		"relatedArticles": [
 			"an-autonomous-future-may-be-closer-than-i-thought",
 			"why-the-little-things-are-important-in-ui-and-ux-design",
@@ -103,8 +107,10 @@
 			"websites",
 			"website flow",
 			"micro-interactions",
-			"ui design"
+			"ui design",
+			"ui ux"
 		],
+		"category": "ui-ux",
 		"relatedArticles": [
 			"an-autonomous-future-may-be-closer-than-i-thought",
 			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
@@ -139,8 +145,10 @@
 			"online ethics",
 			"privacy-fist",
 			"security",
-			"personal information"
+			"personal information",
+			"privacy"
 		],
+		"category": "privacy",
 		"relatedArticles": [
 			"an-autonomous-future-may-be-closer-than-i-thought",
 			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
@@ -171,8 +179,10 @@
 			"web portfolio",
 			"designer portfolio",
 			"top 10 portfolios",
-			"portfolio inspiration"
+			"portfolio inspiration",
+			"inspiration"
 		],
+		"category": "inspiration",
 		"relatedArticles": [
 			"an-autonomous-future-may-be-closer-than-i-thought",
 			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
@@ -207,8 +217,10 @@
 			"getform",
 			"mailchimp",
 			"email notifications",
-			"notifications"
+			"notifications",
+			"my projects"
 		],
+		"category": "my-projects",
 		"relatedArticles": [
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
 			"an-autonomous-future-may-be-closer-than-i-thought",
@@ -241,8 +253,10 @@
 			"artificial inteligence",
 			"ai search",
 			"ai chatbot",
-			"google search"
+			"google search",
+			"my projects"
 		],
+		"category": "my-projects",
 		"relatedArticles": [
 			"an-autonomous-future-may-be-closer-than-i-thought",
 			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
@@ -275,8 +289,10 @@
 			"node.js",
 			"markdown",
 			"markdown blog",
-			"javascript blog"
+			"javascript blog",
+			"my projects"
 		],
+		"category": "my-projects",
 		"relatedArticles": [
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
 			"an-autonomous-future-may-be-closer-than-i-thought",

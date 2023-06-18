@@ -16,6 +16,7 @@ const baseUrl = "https://labnotebook.connorjarrett.com"
 const prefix = "../" // Relative path
 
 const indexURL = `${prefix}/post/index.json`
+const categoriesURL = `${prefix}/post/categories.json`
 const sitemapURL = `${prefix}/post/article-sitemap.xml`
 const shareDir = `${prefix}/s`
 
@@ -87,6 +88,7 @@ function getRelatedArticles(id, tags) {
 
 
 var index = []
+var categories = {}
 var renamed = []
 var waitfor = 0
 
@@ -356,9 +358,10 @@ const e = new Promise((resolveOuter) => {
                         description: this.attribute("description"),
                         SEOdescription: this.attribute("seo-description"),
                         readtime: getReadTime(data),
-                        tags: this.attribute("keywords").split(",").map(function(item) {
+                        tags: [this.attribute("keywords").split(",").map(function(item) {
                             return item.trim();
-                        }),
+                        }), this.attribute("category").toLowerCase()].flat(),
+                        category: this.attribute("category").toLowerCase().replaceAll(" ", "-"),
                         relatedArticles: relatedArticles,
                         published: this.attribute("date"),
                         dateFormats: {
@@ -374,6 +377,15 @@ const e = new Promise((resolveOuter) => {
                         image: this.attribute("image"),
                         video: this.attribute("video")
                     })
+
+                    // Add to categories
+                    let findCategory = categories[this.attribute("category").toLowerCase().replaceAll(" ", "-")]
+
+                    if (findCategory) {
+                        findCategory.push(filename.replace(".html",""))
+                    } else {
+                        categories[this.attribute("category").toLowerCase().replaceAll(" ", "-")] = [filename.replace(".html","")]
+                    }
 
                     function end() {
                         if (p == posts.length-1) {
@@ -407,7 +419,7 @@ e.then(function(){
         if (err) throw err;
         
         // Check for strays
-        const htmls = fs.readdirSync(`${prefix}/post`).filter(element => !["index.json", "article-sitemap.xml"].includes(element))
+        const htmls = fs.readdirSync(`${prefix}/post`).filter(element => !["index.json", "article-sitemap.xml", "categories.json"].includes(element))
         const allPosts = index.map(function(item) { return item.id; })
 
         if (htmls.length > allPosts.length) {
@@ -446,6 +458,14 @@ e.then(function(){
 
         console.log(`\n\x1b[32m\u2705 index.json successfully written\x1b[0m`)
 
+        // Create Categories
+        fs.writeFile(categoriesURL, JSON.stringify(categories, null, "\t"), function (err) {
+            if (err) throw err;
+            
+            console.log(`\x1b[32m\u2705 categories.json successfully written\n\x1b[0m`)
+        })
+
+
         // Create sitemap
         var sitemap = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
         for (let i=0; i<index.length; i++) {
@@ -466,5 +486,7 @@ e.then(function(){
             
             console.log(`\x1b[32m\u2705 article-sitemap.xml successfully written\n\x1b[0m`)
         })
+
+        
     })
 })
