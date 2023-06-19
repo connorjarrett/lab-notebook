@@ -156,6 +156,24 @@ header img {
     width: 350px;
 }
 
+@media screen and (max-width: 7in) {
+    header a {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 70%;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    header {
+        border-bottom: 1px solid #78787833;
+    }
+}
+
 /* Footer */
 footer {
     width: 100%;
