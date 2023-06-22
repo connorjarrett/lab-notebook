@@ -18,7 +18,7 @@ The new Lab Notebook logo was designed to reflect the new, more rounded and frie
 ## The new User Interface
 ![The old Lab Notebook user interface compared to the new one.](../assets/articles/extra/oldvsnewui.png)
 
-The new user interface does a lot in rounding off the corners and making content more readable and accesible. Some of the key changes include:
+The new user interface does a lot in rounding off the corners and making content more readable and accessible. Some of the key changes include:
 - Font sizes are now larger
 - Font is thicker for readability
 - Underlines are less common to avoid confusion that a title is a link
@@ -40,4 +40,4 @@ The design process for the Lab Notebook logo took lots of consideration and fail
 The new logo tries to change that by opting for rounder corners and a different, softer typeface. The wordmark was altered to not take up as much horizontal space, and also to make "Lab Notebook" the main focus, rather than "Connor Jarrett". The favicon was also adjusted to go from black text in a white circle, to white text in a black rounded square.
 
 ## What's next
-Lab Notebook will always be changing, afterall, it's my development playground for experimenting with new tech and features. I've been thinking of building some new accesibility features to make reading long, unbroken lines of text easier, but it's still under development. For the past week I've been trying to organise things for some great collaberations, but right now it's all unconfirmed and still in the research phase. If you're interested in collaberating you can contact me on twitter [@ConnorJrt](https://twitter.com/connorjrt) or email me at [connor@connorjarrett.com](mailto:connor@connorjarrett.com)
+Lab Notebook will always be changing, after all, it's my development playground for experimenting with new tech and features. I've been thinking of building some new accessibility features to make reading long, unbroken lines of text easier, but it's still under development. For the past week I've been trying to organise things for some great collaborations, but right now it's all unconfirmed and still in the research phase. If you're interested in collaborating, you can contact me on Twitter [@ConnorJrt](https://twitter.com/connorjrt) or email me at [connor@connorjarrett.com](mailto:connor@connorjarrett.com)
