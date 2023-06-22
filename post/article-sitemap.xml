@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>
+            https://labnotebook.connorjarrett.com/post/lab-notebook-has-a-new-and-more-responsive-look
+        </loc>
+        <image:image>
+            <image:loc>
+                https://labnotebook.connorjarrett.com/assets/articles/newlook.png
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>
             https://labnotebook.connorjarrett.com/post/an-autonomous-future-may-be-closer-than-i-thought
         </loc>
         <image:image>

@@ -2,15 +2,22 @@
 	{
 		"category": "my-projects",
 		"articles": [
-			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
 			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
-			"adding-a-mailing-list-to-a-github-pages-site-through-getformio"
+			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
+			"lab-notebook-has-a-new-and-more-responsive-look",
+			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges"
 		]
 	},
 	{
 		"category": "future-tech",
 		"articles": [
 			"an-autonomous-future-may-be-closer-than-i-thought"
+		]
+	},
+	{
+		"category": "ui-ux",
+		"articles": [
+			"why-the-little-things-are-important-in-ui-and-ux-design"
 		]
 	},
 	{
@@ -23,12 +30,6 @@
 		"category": "inspiration",
 		"articles": [
 			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
-		]
-	},
-	{
-		"category": "ui-ux",
-		"articles": [
-			"why-the-little-things-are-important-in-ui-and-ux-design"
 		]
 	},
 	{
