@@ -187,6 +187,12 @@ footer h2, footer p {
     color: #ececec;
 }
 
+footer h2 {
+    font-size: 1.9em;
+    font-weight: 900;
+    font-stretch: 120%;
+}
+
 footer .logo {
     filter: invert(1);
     width: 80%;
@@ -371,21 +377,30 @@ form .name-group {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
+
+    border-radius: var(--cardRadius) var(--cardRadius) 0 0;
+    overflow: hidden;
 }
 
 form input {
     width: 100%;
     margin: 0;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     border: 1.5px solid black;
 
-    color: black;
+    color: #252525;
     background-color: #f6f6f6;
+}
+
+form input::placeholder {
+    color: grey;
 }
 
 form input[type="submit"] {
     cursor: pointer;
+    border-radius: 0 0 var(--cardRadius) var(--cardRadius);
+    font-weight: 800;
 }
 
 form p {
