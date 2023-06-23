@@ -294,6 +294,63 @@ article ul li strong {
     color: #2c2c2c;
 }
 
+article blockquote {
+    color: black;
+    margin: 0;
+    padding: 20px 15px 20px 15px;
+
+    font-size: 1.2em;
+    font-weight: 300;
+
+    border-left: 2px solid #c3c3c3;
+}
+
+article blockquote * {
+    margin: 0;
+}
+
+article table {
+    border-collapse: collapse;
+    margin: 25px auto 0 auto;
+    overflow: hidden;
+    outline: 1px solid #cfcfcf;
+
+    border-radius: 0.25em;
+
+    min-width: 75%;
+}
+
+article table thead tr {
+    background-color: #eaeaea;
+    color: #121212;
+    text-align: left;    
+}
+
+article table thead th {
+    font-weight: 600;
+}
+
+article table th, article table td {
+    padding: 12px 15px;
+    border-right: 1px solid #dddddd;
+}
+
+article table th:last-child, article table td:last-child {
+    border: none;
+}
+
+article table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+article table tbody tr:last-child {
+    border: none;
+}
+
+article table tbody tr:nth-of-type(even) {
+    background-color: #f8f8f8;
+}
+
 /* Base Code */
 code {
     border-radius: 4px;
