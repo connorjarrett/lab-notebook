@@ -232,12 +232,12 @@ article img {
     aspect-ratio: 16/9;
 }
 
-article img, .youtube {
+article img, .youtube, article ul {
     border-radius: 1em;
 }
 
 @media screen and (max-width: 6in) {
-    article img, .youtube {
+    article img, .youtube, article ul {
         border-radius: 0.5em;
     }
 }
@@ -264,8 +264,32 @@ article h3 {
 
 article ul {
     list-style-type: square;
-    font-size: 1em;
-    padding-left: 25px;
+    font-size: 1.25em;
+    margin: 0;
+
+    padding: 20px;
+    padding-left: 2.5em;
+    font-weight: 500;
+
+    background-color: #f5f5f6;
+}
+
+article ul li {
+    position: relative;
+    margin-bottom: 0.5em;
+}
+
+article ul li::marker {
+    position: absolute;
+    font-size: 1.8em;
+    color: #1c1c1c;
+    top: 50%;
+    translate: 0 -50%;
+}
+
+
+article ul li strong {
+    font-weight: 800;
 }
 
 /* Base Code */
