@@ -277,6 +277,7 @@ article ul {
 article ul li {
     position: relative;
     margin-bottom: 0.5em;
+    color: #494949;
 }
 
 article ul li::marker {
@@ -290,6 +291,7 @@ article ul li::marker {
 
 article ul li strong {
     font-weight: 800;
+    color: #2c2c2c;
 }
 
 /* Base Code */
