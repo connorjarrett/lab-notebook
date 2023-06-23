@@ -193,14 +193,17 @@ footer h2 {
     font-stretch: 120%;
 }
 
+footer .logo-container {
+    width: 80%;
+}
+
 footer .logo {
     filter: invert(1);
-    width: 80%;
+    width: 100%;
 }
 
 footer .logo.stack {
     display: none;
-    width: 45%;
 }
 
 @media screen and (max-width: 9in) {
@@ -210,6 +213,10 @@ footer .logo.stack {
 
     footer .logo.long {
         display: none;
+    }
+
+    footer .logo-container {
+        width: 45%;
     }
 }
 
