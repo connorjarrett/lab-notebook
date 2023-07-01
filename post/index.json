@@ -1,5 +1,46 @@
 [
 	{
+		"url": "https://labnotebook.connorjarrett.com/post/the-guide-to-san-francisco-from-someone-whos-never-lived-there",
+		"id": "the-guide-to-san-francisco-from-someone-whos-never-lived-there",
+		"title": "The guide to San Francisco from someone who's never lived there.",
+		"description": "I look back at my visit to San Francisco and some of the highlights of the trip",
+		"SEOdescription": "San Francisco will always hold a special place in my heart - here are some of my top things to do if you visit.",
+		"readtime": 5,
+		"tags": [
+			"san francisco",
+			"zoox",
+			"sf",
+			"san francisco tourist",
+			"tourist",
+			"sf tech",
+			"san francisco tech",
+			"apple park",
+			"salesforce",
+			"salesforce park",
+			"stanford",
+			"sanfran",
+			"travel"
+		],
+		"category": "travel",
+		"relatedArticles": [
+			"an-autonomous-future-may-be-closer-than-i-thought",
+			"lab-notebook-has-a-new-and-more-responsive-look",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+		],
+		"published": "2023-7-1",
+		"dateFormats": {
+			"unix": 1688166000000,
+			"locale": "01/07/2023",
+			"string": "July 1, 2023",
+			"iso": "2023-06-30T23:00:00.000Z"
+		},
+		"share": {
+			"string": "-95x2jk",
+			"url": "https://labnotebook.connorjarrett.com/s/-95x2jk?s="
+		},
+		"image": "https://labnotebook.connorjarrett.com/assets/articles/sanfrancisco.jpg"
+	},
+	{
 		"url": "https://labnotebook.connorjarrett.com/post/lab-notebook-has-a-new-and-more-responsive-look",
 		"id": "lab-notebook-has-a-new-and-more-responsive-look",
 		"title": "Lab Notebook has a new and more responsive look",
@@ -30,8 +71,8 @@
 		"category": "my-projects",
 		"relatedArticles": [
 			"why-the-little-things-are-important-in-ui-and-ux-design",
-			"an-autonomous-future-may-be-closer-than-i-thought",
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
+			"an-autonomous-future-may-be-closer-than-i-thought"
 		],
 		"published": "2023-6-23",
 		"dateFormats": {
@@ -65,13 +106,14 @@
 			"self driving cars",
 			"car technology",
 			"autonomous driving",
+			"san francisco",
 			"future tech"
 		],
 		"category": "future-tech",
 		"relatedArticles": [
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
 			"lab-notebook-has-a-new-and-more-responsive-look",
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
-			"why-the-little-things-are-important-in-ui-and-ux-design"
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
 		],
 		"published": "2023-6-13",
 		"dateFormats": {
@@ -118,9 +160,9 @@
 		],
 		"category": "tech-news",
 		"relatedArticles": [
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
 			"lab-notebook-has-a-new-and-more-responsive-look",
-			"an-autonomous-future-may-be-closer-than-i-thought",
-			"why-the-little-things-are-important-in-ui-and-ux-design"
+			"an-autonomous-future-may-be-closer-than-i-thought"
 		],
 		"published": "2023-6-5",
 		"dateFormats": {
@@ -159,9 +201,9 @@
 		],
 		"category": "ui-ux",
 		"relatedArticles": [
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
 			"lab-notebook-has-a-new-and-more-responsive-look",
-			"an-autonomous-future-may-be-closer-than-i-thought",
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+			"an-autonomous-future-may-be-closer-than-i-thought"
 		],
 		"published": "2023-5-31",
 		"dateFormats": {
@@ -197,9 +239,9 @@
 		],
 		"category": "privacy",
 		"relatedArticles": [
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
 			"lab-notebook-has-a-new-and-more-responsive-look",
-			"an-autonomous-future-may-be-closer-than-i-thought",
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+			"an-autonomous-future-may-be-closer-than-i-thought"
 		],
 		"published": "2023-5-26",
 		"dateFormats": {
@@ -231,9 +273,9 @@
 		],
 		"category": "inspiration",
 		"relatedArticles": [
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
 			"lab-notebook-has-a-new-and-more-responsive-look",
-			"an-autonomous-future-may-be-closer-than-i-thought",
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+			"an-autonomous-future-may-be-closer-than-i-thought"
 		],
 		"published": "2023-5-19",
 		"dateFormats": {
@@ -270,8 +312,8 @@
 		"category": "my-projects",
 		"relatedArticles": [
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"lab-notebook-has-a-new-and-more-responsive-look",
-			"an-autonomous-future-may-be-closer-than-i-thought"
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
+			"lab-notebook-has-a-new-and-more-responsive-look"
 		],
 		"published": "2023-5-12",
 		"dateFormats": {
@@ -305,9 +347,9 @@
 		],
 		"category": "my-projects",
 		"relatedArticles": [
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
 			"lab-notebook-has-a-new-and-more-responsive-look",
-			"an-autonomous-future-may-be-closer-than-i-thought",
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+			"an-autonomous-future-may-be-closer-than-i-thought"
 		],
 		"published": "2023-5-8",
 		"dateFormats": {
@@ -342,8 +384,8 @@
 		"category": "my-projects",
 		"relatedArticles": [
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"lab-notebook-has-a-new-and-more-responsive-look",
-			"an-autonomous-future-may-be-closer-than-i-thought"
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
+			"lab-notebook-has-a-new-and-more-responsive-look"
 		],
 		"published": "2023-5-7",
 		"dateFormats": {

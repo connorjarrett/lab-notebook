@@ -3,15 +3,21 @@
 		"category": "my-projects",
 		"articles": [
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
 			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
+			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
 			"lab-notebook-has-a-new-and-more-responsive-look"
 		]
 	},
 	{
-		"category": "inspiration",
+		"category": "travel",
 		"articles": [
-			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
+		]
+	},
+	{
+		"category": "future-tech",
+		"articles": [
+			"an-autonomous-future-may-be-closer-than-i-thought"
 		]
 	},
 	{
@@ -21,21 +27,21 @@
 		]
 	},
 	{
-		"category": "tech-news",
-		"articles": [
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
-		]
-	},
-	{
 		"category": "ui-ux",
 		"articles": [
 			"why-the-little-things-are-important-in-ui-and-ux-design"
 		]
 	},
 	{
-		"category": "future-tech",
+		"category": "inspiration",
 		"articles": [
-			"an-autonomous-future-may-be-closer-than-i-thought"
+			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
+		]
+	},
+	{
+		"category": "tech-news",
+		"articles": [
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
 		]
 	}
 ]
