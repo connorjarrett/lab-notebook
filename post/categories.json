@@ -2,16 +2,10 @@
 	{
 		"category": "my-projects",
 		"articles": [
-			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"lab-notebook-has-a-new-and-more-responsive-look"
-		]
-	},
-	{
-		"category": "travel",
-		"articles": [
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
+			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
+			"lab-notebook-has-a-new-and-more-responsive-look",
+			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search"
 		]
 	},
 	{
@@ -21,15 +15,9 @@
 		]
 	},
 	{
-		"category": "privacy",
+		"category": "travel",
 		"articles": [
-			"the-ethics-of-tracking-and-analytics-on-the-internet"
-		]
-	},
-	{
-		"category": "ui-ux",
-		"articles": [
-			"why-the-little-things-are-important-in-ui-and-ux-design"
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
 		]
 	},
 	{
@@ -39,9 +27,21 @@
 		]
 	},
 	{
+		"category": "privacy",
+		"articles": [
+			"the-ethics-of-tracking-and-analytics-on-the-internet"
+		]
+	},
+	{
 		"category": "tech-news",
 		"articles": [
 			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+		]
+	},
+	{
+		"category": "ui-ux",
+		"articles": [
+			"why-the-little-things-are-important-in-ui-and-ux-design"
 		]
 	}
 ]
