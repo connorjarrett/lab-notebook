@@ -2,10 +2,10 @@
 	{
 		"category": "my-projects",
 		"articles": [
-			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"lab-notebook-has-a-new-and-more-responsive-look",
-			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search"
+			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
+			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
+			"lab-notebook-has-a-new-and-more-responsive-look"
 		]
 	},
 	{
@@ -21,27 +21,27 @@
 		]
 	},
 	{
-		"category": "inspiration",
-		"articles": [
-			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
-		]
-	},
-	{
 		"category": "privacy",
 		"articles": [
 			"the-ethics-of-tracking-and-analytics-on-the-internet"
 		]
 	},
 	{
-		"category": "tech-news",
-		"articles": [
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
-		]
-	},
-	{
 		"category": "ui-ux",
 		"articles": [
 			"why-the-little-things-are-important-in-ui-and-ux-design"
+		]
+	},
+	{
+		"category": "inspiration",
+		"articles": [
+			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
+		]
+	},
+	{
+		"category": "tech-news",
+		"articles": [
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
 		]
 	}
 ]
