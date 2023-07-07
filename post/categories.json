@@ -15,9 +15,22 @@
 		]
 	},
 	{
+		"category": "tech-news",
+		"articles": [
+			"threads-does-twitter-stand-a-chance-any-more",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+		]
+	},
+	{
 		"category": "travel",
 		"articles": [
 			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
+		]
+	},
+	{
+		"category": "inspiration",
+		"articles": [
+			"my-10-favourite-portfolios-for-inspiration-from-across-the-web"
 		]
 	},
 	{
@@ -30,18 +43,6 @@
 		"category": "ui-ux",
 		"articles": [
 			"why-the-little-things-are-important-in-ui-and-ux-design"
-		]
-	},
-	{
-		"category": "inspiration",
-		"articles": [
-			"my-10-favourite-porfolios-for-inspiration-from-across-the-web"
-		]
-	},
-	{
-		"category": "tech-news",
-		"articles": [
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
 		]
 	}
 ]

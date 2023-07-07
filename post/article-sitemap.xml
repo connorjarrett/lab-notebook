@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>
+            https://labnotebook.connorjarrett.com/post/threads-does-twitter-stand-a-chance-any-more
+        </loc>
+        <image:image>
+            <image:loc>
+                https://labnotebook.connorjarrett.com/assets/articles/threads.png
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>
             https://labnotebook.connorjarrett.com/post/the-guide-to-san-francisco-from-someone-whos-never-lived-there
         </loc>
         <image:image>
@@ -62,7 +72,7 @@
     </url>
     <url>
         <loc>
-            https://labnotebook.connorjarrett.com/post/my-10-favourite-porfolios-for-inspiration-from-across-the-web
+            https://labnotebook.connorjarrett.com/post/my-10-favourite-portfolios-for-inspiration-from-across-the-web
         </loc>
         <image:image>
             <image:loc>
