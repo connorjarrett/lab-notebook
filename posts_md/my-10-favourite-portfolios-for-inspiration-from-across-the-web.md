@@ -1,5 +1,5 @@
 <!-- 
-# title: My 10 favourite porfolios for inspiration from across the web
+# title: My 10 favourite portfolios for inspiration from across the web
 # description: I share my top 10 favourite websites that inspire me to create, and some of my top tips for your portfolio.
 # seo-description: Connor Jarrett shares his 10 favourite websites for inspiration and gives some tips for people looking to design their own portfolio website.
 # category: Inspiration
