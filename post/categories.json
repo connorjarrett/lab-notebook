@@ -1,11 +1,19 @@
 [
 	{
+		"category": "tech-news",
+		"articles": [
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+		]
+	},
+	{
 		"category": "my-projects",
 		"articles": [
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"lab-notebook-has-a-new-and-more-responsive-look"
+			"lab-notebook-has-a-new-and-more-responsive-look",
+			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search"
 		]
 	},
 	{
@@ -15,22 +23,15 @@
 		]
 	},
 	{
-		"category": "tech-news",
+		"category": "inspiration",
 		"articles": [
-			"threads-does-twitter-stand-a-chance-any-more",
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+			"my-10-favourite-portfolios-for-inspiration-from-across-the-web"
 		]
 	},
 	{
 		"category": "travel",
 		"articles": [
 			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
-		]
-	},
-	{
-		"category": "inspiration",
-		"articles": [
-			"my-10-favourite-portfolios-for-inspiration-from-across-the-web"
 		]
 	},
 	{

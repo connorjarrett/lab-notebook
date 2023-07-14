@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>
+            https://labnotebook.connorjarrett.com/post/after-15-years-microsoft-is-changing-the-default-font
+        </loc>
+        <image:image>
+            <image:loc>
+                https://labnotebook.connorjarrett.com/assets/articles/aptos.png
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>
             https://labnotebook.connorjarrett.com/post/threads-does-twitter-stand-a-chance-any-more
         </loc>
         <image:image>

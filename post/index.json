@@ -1,5 +1,44 @@
 [
 	{
+		"url": "https://labnotebook.connorjarrett.com/post/after-15-years-microsoft-is-changing-the-default-font",
+		"id": "after-15-years-microsoft-is-changing-the-default-font",
+		"title": "After 15 years, Microsoft is changing the default font",
+		"description": "After 15 years of using Calibri, Microsoft is dropping it as the default Office font to replace it with Aptos",
+		"SEOdescription": "Microsoft is dropping Calibri after 15 years, what's next?",
+		"readtime": 2,
+		"tags": [
+			"aptos",
+			"calibri",
+			"font",
+			"word",
+			"microsoft",
+			"new font",
+			"new word font",
+			"bierstadt",
+			"office",
+			"office365",
+			"tech news"
+		],
+		"category": "tech-news",
+		"relatedArticles": [
+			"threads-does-twitter-stand-a-chance-any-more",
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
+			"lab-notebook-has-a-new-and-more-responsive-look"
+		],
+		"published": "2023-7-14",
+		"dateFormats": {
+			"unix": 1689289200000,
+			"locale": "14/07/2023",
+			"string": "July 14, 2023",
+			"iso": "2023-07-13T23:00:00.000Z"
+		},
+		"share": {
+			"string": "4bkndq",
+			"url": "https://labnotebook.connorjarrett.com/s/4bkndq?s="
+		},
+		"image": "https://labnotebook.connorjarrett.com/assets/articles/aptos.png"
+	},
+	{
 		"url": "https://labnotebook.connorjarrett.com/post/threads-does-twitter-stand-a-chance-any-more",
 		"id": "threads-does-twitter-stand-a-chance-any-more",
 		"title": "Threads: Does Twitter stand a chance any more?",
@@ -22,9 +61,9 @@
 		],
 		"category": "tech-news",
 		"relatedArticles": [
+			"after-15-years-microsoft-is-changing-the-default-font",
 			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
-			"lab-notebook-has-a-new-and-more-responsive-look",
-			"an-autonomous-future-may-be-closer-than-i-thought"
+			"lab-notebook-has-a-new-and-more-responsive-look"
 		],
 		"published": "2023-7-7",
 		"dateFormats": {
@@ -64,8 +103,8 @@
 		"category": "travel",
 		"relatedArticles": [
 			"an-autonomous-future-may-be-closer-than-i-thought",
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"lab-notebook-has-a-new-and-more-responsive-look"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more"
 		],
 		"published": "2023-7-1",
 		"dateFormats": {
@@ -111,8 +150,8 @@
 		"category": "my-projects",
 		"relatedArticles": [
 			"why-the-little-things-are-important-in-ui-and-ux-design",
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more"
 		],
 		"published": "2023-6-23",
 		"dateFormats": {
@@ -152,8 +191,8 @@
 		"category": "future-tech",
 		"relatedArticles": [
 			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"lab-notebook-has-a-new-and-more-responsive-look"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more"
 		],
 		"published": "2023-6-13",
 		"dateFormats": {
@@ -200,9 +239,9 @@
 		],
 		"category": "tech-news",
 		"relatedArticles": [
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
-			"lab-notebook-has-a-new-and-more-responsive-look"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more",
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
 		],
 		"published": "2023-6-5",
 		"dateFormats": {
@@ -241,9 +280,9 @@
 		],
 		"category": "ui-ux",
 		"relatedArticles": [
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
-			"lab-notebook-has-a-new-and-more-responsive-look"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more",
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
 		],
 		"published": "2023-5-31",
 		"dateFormats": {
@@ -279,9 +318,9 @@
 		],
 		"category": "privacy",
 		"relatedArticles": [
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
-			"lab-notebook-has-a-new-and-more-responsive-look"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more",
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
 		],
 		"published": "2023-5-26",
 		"dateFormats": {
@@ -313,9 +352,9 @@
 		],
 		"category": "inspiration",
 		"relatedArticles": [
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
-			"lab-notebook-has-a-new-and-more-responsive-look"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more",
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
 		],
 		"published": "2023-5-19",
 		"dateFormats": {
@@ -352,8 +391,8 @@
 		"category": "my-projects",
 		"relatedArticles": [
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more"
 		],
 		"published": "2023-5-12",
 		"dateFormats": {
@@ -387,9 +426,9 @@
 		],
 		"category": "my-projects",
 		"relatedArticles": [
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
-			"lab-notebook-has-a-new-and-more-responsive-look"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more",
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
 		],
 		"published": "2023-5-8",
 		"dateFormats": {
@@ -424,8 +463,8 @@
 		"category": "my-projects",
 		"relatedArticles": [
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"threads-does-twitter-stand-a-chance-any-more?",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more"
 		],
 		"published": "2023-5-7",
 		"dateFormats": {
