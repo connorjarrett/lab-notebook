@@ -119,7 +119,7 @@ const e = new Promise((resolveOuter) => {
                     )
 
                     this.attribute = function(attribute) {
-                        if (!["content","url","share","shareid","iso","dateString","built","image","readtime", "relevant","keywords"].includes(attribute)) {
+                        if (!["content","url","share","shareid","iso","dateString","built","image","readtime", "relevant","keywords","imagery"].includes(attribute)) {
                             return getAttribute(data, attribute)
                         }
 
@@ -145,6 +145,12 @@ const e = new Promise((resolveOuter) => {
                             content = content.replaceAll('iframe class="youtube"', 'iframe class="youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen')
 
                             return content
+                        } else if (attribute == "imagery") {
+                            if (getAttribute(data, "imagery")) {
+                                return `<p id="imagery">Imagery: &copy; ${getAttribute(data, "imagery")}</p>`
+                            }
+
+                            return ""
                         } else if (attribute == "relevant") {
                             let relevantHTML = ""
                             

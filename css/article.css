@@ -194,7 +194,7 @@ main > img {
     align-items: center;
 }
 
-.postinfo p {
+.postinfo p, #imagery {
     margin-top: -2px;
     margin-bottom: 0;
     color: #686868;
@@ -204,6 +204,11 @@ main > img {
 
     display: flex;
     align-items: center;
+}
+
+#imagery {
+    font-size: 0.8em;
+    margin-top: 0;
 }
 
 .postinfo span {
