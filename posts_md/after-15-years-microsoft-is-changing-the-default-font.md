@@ -5,6 +5,7 @@
 # category: Tech News
 # keywords: aptos, calibri, font, word, microsoft, new font, new word font, bierstadt, office, office365
 # image: aptos.png
+# imagery: Microsoft
 # date: 2023-7-14
 -->
 Sometimes I think, have I run out of ideas when this week's post is all about a font? Aptos is the new default font for Microsoft Office. Most natives to Microsoft Office will be familiar with Calibri as the default font, but all great things must come to an end, so here it is, everything you need to know about Aptos, the new default font.

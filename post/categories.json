@@ -1,5 +1,20 @@
 [
 	{
+		"category": "my-projects",
+		"articles": [
+			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
+			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
+			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
+			"lab-notebook-has-a-new-and-more-responsive-look"
+		]
+	},
+	{
+		"category": "future-tech",
+		"articles": [
+			"an-autonomous-future-may-be-closer-than-i-thought"
+		]
+	},
+	{
 		"category": "tech-news",
 		"articles": [
 			"after-15-years-microsoft-is-changing-the-default-font",
@@ -8,18 +23,9 @@
 		]
 	},
 	{
-		"category": "my-projects",
+		"category": "privacy",
 		"articles": [
-			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"lab-notebook-has-a-new-and-more-responsive-look",
-			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search"
-		]
-	},
-	{
-		"category": "future-tech",
-		"articles": [
-			"an-autonomous-future-may-be-closer-than-i-thought"
+			"the-ethics-of-tracking-and-analytics-on-the-internet"
 		]
 	},
 	{
@@ -32,12 +38,6 @@
 		"category": "travel",
 		"articles": [
 			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
-		]
-	},
-	{
-		"category": "privacy",
-		"articles": [
-			"the-ethics-of-tracking-and-analytics-on-the-internet"
 		]
 	},
 	{
