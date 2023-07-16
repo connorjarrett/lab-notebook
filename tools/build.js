@@ -200,6 +200,8 @@ const e = new Promise((resolveOuter) => {
                                     .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"") // Remove punctuation
                                     .replaceAll("?","") // Remove question marks
                                     .replaceAll("'","") // Remove apostrophe
+                                    .replaceAll("–","") // Remove En Dash
+                                    .replaceAll("—","") // Remove Em Dash
                                     .replace(/\s{2,}/g," ") // Remove stray spaces
                                     .replaceAll(" ","-") // Replace spaces with dashes
                                     .toLowerCase() // Lowercase
