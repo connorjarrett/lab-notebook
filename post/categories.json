@@ -1,21 +1,29 @@
 [
 	{
-		"category": "My projects",
+		"category": "Travel",
+		"latest": 1689462000,
 		"articles": [
-			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
-			"lab-notebook-has-a-new-and-more-responsive-look"
+			"my-take-on-mission-impossible-dead-reckoning-part-one",
+			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
 		]
 	},
 	{
-		"category": "Future tech",
+		"category": "Movies",
+		"latest": 1689462000,
 		"articles": [
-			"an-autonomous-future-may-be-closer-than-i-thought"
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
+		]
+	},
+	{
+		"category": "AI",
+		"latest": 1689462000,
+		"articles": [
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		]
 	},
 	{
 		"category": "Tech News",
+		"latest": 1689289200,
 		"articles": [
 			"after-15-years-microsoft-is-changing-the-default-font",
 			"threads-does-twitter-stand-a-chance-any-more",
@@ -23,40 +31,41 @@
 		]
 	},
 	{
-		"category": "Inspiration",
+		"category": "My projects",
+		"latest": 1687474800,
 		"articles": [
-			"my-10-favourite-portfolios-for-inspiration-from-across-the-web"
+			"lab-notebook-has-a-new-and-more-responsive-look",
+			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
+			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
+			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges"
 		]
 	},
 	{
-		"category": "Movies",
+		"category": "Future tech",
+		"latest": 1686610800,
 		"articles": [
-			"my-take-on-mission-impossible-dead-reckoning-part-one"
+			"an-autonomous-future-may-be-closer-than-i-thought"
 		]
 	},
 	{
-		"category": "Travel",
+		"category": "UI UX",
+		"latest": 1685487600,
 		"articles": [
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
-		]
-	},
-	{
-		"category": "AI",
-		"articles": [
-			"my-take-on-mission-impossible-dead-reckoning-part-one"
+			"why-the-little-things-are-important-in-ui-and-ux-design"
 		]
 	},
 	{
 		"category": "Privacy",
+		"latest": 1685055600,
 		"articles": [
 			"the-ethics-of-tracking-and-analytics-on-the-internet"
 		]
 	},
 	{
-		"category": "UI UX",
+		"category": "Inspiration",
+		"latest": 1684450800,
 		"articles": [
-			"why-the-little-things-are-important-in-ui-and-ux-design"
+			"my-10-favourite-portfolios-for-inspiration-from-across-the-web"
 		]
 	}
 ]
