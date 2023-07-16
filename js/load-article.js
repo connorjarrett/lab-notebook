@@ -117,7 +117,11 @@ const articles = {
                 image[0].alt = articles.getAttribute(article, "SEOdescription")
 
                 setTimeout(function(){
-                    image[0].src = articles.getAttribute(article, "image")
+                    if (document.location.hostname != "localhost") {
+                        image[0].src = articles.getAttribute(article, "image")
+                    } else {
+                        image[0].src = articles.getAttribute(article, "image").replace("https://labnotebook.connorjarrett.com","./")
+                    }
                 }, 10)
             }
         }
