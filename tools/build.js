@@ -136,6 +136,9 @@ const e = new Promise((resolveOuter) => {
                             // Edit links to open in new tab
                             content = content.replaceAll("<a","<a target='_BLANK'")
 
+                            // Don't edit anchor links
+                            content = content.replaceAll('<a target="_BLANK" href="', '<a href="#')
+
                             if (content.includes("<p>[video]</p>")) {
                                 if (this.attribute("video")) {
                                     content = content.replaceAll("<p>[video]</p>", `<iframe class="youtube" src="https://www.youtube-nocookie.com/embed/${this.attribute("video")}"></iframe>`)
