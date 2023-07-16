@@ -402,9 +402,21 @@ const e = new Promise((resolveOuter) => {
 
                         if (findCategory) {
                             findCategory.articles.push(filename.replace(".html",""))
+
+                            if (new Date(this.attribute("date")).getTime() / 1000 > findCategory.latest) {
+                                findCategory.latest = new Date(this.attribute("date")).getTime() / 1000
+                            }
+
+                            findCategory.articles.sort(function(a,b){
+                                let articleA = index.find(e => e.id == a)
+                                let articleB = index.find(e => e.id == b)
+
+                                return articleB.dateFormats.unix - articleA.dateFormats.unix
+                            })
                         } else {
                             categories.push({
                                 category: category,
+                                latest: new Date(this.attribute("date")).getTime() / 1000,
                                 articles: [
                                     filename.replace(".html","")
                                 ]
@@ -483,8 +495,13 @@ e.then(function(){
 
         console.log(`\n\x1b[32m\u2705 index.json successfully written\x1b[0m`)
 
+        // Sort Categories
+        categories.sort(function(a,b){
+            return b.latest - a.latest || b.articles.length - a.articles.length
+        })
+
         // Create Categories
-        fs.writeFile(categoriesURL, JSON.stringify(categories.sort(function(a,b) {a.articles.length - b.articles.length}), null, "\t"), function (err) {
+        fs.writeFile(categoriesURL, JSON.stringify(categories, null, "\t"), function (err) {
             if (err) throw err;
             
             console.log(`\x1b[32m\u2705 categories.json successfully written\n\x1b[0m`)
