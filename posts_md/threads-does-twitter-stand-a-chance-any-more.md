@@ -2,7 +2,7 @@
 # title: Threads: Does Twitter stand a chance any more?
 # description: Today I look at Threads, the new social media app taking the internet by storm. Is it any good?
 # seo-description: Threads is the brand-new social media app from Meta that is taking the internet by storm, but does the new kid on the block stand a chance against Twitter?
-# category: Tech News
+# categories: Tech News
 # keywords: threads, twitter, meta, elon, zuck, metaverse, mark zuckerburg, elon musk, twitter vs threads, social media, social apps
 # image: threads.png
 # date: 2023-7-7

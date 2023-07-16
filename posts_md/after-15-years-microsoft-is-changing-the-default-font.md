@@ -2,7 +2,7 @@
 # title: After 15 years, Microsoft is changing the default font
 # description: After 15 years of using Calibri, Microsoft is dropping it as the default Office font to replace it with Aptos
 # seo-description: Microsoft is dropping Calibri after 15 years, what's next?
-# category: Tech News
+# categories: Tech News
 # keywords: aptos, calibri, font, word, microsoft, new font, new word font, bierstadt, office, office365
 # image: aptos.png
 # imagery: Microsoft

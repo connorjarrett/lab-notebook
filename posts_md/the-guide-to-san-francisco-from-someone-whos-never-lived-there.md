@@ -2,7 +2,7 @@
 # title: The guide to San Francisco from someone who's never lived there.
 # description: I look back at my visit to San Francisco and some of the highlights of the trip
 # seo-description: San Francisco will always hold a special place in my heart - here are some of my top things to do if you visit.
-# category: Travel
+# categories: Travel
 # keywords: san francisco, zoox, sf, san francisco tourist, tourist, sf tech, san francisco tech, apple park, salesforce, salesforce park, stanford, sanfran
 # image: sanfrancisco.jpg
 # date: 2023-7-1

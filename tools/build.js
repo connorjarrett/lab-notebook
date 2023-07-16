@@ -369,8 +369,10 @@ const e = new Promise((resolveOuter) => {
                         readtime: getReadTime(data),
                         tags: [this.attribute("keywords").split(",").map(function(item) {
                             return item.trim();
-                        }), this.attribute("category").toLowerCase()].flat(),
-                        category: this.attribute("category").toLowerCase().replaceAll(" ", "-"),
+                        }), this.attribute("categories").split(",")[0].toLowerCase()].flat(),
+                        categories: this.attribute("categories").split(",").map(function(item) {
+                            return item.trim();
+                        }),
                         relatedArticles: relatedArticles,
                         published: this.attribute("date"),
                         dateFormats: {
@@ -388,17 +390,23 @@ const e = new Promise((resolveOuter) => {
                     })
 
                     // Add to categories
-                    let findCategory = categories.find(e => e.category == this.attribute("category").toLowerCase().replaceAll(" ", "-"))
+                    for (let i=0; i < this.attribute("categories").split(",").length; i++) {
+                        let category = this.attribute("categories").split(",")[i]
+                        category = category.trim()
 
-                    if (findCategory) {
-                        findCategory.articles.push(filename.replace(".html",""))
-                    } else {
-                        categories.push({
-                            category: this.attribute("category").toLowerCase().replaceAll(" ", "-"),
-                            articles: [
-                                filename.replace(".html","")
-                            ]
-                        })
+                        // let findCategory = categories.find(e => e.category == this.attribute("category").toLowerCase().replaceAll(" ", "-"))
+                        let findCategory = categories.find(e => e.category == category)
+
+                        if (findCategory) {
+                            findCategory.articles.push(filename.replace(".html",""))
+                        } else {
+                            categories.push({
+                                category: category,
+                                articles: [
+                                    filename.replace(".html","")
+                                ]
+                            })
+                        }
                     }
 
                     function end() {

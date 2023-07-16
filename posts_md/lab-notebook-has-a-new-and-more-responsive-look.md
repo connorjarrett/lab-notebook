@@ -2,7 +2,7 @@
 # title: Lab Notebook has a new and more responsive look
 # description: I spent a week redesigning Lab Notebook to be more responsive - here's what's new.
 # seo-description: I spent a week redesigning my blog from the ground up  - and the impact it had on UX was mind-blowing.
-# category: My projects
+# categories: My projects
 # keywords: redesign, ui, ux , uiux, top tips, figma, new logo, new brand, rebrand, mona sans, website redesign, contact, collaboration, update, 2 month update, 1 month update, logos, new logo
 # image: newlook.png
 # date: 2023-6-23

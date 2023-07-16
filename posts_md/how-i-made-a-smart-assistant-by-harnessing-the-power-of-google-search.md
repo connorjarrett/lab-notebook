@@ -2,7 +2,7 @@
 # title: How I made a smart assistant by harnessing the power of Google Search
 # description: I look at the fundamental concept of search engines and explore opportunities to improve them.
 # seo-description: Connor Jarrett looks at the fundamental concept of search and explores possibilities of what it would be like if they changed.
-# category: My projects
+# categories: My projects
 # keywords: chatbot, ai, chatgpt, artificial inteligence, ai search, ai chatbot, google search
 # image: chatbot.png
 # date: 2023-5-8

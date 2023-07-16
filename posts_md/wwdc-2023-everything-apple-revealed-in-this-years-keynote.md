@@ -2,7 +2,7 @@
 # title: WWDC 2023: Everything Apple revealed in this year's keynote
 # description: Apple's annual developer's conference revealed new hardware and software. Let's see what's new and if it lives up to the rumours.
 # seo-description: Connor Jarrett looks at Apples's annual developer's conference, and reveals what's new and if it lives up to the rumours.
-# category: Tech News
+# categories: Tech News
 # keywords: apple, wwdc, wwdc23, wwdc2023, apple, 15" macbook air, new mac pro, ios 17, iphone, apple vr, vr headset, apple vr headset, developers, apple event, apple leaks, ios leaks, new ios, new mac, macos 14, apple glasses
 # image: wwdc-23.jpg
 # date: 2023-6-5

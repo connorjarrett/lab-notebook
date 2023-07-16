@@ -2,7 +2,7 @@
 # title: Why the little things are important in UI and UX design
 # description: I look into the history of User Interface and User Experience design and provide some top tips for beginners
 # seo-description: Connor Jarrett explores the history of User Interface and User Experience and uncovers the key ingredient to a successful design.
-# category: UI UX
+# categories: UI UX
 # keywords: UI, UX, User Interface, User Experience, UIUX, Design, Designers, Web Design, Websites, Website Flow, Micro-interactions, UI Design
 # image: uiux-little-things.png
 # date: 2023-5-31
@@ -48,7 +48,7 @@ aside li.active {
 ## The little things in User Interface matter
 In a recent project of mine, I wanted to find a way to make the User Interface seem more alive and less dull. I thought of using emojis to add a splash of colour to the design, but it didn't do enough.
 
-I ended up coming up with a bit of JavaScript that could generate a random emoji depending on a certain category, it worked a charm for some basic features, adding a subtle change to liven up the interface. When it came to using it for user avatars is when I realised it needed more. Next to each user it would generate a random emoji, this works fine on paper, but in practise, [having a female emoji next to a masculine name didn't usually fit](https://labnotebook.connorjarrett.com/assets/articles/extra/emoji-mismatch.jpg). To rectify this, I used an [API that allows 1,000 free daily requests](https://genderize.io) to guess the gender from their first name. This small detail provides a consistency to the user interface that it otherwise wouldn't have.
+I ended up coming up with a bit of JavaScript that could generate a random emoji depending on a certain categories, it worked a charm for some basic features, adding a subtle change to liven up the interface. When it came to using it for user avatars is when I realised it needed more. Next to each user it would generate a random emoji, this works fine on paper, but in practise, [having a female emoji next to a masculine name didn't usually fit](https://labnotebook.connorjarrett.com/assets/articles/extra/emoji-mismatch.jpg). To rectify this, I used an [API that allows 1,000 free daily requests](https://genderize.io) to guess the gender from their first name. This small detail provides a consistency to the user interface that it otherwise wouldn't have.
 
 ## Why mobile-first design is taking over
 According to [analysis](https://research.com/software/mobile-vs-desktop-usage#:~:text=When%20it%20comes%20to%20mobile,of%20the%20total%20web%20traffic.), many separate researchers have concluded that now more people browse the web on a smartphone rather than a desktop, making responsive design more important than ever. Responsive design is a design that varies depending on the screen size or device type. Not having a responsive website or good mobile support can [negatively affect SEO](https://developers.google.com/search/blog/2015/02/finding-more-mobile-friendly-search), which is something no one wants.
