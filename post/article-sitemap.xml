@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>
+            https://labnotebook.connorjarrett.com/post/my-take-on-mission-impossible-dead-reckoning-part-one
+        </loc>
+        <image:image>
+            <image:loc>
+                https://labnotebook.connorjarrett.com/assets/articles/mission7review.png
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>
             https://labnotebook.connorjarrett.com/post/after-15-years-microsoft-is-changing-the-default-font
         </loc>
         <image:image>

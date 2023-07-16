@@ -1,21 +1,21 @@
 [
 	{
-		"category": "my-projects",
+		"category": "My projects",
 		"articles": [
-			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
+			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
 			"how-i-made-a-smart-assistant-by-harnessing-the-power-of-google-search",
 			"lab-notebook-has-a-new-and-more-responsive-look"
 		]
 	},
 	{
-		"category": "future-tech",
+		"category": "Future tech",
 		"articles": [
 			"an-autonomous-future-may-be-closer-than-i-thought"
 		]
 	},
 	{
-		"category": "tech-news",
+		"category": "Tech News",
 		"articles": [
 			"after-15-years-microsoft-is-changing-the-default-font",
 			"threads-does-twitter-stand-a-chance-any-more",
@@ -23,25 +23,38 @@
 		]
 	},
 	{
-		"category": "privacy",
-		"articles": [
-			"the-ethics-of-tracking-and-analytics-on-the-internet"
-		]
-	},
-	{
-		"category": "inspiration",
+		"category": "Inspiration",
 		"articles": [
 			"my-10-favourite-portfolios-for-inspiration-from-across-the-web"
 		]
 	},
 	{
-		"category": "travel",
+		"category": "Movies",
 		"articles": [
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
+		]
+	},
+	{
+		"category": "Travel",
+		"articles": [
+			"my-take-on-mission-impossible-dead-reckoning-part-one",
 			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
 		]
 	},
 	{
-		"category": "ui-ux",
+		"category": "AI",
+		"articles": [
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
+		]
+	},
+	{
+		"category": "Privacy",
+		"articles": [
+			"the-ethics-of-tracking-and-analytics-on-the-internet"
+		]
+	},
+	{
+		"category": "UI UX",
 		"articles": [
 			"why-the-little-things-are-important-in-ui-and-ux-design"
 		]
