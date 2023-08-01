@@ -1,7 +1,7 @@
 <!-- 
 # title: RIP Twitter, here comes 𝕏
-# description: Elon Musk has killed Twitter and is trying to create the "everything app", 𝕏
-# seo-description: Goodbye Twitter? What's different about 𝕏?
+# description: Elon Musk has killed Twitter and is trying to create the "everything app", X
+# seo-description: Goodbye Twitter? What's different about X?
 # categories: Tech News
 # keywords: Twitter, X, Elon Musk, Post, Tweet, Xing, Repost, Twitter Blue, X Black, rebrand, tesla, 𝕏
 # image: x.png
