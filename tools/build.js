@@ -1,4 +1,6 @@
 // build.js converts all the article.md files into HTML files following a template
+
+const latinize = require("./latinize")
 const path = require('path');
 const jsBeautify = require("js-beautify");
 const fs = require('fs');
@@ -200,6 +202,7 @@ const e = new Promise((resolveOuter) => {
                     }
 
                     const filename = this.attribute("title") // Get article title
+                                    .latinize() // Latinize
                                     .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"") // Remove punctuation
                                     .replaceAll("?","") // Remove question marks
                                     .replaceAll("'","") // Remove apostrophe
