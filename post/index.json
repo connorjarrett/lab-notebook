@@ -1,5 +1,48 @@
 [
 	{
+		"url": "https://labnotebook.connorjarrett.com/post/rip-twitter-here-comes-xx",
+		"id": "rip-twitter-here-comes-xx",
+		"title": "RIP Twitter, here comes 𝕏",
+		"description": "Elon Musk has killed Twitter and is trying to create the \"everything app\", 𝕏",
+		"SEOdescription": "Goodbye Twitter? What's different about 𝕏?",
+		"readtime": 2,
+		"tags": [
+			"twitter",
+			"x",
+			"elon musk",
+			"post",
+			"tweet",
+			"xing",
+			"repost",
+			"twitter blue",
+			"x black",
+			"rebrand",
+			"tesla",
+			"𝕏",
+			"tech news"
+		],
+		"categories": [
+			"Tech News"
+		],
+		"relatedArticles": [
+			"lab-notebook-has-a-new-and-more-responsive-look",
+			"my-take-on-mission-impossible-dead-reckoning-part-one",
+			"after-15-years-microsoft-is-changing-the-default-font"
+		],
+		"published": "2023-8-1",
+		"dateFormats": {
+			"unix": 1690844400000,
+			"locale": "01/08/2023",
+			"string": "August 1, 2023",
+			"iso": "2023-07-31T23:00:00.000Z"
+		},
+		"share": {
+			"string": "15s9ayn",
+			"url": "https://labnotebook.connorjarrett.com/s/15s9ayn?s="
+		},
+		"image": "https://labnotebook.connorjarrett.com/assets/articles/x.png"
+	},
+	{
 		"url": "https://labnotebook.connorjarrett.com/post/my-take-on-mission-impossible-dead-reckoning-part-one",
 		"id": "my-take-on-mission-impossible-dead-reckoning-part-one",
 		"title": "My take on Mission: Impossible – Dead Reckoning Part One",
@@ -32,9 +75,9 @@
 			"AI"
 		],
 		"relatedArticles": [
+			"rip-twitter-here-comes-xx",
 			"after-15-years-microsoft-is-changing-the-default-font",
-			"threads-does-twitter-stand-a-chance-any-more",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
+			"threads-does-twitter-stand-a-chance-any-more"
 		],
 		"published": "2023-7-16",
 		"dateFormats": {
@@ -73,9 +116,9 @@
 			"Tech News"
 		],
 		"relatedArticles": [
+			"rip-twitter-here-comes-xx",
 			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"threads-does-twitter-stand-a-chance-any-more",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
+			"threads-does-twitter-stand-a-chance-any-more"
 		],
 		"published": "2023-7-14",
 		"dateFormats": {
@@ -115,9 +158,9 @@
 			"Tech News"
 		],
 		"relatedArticles": [
+			"rip-twitter-here-comes-xx",
 			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font",
-			"the-guide-to-san-francisco-from-someone-whos-never-lived-there"
+			"after-15-years-microsoft-is-changing-the-default-font"
 		],
 		"published": "2023-7-7",
 		"dateFormats": {
@@ -159,8 +202,8 @@
 		],
 		"relatedArticles": [
 			"an-autonomous-future-may-be-closer-than-i-thought",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"rip-twitter-here-comes-xx",
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-7-1",
 		"dateFormats": {
@@ -208,8 +251,8 @@
 		],
 		"relatedArticles": [
 			"why-the-little-things-are-important-in-ui-and-ux-design",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"rip-twitter-here-comes-xx",
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-6-23",
 		"dateFormats": {
@@ -251,8 +294,8 @@
 		],
 		"relatedArticles": [
 			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"rip-twitter-here-comes-xx",
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-6-13",
 		"dateFormats": {
@@ -301,9 +344,9 @@
 			"Tech News"
 		],
 		"relatedArticles": [
+			"rip-twitter-here-comes-xx",
 			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font",
-			"threads-does-twitter-stand-a-chance-any-more"
+			"after-15-years-microsoft-is-changing-the-default-font"
 		],
 		"published": "2023-6-5",
 		"dateFormats": {
@@ -344,9 +387,9 @@
 			"UI UX"
 		],
 		"relatedArticles": [
+			"rip-twitter-here-comes-xx",
 			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font",
-			"threads-does-twitter-stand-a-chance-any-more"
+			"after-15-years-microsoft-is-changing-the-default-font"
 		],
 		"published": "2023-5-31",
 		"dateFormats": {
@@ -384,9 +427,9 @@
 			"Privacy"
 		],
 		"relatedArticles": [
+			"rip-twitter-here-comes-xx",
 			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font",
-			"threads-does-twitter-stand-a-chance-any-more"
+			"after-15-years-microsoft-is-changing-the-default-font"
 		],
 		"published": "2023-5-26",
 		"dateFormats": {
@@ -420,9 +463,9 @@
 			"Inspiration"
 		],
 		"relatedArticles": [
+			"rip-twitter-here-comes-xx",
 			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font",
-			"threads-does-twitter-stand-a-chance-any-more"
+			"after-15-years-microsoft-is-changing-the-default-font"
 		],
 		"published": "2023-5-19",
 		"dateFormats": {
@@ -461,8 +504,8 @@
 		],
 		"relatedArticles": [
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"rip-twitter-here-comes-xx",
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-5-12",
 		"dateFormats": {
@@ -498,9 +541,9 @@
 			"My projects"
 		],
 		"relatedArticles": [
+			"rip-twitter-here-comes-xx",
 			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font",
-			"threads-does-twitter-stand-a-chance-any-more"
+			"after-15-years-microsoft-is-changing-the-default-font"
 		],
 		"published": "2023-5-8",
 		"dateFormats": {
@@ -537,8 +580,8 @@
 		],
 		"relatedArticles": [
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"rip-twitter-here-comes-xx",
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-5-7",
 		"dateFormats": {

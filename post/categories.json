@@ -1,5 +1,15 @@
 [
 	{
+		"category": "Tech News",
+		"latest": 1690844400,
+		"articles": [
+			"rip-twitter-here-comes-xx",
+			"after-15-years-microsoft-is-changing-the-default-font",
+			"threads-does-twitter-stand-a-chance-any-more",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+		]
+	},
+	{
 		"category": "Travel",
 		"latest": 1689462000,
 		"articles": [
@@ -19,15 +29,6 @@
 		"latest": 1689462000,
 		"articles": [
 			"my-take-on-mission-impossible-dead-reckoning-part-one"
-		]
-	},
-	{
-		"category": "Tech News",
-		"latest": 1689289200,
-		"articles": [
-			"after-15-years-microsoft-is-changing-the-default-font",
-			"threads-does-twitter-stand-a-chance-any-more",
-			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
 		]
 	},
 	{
