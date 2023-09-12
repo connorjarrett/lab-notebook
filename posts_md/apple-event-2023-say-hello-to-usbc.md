@@ -16,7 +16,7 @@ The new iPhone 15 and 15 Pro models have just been announced and look great as e
 
 This year, the iPhone 15 comes with a 48MP main camera with 2x Telephoto and improved focus. Photos will also now be able to switch to Portrait mode after being captured, and the focus will be able to be shifter after the fact.
 
-iPhone 15 will also come with Satellite SOS, just like the 14 Pro last year. All these new features look pretty cool, and there is quite a bit of new features, it builds on the iPhone 14's strong points and really does look like a genuine improvement and I can see it being useful in the hands of consumers.
+iPhone 15 will also come with Satellite SOS All these new features look pretty cool, and there is quite a bit of new features, it builds on the iPhone 14's strong points and really does look like a genuine improvement and I can see it being useful in the hands of consumers.
 
 ## Apple Watch Series 9
 Apple's Watch 9 looks pretty similar to Series 8 at first glance, but there is one massive feature which deserves recognition. Double Tap allows you to control your Apple Watch without even reaching for the screen, you can control music, timers, calls and much more just by tapping your fingers together. This looks like a really great feature, especially for users with only one arm.
