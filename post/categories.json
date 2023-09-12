@@ -1,11 +1,20 @@
 [
 	{
 		"category": "Tech News",
-		"latest": 1690844400,
+		"latest": 1694473200,
 		"articles": [
+			"apple-event-2023-say-hello-to-usbc",
 			"rip-twitter-here-comes-xx",
 			"after-15-years-microsoft-is-changing-the-default-font",
 			"threads-does-twitter-stand-a-chance-any-more",
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
+		]
+	},
+	{
+		"category": "Apple",
+		"latest": 1694473200,
+		"articles": [
+			"apple-event-2023-say-hello-to-usbc",
 			"wwdc-2023-everything-apple-revealed-in-this-years-keynote"
 		]
 	},

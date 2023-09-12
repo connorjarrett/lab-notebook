@@ -1,5 +1,50 @@
 [
 	{
+		"url": "https://labnotebook.connorjarrett.com/post/apple-event-2023-say-hello-to-usbc",
+		"id": "apple-event-2023-say-hello-to-usbc",
+		"title": "Apple Event 2023: Say hello to USB-C!",
+		"description": "The iPhone 15 has finally arrived and Apple's finally made the long awaited switch to USB-C, what else is new?",
+		"SEOdescription": "What's new at the Apple Event this year? Does the iPhone 15 live up to the rumors? Let's find out!",
+		"readtime": 3,
+		"tags": [
+			"apple event",
+			"apple",
+			"usb-c",
+			"iphone 15",
+			"ios",
+			"ios17",
+			"usbc",
+			"lightning",
+			"apple leaks",
+			"leak",
+			"new ios",
+			"new iphone",
+			"iphone",
+			"tech news"
+		],
+		"categories": [
+			"Tech News",
+			"Apple"
+		],
+		"relatedArticles": [
+			"wwdc-2023-everything-apple-revealed-in-this-years-keynote",
+			"rip-twitter-here-comes-xx",
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
+		],
+		"published": "2023-9-12",
+		"dateFormats": {
+			"unix": 1694473200000,
+			"locale": "12/09/2023",
+			"string": "September 12, 2023",
+			"iso": "2023-09-11T23:00:00.000Z"
+		},
+		"share": {
+			"string": "-f7eb2e",
+			"url": "https://labnotebook.connorjarrett.com/s/-f7eb2e?s="
+		},
+		"image": "https://labnotebook.connorjarrett.com/assets/articles/appleevent23.png"
+	},
+	{
 		"url": "https://labnotebook.connorjarrett.com/post/rip-twitter-here-comes-xx",
 		"id": "rip-twitter-here-comes-xx",
 		"title": "RIP Twitter, here comes 𝕏",
@@ -26,8 +71,8 @@
 		],
 		"relatedArticles": [
 			"lab-notebook-has-a-new-and-more-responsive-look",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"apple-event-2023-say-hello-to-usbc",
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-8-1",
 		"dateFormats": {
@@ -75,9 +120,9 @@
 			"AI"
 		],
 		"relatedArticles": [
+			"apple-event-2023-say-hello-to-usbc",
 			"rip-twitter-here-comes-xx",
-			"after-15-years-microsoft-is-changing-the-default-font",
-			"threads-does-twitter-stand-a-chance-any-more"
+			"after-15-years-microsoft-is-changing-the-default-font"
 		],
 		"published": "2023-7-16",
 		"dateFormats": {
@@ -116,9 +161,9 @@
 			"Tech News"
 		],
 		"relatedArticles": [
+			"apple-event-2023-say-hello-to-usbc",
 			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"threads-does-twitter-stand-a-chance-any-more"
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-7-14",
 		"dateFormats": {
@@ -159,8 +204,8 @@
 		],
 		"relatedArticles": [
 			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"apple-event-2023-say-hello-to-usbc",
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-7-7",
 		"dateFormats": {
@@ -202,8 +247,8 @@
 		],
 		"relatedArticles": [
 			"an-autonomous-future-may-be-closer-than-i-thought",
-			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one"
+			"apple-event-2023-say-hello-to-usbc",
+			"rip-twitter-here-comes-xx"
 		],
 		"published": "2023-7-1",
 		"dateFormats": {
@@ -252,7 +297,7 @@
 		"relatedArticles": [
 			"why-the-little-things-are-important-in-ui-and-ux-design",
 			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one"
+			"apple-event-2023-say-hello-to-usbc"
 		],
 		"published": "2023-6-23",
 		"dateFormats": {
@@ -294,8 +339,8 @@
 		],
 		"relatedArticles": [
 			"the-guide-to-san-francisco-from-someone-whos-never-lived-there",
-			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one"
+			"apple-event-2023-say-hello-to-usbc",
+			"rip-twitter-here-comes-xx"
 		],
 		"published": "2023-6-13",
 		"dateFormats": {
@@ -341,12 +386,13 @@
 			"tech news"
 		],
 		"categories": [
-			"Tech News"
+			"Tech News",
+			"Apple"
 		],
 		"relatedArticles": [
+			"apple-event-2023-say-hello-to-usbc",
 			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-6-5",
 		"dateFormats": {
@@ -387,9 +433,9 @@
 			"UI UX"
 		],
 		"relatedArticles": [
+			"apple-event-2023-say-hello-to-usbc",
 			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-5-31",
 		"dateFormats": {
@@ -427,9 +473,9 @@
 			"Privacy"
 		],
 		"relatedArticles": [
+			"apple-event-2023-say-hello-to-usbc",
 			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-5-26",
 		"dateFormats": {
@@ -463,9 +509,9 @@
 			"Inspiration"
 		],
 		"relatedArticles": [
+			"apple-event-2023-say-hello-to-usbc",
 			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-5-19",
 		"dateFormats": {
@@ -504,8 +550,8 @@
 		],
 		"relatedArticles": [
 			"building-a-blog-with-github-pages-and-nodejs-despite-the-challenges",
-			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one"
+			"apple-event-2023-say-hello-to-usbc",
+			"rip-twitter-here-comes-xx"
 		],
 		"published": "2023-5-12",
 		"dateFormats": {
@@ -541,9 +587,9 @@
 			"My projects"
 		],
 		"relatedArticles": [
+			"apple-event-2023-say-hello-to-usbc",
 			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one",
-			"after-15-years-microsoft-is-changing-the-default-font"
+			"my-take-on-mission-impossible-dead-reckoning-part-one"
 		],
 		"published": "2023-5-8",
 		"dateFormats": {
@@ -580,8 +626,8 @@
 		],
 		"relatedArticles": [
 			"adding-a-mailing-list-to-a-github-pages-site-through-getformio",
-			"rip-twitter-here-comes-xx",
-			"my-take-on-mission-impossible-dead-reckoning-part-one"
+			"apple-event-2023-say-hello-to-usbc",
+			"rip-twitter-here-comes-xx"
 		],
 		"published": "2023-5-7",
 		"dateFormats": {
