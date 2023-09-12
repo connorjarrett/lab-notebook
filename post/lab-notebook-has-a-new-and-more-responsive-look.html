@@ -71,7 +71,7 @@
         This page is built automatically.
         If you're interested in that kind of stuff, this blog is for you.
 
-        Page last built: Tue, 01 Aug 2023 11:31:15 GMT
+        Page last built: Tue, 12 Sep 2023 16:44:29 GMT
 
     -->
 
@@ -182,11 +182,11 @@
 				</article>
 			</a>
 
-			<a href="https://labnotebook.connorjarrett.com/s/bf31ih?s=related" class="articleLinkElement">
-				<article class="article adjustable"><img src="https://labnotebook.connorjarrett.com/assets/articles/mission7review.png">
+			<a href="https://labnotebook.connorjarrett.com/s/-f7eb2e?s=related" class="articleLinkElement">
+				<article class="article adjustable"><img src="https://labnotebook.connorjarrett.com/assets/articles/appleevent23.png">
 					<div id="info">
-						<p id="article-title">My take on Mission: Impossible – Dead Reckoning Part One</p>
-						<p id="article-description">I watched the brand new Mission Impossible this weekend, here's my thoughts on it.</p>
+						<p id="article-title">Apple Event 2023: Say hello to USB-C!</p>
+						<p id="article-description">The iPhone 15 has finally arrived and Apple's finally made the long awaited switch to USB-C, what else is new?</p>
 					</div>
 				</article>
 			</a>
@@ -229,13 +229,14 @@
 				<h2>BE THE FIRST TO KNOW</h2>
 				<form action="https://getform.io/f/ae8ec051-fa4b-42ef-b7a0-2c44b84730ee" method="POST">
 					<div class="name-group">
-						<input name="firstname" type="text" placeholder="Firstname" required>
+						<input disabled="disabled" name="firstname" type="text" placeholder="Firstname" required>
 						<input name="surname" type="text" placeholder="Surname" required>
 					</div>
-					<input name="email" type="email" placeholder="your@email.com" required>
-					<input type="hidden" name="_gotcha" style="display:none !important">
-					<input type="submit" value="Join">
-					<p>Data sent through this form is sent to <a href="https://getform.io/legal/privacy-policy" target="_blank">getform.io</a>. By clicking "Join" you agree to their privacy policy and terms.</p>
+					<input disabled="disabled" name="email" type="email" placeholder="your@email.com" required>
+					<input disabled="disabled" type="hidden" name="_gotcha" style="display:none !important">
+					<input disabled="disabled" type="submit" value="Join">
+					<!-- <p>Data sent through this form is sent to <a href="https://getform.io/legal/privacy-policy" target="_blank">getform.io</a>. By clicking "Join" you agree to their privacy policy and terms.</p> -->
+					<p>Mailing list is currently disabled</p>
 				</form>
 
 			</section>
@@ -252,6 +253,16 @@
 			cssSelector: "code"
 		})
 		hljs.highlightAll();
+	</script>
+
+	<!-- Allow images on LocalHost -->
+	<script>
+		if (document.location.hostname == "localhost") {
+			document.querySelectorAll("img").forEach(function(image) {
+				console.log(image)
+				image.src = image.src.replace("https://labnotebook.connorjarrett.com/", "../")
+			})
+		}
 	</script>
 </body>
 
