@@ -214,5 +214,15 @@
         })
         hljs.highlightAll();
     </script>
+
+    <!-- Allow images on LocalHost -->
+    <script>
+        if (document.location.hostname == "localhost") {
+            document.querySelectorAll("img").forEach(function(image){
+                console.log(image)
+                image.src = image.src.replace("https://labnotebook.connorjarrett.com/","../")
+            })
+        }
+    </script>
 </body>
 </html
