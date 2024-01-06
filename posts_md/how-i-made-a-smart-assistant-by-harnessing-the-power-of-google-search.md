@@ -8,7 +8,7 @@
 # date: 2023-5-8
 -->
 
-A few weeks ago, I launched my latest project [Chatbot](https://conjardev.github.io/chatbot). It started out as something that could just be an alternate user interface to Google, but later became so much more.
+A few weeks ago, I launched my latest project [Chatbot](https://connorjarrett.github.io/chatbot). It started out as something that could just be an alternate user interface to Google, but later became so much more.
 
 ## What if search was more useful
 When you step back and really think about search online, the relevancy of results has definitely got better, but we're still presented with the same long list of results to click with limited information about most sites. What if that were to change? Imagine if the fundamental concept of a smart assistant like Siri or Google Assistant where you get one, optimised and informative result came to desktop search, that is the vision I was trying to create with my project.
@@ -29,7 +29,7 @@ I'm always looking for new things to turn into Tier 2-3 results, and recently, I
 ## Where can I see this in action?
 Right now, for security reasons, you have to run the program on your home machine, rather than it being available through a web app, this is due to the lack of server side code on GitHub pages which I explore more in [this article](https://labnotebook.connorjarrett.com/post/building-a-blog-with-github-pages-and-nodejs-despite-the-challenges).
 
-For now, you can see the live demo and the code on the project website, [conjardev.github.io/chatbot](https://conjardev.github.io/chatbot)
+For now, you can see the live demo and the code on the project website, [connorjarrett.github.io/chatbot](https://connorjarrett.github.io/chatbot)
 
 ## Conclusion
 I really think that this approach to search is better than what we have today, and while we can see elements of this concept through Siri Suggested Website on Safari, and featured snippets on Google becoming more frequent, none of them provide, in my eyes, enough detail and relevance, and I hope we see more of this in years to come.

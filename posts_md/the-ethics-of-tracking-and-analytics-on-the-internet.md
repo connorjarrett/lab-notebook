@@ -32,7 +32,7 @@ I chose to develop my own analytics tool for 2 reasons, A: So I could experiment
 
 To start with, `https://labnotebook.connorjarrett.com/s/` is nothing special, and is just a common URL containing no further information. Next is `2ng6ib`, this is the identifier, this tells my script which article you want to go to, each article has its own, shortened, unique identifier. The real data comes from the last element of the URL `?s=tw-p`, this looks basic, but that particular string is short for `twitter-promoted` which basically means, it's from Twitter, and it's a promotion (from myself). This could also contain `-i` meaning independent, which means that the sender was not encouraged to share, or it could contain `-e` which means that the sender was encouraged to share.
 
-If you want to learn more about the analytics on Lab Notebook and what information it collects, you can read all the code for yourself on my [GitHub](https://github.com/conjardev/lab-notebook/blob/master/js/share.js)
+If you want to learn more about the analytics on Lab Notebook and what information it collects, you can read all the code for yourself on my [GitHub](https://github.com/connorjarrett/lab-notebook/blob/master/js/share.js)
 
 ## The warning signs were there
 People have been predicting this for years. George Orwell wrote of "Big Brother" and "Thoughtcrime" in his 1949 novel titled "Nineteen Eighty-Four" and in more recent years, Ubisoft hinted and warned of the danger with their WatchDogs franchise. My favourite reference to the reality we live in is the very first cutscene in WatchDogs 2 (2016) and I'd suggest you play the games, as they really are some of my favourite games out there.
